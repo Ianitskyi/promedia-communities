@@ -1,45 +1,15 @@
 (function () {
   "use strict";
 
-  var BADGE_LABELS = {
-    recommended: "🗺️ Рекомендоване медіа",
-    whitelist: "✅ Білий список ЗМІ",
-    jti: "🛡️ JTI-сертифіковане"
-  };
-
-  var TAG_LABELS = {
-    investigative: "🔍 Розслідувальне медіа",
-    warJournalism: "🎖️ Воєнна журналістика"
-  };
-
-  var OBLAST_LABELS = {
-    "cherkasy": "Черкаська область",
-    "chernihiv": "Чернігівська область",
-    "chernivtsi": "Чернівецька область",
-    "crimea": "Автономна Республіка Крим",
-    "dnipropetrovsk": "Дніпропетровська область",
-    "donetsk": "Донецька область",
-    "ivano-frankivsk": "Івано-Франківська область",
-    "kharkiv": "Харківська область",
-    "kherson": "Херсонська область",
-    "khmelnytskyi": "Хмельницька область",
-    "kirovohrad": "Кіровоградська область",
-    "kyiv": "Київська область",
-    "kyiv-city": "м. Київ",
-    "luhansk": "Луганська область",
-    "lviv": "Львівська область",
-    "mykolaiv": "Миколаївська область",
-    "odessa": "Одеська область",
-    "poltava": "Полтавська область",
-    "rivne": "Рівненська область",
-    "sumy": "Сумська область",
-    "ternopil": "Тернопільська область",
-    "vinnytsia": "Вінницька область",
-    "volyn": "Волинська область",
-    "zakarpattia": "Закарпатська область",
-    "zaporizhia": "Запорізька область",
-    "zhytomyr": "Житомирська область"
-  };
+  var BADGE_KEYS = ["recommended", "whitelist", "jti"];
+  var TAG_KEYS = ["investigative", "warJournalism"];
+  var OBLAST_SLUGS = [
+    "cherkasy", "chernihiv", "chernivtsi", "crimea", "dnipropetrovsk",
+    "donetsk", "ivano-frankivsk", "kharkiv", "kherson", "khmelnytskyi",
+    "kirovohrad", "kyiv", "kyiv-city", "luhansk", "lviv", "mykolaiv",
+    "odessa", "poltava", "rivne", "sumy", "ternopil", "vinnytsia",
+    "volyn", "zakarpattia", "zaporizhia", "zhytomyr"
+  ];
 
   var state = {
     all: [],
@@ -58,15 +28,23 @@
 
   function populateRegionSelect() {
     var select = document.getElementById("region-filter");
-    var slugs = Object.keys(OBLAST_LABELS).sort(function (a, b) {
-      return OBLAST_LABELS[a].localeCompare(OBLAST_LABELS[b], "uk");
+    var current = state.regionSlug;
+    select.innerHTML = "";
+    var allOpt = document.createElement("option");
+    allOpt.value = "";
+    allOpt.textContent = t("controls.allRegions");
+    select.appendChild(allOpt);
+
+    var slugs = OBLAST_SLUGS.slice().sort(function (a, b) {
+      return tRaw("oblasts." + a).localeCompare(tRaw("oblasts." + b), getLang());
     });
     slugs.forEach(function (slug) {
       var opt = document.createElement("option");
       opt.value = slug;
-      opt.textContent = OBLAST_LABELS[slug];
+      opt.textContent = tRaw("oblasts." + slug);
       select.appendChild(opt);
     });
+    select.value = current;
   }
 
   function loadMap() {
@@ -82,7 +60,7 @@
           path.classList.add("oblast");
           path.setAttribute("tabindex", "0");
           var title = document.createElementNS("http://www.w3.org/2000/svg", "title");
-          title.textContent = OBLAST_LABELS[slug] || path.getAttribute("aria-label") || slug;
+          title.textContent = tRaw("oblasts." + slug) || path.getAttribute("aria-label") || slug;
           path.appendChild(title);
           path.addEventListener("click", function () { toggleRegion(slug); });
           path.addEventListener("keydown", function (e) {
@@ -102,9 +80,16 @@
       })
       .catch(function (err) {
         document.getElementById("oblast-map").innerHTML =
-          '<p class="empty-state">Не вдалося завантажити карту.</p>';
+          '<p class="empty-state">' + escapeHtml(t("map.loadError")) + "</p>";
         console.error(err);
       });
+  }
+
+  function updateMapTitles() {
+    Object.keys(oblastPaths).forEach(function (slug) {
+      var title = oblastPaths[slug].querySelector("title");
+      if (title) title.textContent = tRaw("oblasts." + slug) || slug;
+    });
   }
 
   function loadData() {
@@ -116,7 +101,7 @@
       })
       .catch(function (err) {
         document.getElementById("card-list").innerHTML =
-          '<p class="empty-state">Не вдалося завантажити каталог. Спробуйте оновити сторінку.</p>';
+          '<p class="empty-state">' + escapeHtml(t("list.loadError")) + "</p>";
         console.error(err);
       });
   }
@@ -145,8 +130,8 @@
     renderMapCounts(preRegion);
     renderList();
 
-    var count = state.filtered.length;
-    document.getElementById("results-count").textContent = count + " з " + state.all.length + " медіа";
+    document.getElementById("results-count").textContent =
+      t("results.count", { count: state.filtered.length, total: state.all.length });
   }
 
   function renderMapCounts(preRegion) {
@@ -169,7 +154,7 @@
     var list = document.getElementById("card-list");
     list.innerHTML = "";
     if (!state.filtered.length) {
-      list.innerHTML = '<p class="empty-state">Нічого не знайдено за такими фільтрами.</p>';
+      list.innerHTML = '<p class="empty-state">' + escapeHtml(t("list.empty")) + "</p>";
       return;
     }
     state.filtered.forEach(function (item) {
@@ -179,21 +164,21 @@
 
       var badgesHtml = "";
       if (item.badges) {
-        Object.keys(BADGE_LABELS).forEach(function (key) {
+        BADGE_KEYS.forEach(function (key) {
           if (item.badges[key]) {
-            badgesHtml += '<span class="badge ' + key + '">' + BADGE_LABELS[key] + "</span>";
+            badgesHtml += '<span class="badge ' + key + '">' + tRaw("badges." + key) + "</span>";
           }
         });
       }
       if (item.tags) {
         item.tags.forEach(function (tag) {
-          if (TAG_LABELS[tag]) {
-            badgesHtml += '<span class="badge tag">' + TAG_LABELS[tag] + "</span>";
+          if (TAG_KEYS.indexOf(tag) !== -1) {
+            badgesHtml += '<span class="badge tag">' + tRaw("tags." + tag) + "</span>";
           }
         });
       }
       if (item.example) {
-        badgesHtml += '<span class="badge example">приклад — уточнюється</span>';
+        badgesHtml += '<span class="badge example">' + escapeHtml(t("card.example")) + "</span>";
       }
 
       card.innerHTML =
@@ -203,8 +188,8 @@
         '<p class="desc">' + escapeHtml(item.description) + "</p>" +
         '<p class="idea">' + escapeHtml(item.communityIdea) + "</p>" +
         '<div class="card-links">' +
-        '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">Підписатися →</a>' +
-        '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">Сайт медіа</a>' +
+        '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.subscribe")) + "</a>" +
+        '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.website")) + "</a>" +
         "</div>";
 
       card.addEventListener("click", function (e) {
@@ -239,6 +224,12 @@
     state.regionSlug = e.target.value;
     render();
   });
+
+  window.onLangChange = function () {
+    populateRegionSelect();
+    updateMapTitles();
+    render();
+  };
 
   function escapeHtml(str) {
     return String(str || "").replace(/[&<>"']/g, function (c) {

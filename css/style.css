@@ -91,20 +91,33 @@ a { color: inherit; }
 
 .add-btn:hover { background: var(--ink-soft); }
 
-/* ---------- beta banner ---------- */
-
-.beta-banner {
-  background: var(--accent-tint);
-  color: var(--accent-dark);
-  border-bottom: 1px solid var(--accent);
-  padding: 10px 24px;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
+.lang-toggle {
+  display: inline-flex;
+  gap: 2px;
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  margin-left: auto;
 }
 
-.beta-banner a { text-decoration: underline; }
+.lang-btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+
+.lang-btn.active { background: var(--ink); color: #fff; }
+
+.lang-btn:not(.active):hover { color: var(--ink); }
 
 /* ---------- hero ---------- */
 
