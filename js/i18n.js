@@ -35,10 +35,6 @@ const I18N = {
       q3: {
         q: "Як створити свою спільноту?",
         aHtml: "Громадська організація «ПроМедіа» допомагає медіа створювати та розвивати спільноти читачів. Ми також проводимо вебінари та офлайнове навчання на замовлення міжнародної організації Institute for War and Peace Reporting. У 2026 році ми долучилися до створення посібника з розвитку спільнот, ви можете знайти pdf-версію за посиланням: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
-      },
-      q4: {
-        q: "Як додати спільноту свого медіа на карту?",
-        aHtml: "Якщо ви згуртували спільноту прихильників навколо свого медіа та хочете розповісти про неї світу, ви можете додати посилання на цю карту. Для цього потрібно заповнити коротку анкету, наші модератори перевірять наведені дані і додадуть редакцію на карту. Зазвичай ми робимо це за 1-2 робочих дні."
       }
     },
     controls: {
@@ -181,10 +177,6 @@ const I18N = {
       q3: {
         q: "How do I build my own community?",
         aHtml: "The NGO \"ProMedia\" helps media outlets build and grow reader communities. We also run webinars and offline training commissioned by the international Institute for War and Peace Reporting. In 2026 we contributed to a community-building handbook — you can find the PDF version here: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
-      },
-      q4: {
-        q: "How do I add my media's community to the map?",
-        aHtml: "If you've built a community of supporters around your media outlet and want to tell the world about it, you can add a link to this map. Just fill out a short form — our moderators will verify the details and add your outlet to the map. This usually takes 1-2 business days."
       }
     },
     controls: {
