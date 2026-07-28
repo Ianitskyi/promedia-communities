@@ -78,7 +78,8 @@ const I18N = {
     footer: {
       initiative: "Ініціатива",
       wordmarkAlt: "ГО «ПроМедіа»",
-      mapCreditHtml: "Контурна карта областей: адаптовано з <a href=\"https://mapsvg.com/maps/ukraine\" target=\"_blank\" rel=\"noopener\">MapSVG</a> (<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>). Дані каталогу проходять премодерацію."
+      mapCreditHtml: "Контурна карта областей: адаптовано з <a href=\"https://mapsvg.com/maps/ukraine\" target=\"_blank\" rel=\"noopener\">MapSVG</a> (<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>). Дані каталогу проходять премодерацію.",
+      reportErrorHtml: "Побачили помилку? Напишіть на <a href=\"mailto:info@promedia.report\">info@promedia.report</a>"
     },
     oblasts: {
       "cherkasy": "Черкаська область",
@@ -219,7 +220,8 @@ const I18N = {
     footer: {
       initiative: "Initiative",
       wordmarkAlt: "NGO “ProMedia”",
-      mapCreditHtml: "Oblast outline map: adapted from <a href=\"https://mapsvg.com/maps/ukraine\" target=\"_blank\" rel=\"noopener\">MapSVG</a> (<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>). Catalog entries go through pre-moderation."
+      mapCreditHtml: "Oblast outline map: adapted from <a href=\"https://mapsvg.com/maps/ukraine\" target=\"_blank\" rel=\"noopener\">MapSVG</a> (<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>). Catalog entries go through pre-moderation.",
+      reportErrorHtml: "Found a mistake? Email us at <a href=\"mailto:info@promedia.report\">info@promedia.report</a>"
     },
     oblasts: {
       "cherkasy": "Cherkasy Oblast",
