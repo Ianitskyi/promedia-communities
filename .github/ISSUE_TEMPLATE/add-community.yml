@@ -1,0 +1,96 @@
+name: "➕ Додати медіаспільноту"
+description: "Запропонуйте медіа для каталогу медіаспільнот України. Заявка проходить премодерацію команди ПроМедіа перед публікацією."
+title: "[Нова спільнота] "
+labels: ["new-community", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Дякуємо, що хочете додати медіа до каталогу! Заповніть поля нижче — команда ПроМедіа перевірить заявку і додасть її до `data/communities.json`.
+  - type: input
+    id: name
+    attributes:
+      label: Назва медіа
+      placeholder: "Наприклад: Суспільне Новини"
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Сайт медіа
+      placeholder: "https://example.com"
+    validations:
+      required: true
+  - type: input
+    id: community-url
+    attributes:
+      label: Посилання на спільноту (де підписатися)
+      description: "Telegram, Facebook-група, YouTube тощо — саме те посилання, куди підписник має перейти."
+      placeholder: "https://t.me/example"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Платформа спільноти
+      options:
+        - telegram
+        - facebook
+        - instagram
+        - youtube
+        - viber
+        - website
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Короткий опис медіа
+      description: "1-2 речення: що це за медіа."
+    validations:
+      required: true
+  - type: textarea
+    id: community-idea
+    attributes:
+      label: Ключова ідея спільноти
+      description: "Чому варто підписатися — фокус, місія, унікальність."
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: Місто
+      placeholder: "Львів"
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Область
+      placeholder: "Львівська область"
+    validations:
+      required: true
+  - type: input
+    id: coordinates
+    attributes:
+      label: Координати (широта, довгота)
+      description: "Якщо не знаєте точних — вкажіть приблизні координати міста, знайдені напр. через Google Maps (правою кнопкою по точці на карті)."
+      placeholder: "49.8397, 24.0297"
+    validations:
+      required: true
+  - type: checkboxes
+    id: badges
+    attributes:
+      label: Позначки (якщо застосовно)
+      options:
+        - label: На мапі рекомендованих медіа
+        - label: У білому списку ЗМІ
+        - label: Має міжнародний знак JTI (Journalism Trust Initiative)
+  - type: input
+    id: contact
+    attributes:
+      label: Контакт заявника (email або телефон)
+      description: "Щоб ми могли зв'язатися, якщо виникнуть питання щодо заявки."
+    validations:
+      required: false
