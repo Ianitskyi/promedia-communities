@@ -7,93 +7,161 @@
     jti: "🛡️ JTI-сертифіковане"
   };
 
+  var OBLAST_LABELS = {
+    "cherkasy": "Черкаська область",
+    "chernihiv": "Чернігівська область",
+    "chernivtsi": "Чернівецька область",
+    "crimea": "Автономна Республіка Крим",
+    "dnipropetrovsk": "Дніпропетровська область",
+    "donetsk": "Донецька область",
+    "ivano-frankivsk": "Івано-Франківська область",
+    "kharkiv": "Харківська область",
+    "kherson": "Херсонська область",
+    "khmelnytskyi": "Хмельницька область",
+    "kirovohrad": "Кіровоградська область",
+    "kyiv": "Київська область",
+    "kyiv-city": "м. Київ",
+    "luhansk": "Луганська область",
+    "lviv": "Львівська область",
+    "mykolaiv": "Миколаївська область",
+    "odessa": "Одеська область",
+    "poltava": "Полтавська область",
+    "rivne": "Рівненська область",
+    "sumy": "Сумська область",
+    "ternopil": "Тернопільська область",
+    "vinnytsia": "Вінницька область",
+    "volyn": "Волинська область",
+    "zakarpattia": "Закарпатська область",
+    "zaporizhia": "Запорізька область",
+    "zhytomyr": "Житомирська область"
+  };
+
   var state = {
     all: [],
     filtered: [],
     activeBadges: new Set(),
     search: "",
-    region: "",
-    markers: {},
+    regionSlug: "",
     activeId: null
   };
 
-  var map = L.map("map", { scrollWheelZoom: false }).setView([48.7, 31.3], 6);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "&copy; OpenStreetMap contributors",
-    maxZoom: 18
-  }).addTo(map);
+  var oblastPaths = {};
+  var oblastLabels = {};
 
-  var markerIcon = L.divIcon({
-    className: "media-marker",
-    html: '<span style="display:block;width:14px;height:14px;border-radius:50%;background:#0d0c5c;border:2.5px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)"></span>',
-    iconSize: [14, 14],
-    iconAnchor: [7, 7]
-  });
+  populateRegionSelect();
+  loadMap();
+  loadData();
 
-  fetch("data/communities.json")
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      state.all = data.filter(function (item) { return item.status === "approved"; });
-      populateRegions(state.all);
-      render();
-    })
-    .catch(function (err) {
-      document.getElementById("card-list").innerHTML =
-        '<p class="empty-state">Не вдалося завантажити каталог. Спробуйте оновити сторінку.</p>';
-      console.error(err);
-    });
-
-  function populateRegions(items) {
-    var regions = Array.from(new Set(items.map(function (i) { return i.region; }))).sort();
+  function populateRegionSelect() {
     var select = document.getElementById("region-filter");
-    regions.forEach(function (r) {
+    var slugs = Object.keys(OBLAST_LABELS).sort(function (a, b) {
+      return OBLAST_LABELS[a].localeCompare(OBLAST_LABELS[b], "uk");
+    });
+    slugs.forEach(function (slug) {
       var opt = document.createElement("option");
-      opt.value = r;
-      opt.textContent = r;
+      opt.value = slug;
+      opt.textContent = OBLAST_LABELS[slug];
       select.appendChild(opt);
     });
   }
 
-  function applyFilters() {
+  function loadMap() {
+    fetch("img/ukraine-oblasts.svg")
+      .then(function (r) { return r.text(); })
+      .then(function (svgText) {
+        var container = document.getElementById("oblast-map");
+        container.innerHTML = svgText;
+        var svg = container.querySelector("svg");
+        svg.setAttribute("role", "img");
+        Array.prototype.forEach.call(svg.querySelectorAll("path"), function (path) {
+          var slug = path.id;
+          path.classList.add("oblast");
+          path.setAttribute("tabindex", "0");
+          var title = document.createElementNS("http://www.w3.org/2000/svg", "title");
+          title.textContent = OBLAST_LABELS[slug] || path.getAttribute("aria-label") || slug;
+          path.appendChild(title);
+          path.addEventListener("click", function () { toggleRegion(slug); });
+          path.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleRegion(slug); }
+          });
+          oblastPaths[slug] = path;
+
+          var bbox = path.getBBox();
+          var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+          text.setAttribute("x", bbox.x + bbox.width / 2);
+          text.setAttribute("y", bbox.y + bbox.height / 2);
+          text.classList.add("oblast-count");
+          svg.appendChild(text);
+          oblastLabels[slug] = text;
+        });
+        render();
+      })
+      .catch(function (err) {
+        document.getElementById("oblast-map").innerHTML =
+          '<p class="empty-state">Не вдалося завантажити карту.</p>';
+        console.error(err);
+      });
+  }
+
+  function loadData() {
+    fetch("data/communities.json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        state.all = data.filter(function (item) { return item.status === "approved"; });
+        render();
+      })
+      .catch(function (err) {
+        document.getElementById("card-list").innerHTML =
+          '<p class="empty-state">Не вдалося завантажити каталог. Спробуйте оновити сторінку.</p>';
+        console.error(err);
+      });
+  }
+
+  function toggleRegion(slug) {
+    state.regionSlug = state.regionSlug === slug ? "" : slug;
+    document.getElementById("region-filter").value = state.regionSlug;
+    render();
+  }
+
+  function matchesSearchAndBadges(item) {
     var q = state.search.trim().toLowerCase();
-    state.filtered = state.all.filter(function (item) {
-      if (state.region && item.region !== state.region) return false;
-      for (var b of state.activeBadges) {
-        if (!item.badges || !item.badges[b]) return false;
-      }
-      if (q) {
-        var hay = (item.name + " " + item.city + " " + item.region).toLowerCase();
-        if (hay.indexOf(q) === -1) return false;
-      }
-      return true;
-    });
+    for (var b of state.activeBadges) {
+      if (!item.badges || !item.badges[b]) return false;
+    }
+    if (q) {
+      var hay = (item.name + " " + item.city + " " + item.region).toLowerCase();
+      if (hay.indexOf(q) === -1) return false;
+    }
+    return true;
   }
 
   function render() {
-    applyFilters();
-    renderMarkers();
+    var preRegion = state.all.filter(matchesSearchAndBadges);
+    state.filtered = state.regionSlug
+      ? preRegion.filter(function (item) { return item.regionSlug === state.regionSlug; })
+      : preRegion;
+
+    renderMapCounts(preRegion);
     renderList();
-    document.getElementById("results-count").textContent =
-      state.filtered.length + " з " + state.all.length + " медіа";
+
+    var count = state.filtered.length;
+    document.getElementById("results-count").textContent = count + " з " + state.all.length + " медіа";
   }
 
-  function renderMarkers() {
-    Object.values(state.markers).forEach(function (m) { map.removeLayer(m); });
-    state.markers = {};
-    state.filtered.forEach(function (item) {
-      var marker = L.marker([item.lat, item.lng], { icon: markerIcon }).addTo(map);
-      marker.bindPopup(popupHtml(item));
-      marker.on("click", function () { setActive(item.id); });
-      state.markers[item.id] = marker;
+  function renderMapCounts(preRegion) {
+    if (!Object.keys(oblastPaths).length) return;
+    var counts = {};
+    preRegion.forEach(function (item) {
+      counts[item.regionSlug] = (counts[item.regionSlug] || 0) + 1;
     });
-  }
-
-  function popupHtml(item) {
-    return (
-      '<div class="popup-title">' + escapeHtml(item.name) + "</div>" +
-      '<p class="popup-desc">' + escapeHtml(item.description) + "</p>" +
-      '<a class="popup-link" href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">Перейти на сайт →</a>'
-    );
+    Object.keys(oblastPaths).forEach(function (slug) {
+      var path = oblastPaths[slug];
+      var count = counts[slug] || 0;
+      path.classList.toggle("has-media", count > 0);
+      path.classList.toggle("active", slug === state.regionSlug);
+      var label = oblastLabels[slug];
+      if (label) label.textContent = count > 0 ? count : "";
+    });
   }
 
   function renderList() {
@@ -143,10 +211,11 @@
   function setActive(id) {
     state.activeId = id;
     var item = state.all.find(function (i) { return i.id === id; });
-    if (item) {
-      map.flyTo([item.lat, item.lng], 10, { duration: 0.6 });
-      var marker = state.markers[id];
-      if (marker) marker.openPopup();
+    if (item && oblastPaths[item.regionSlug]) {
+      var path = oblastPaths[item.regionSlug];
+      path.classList.add("pulse");
+      path.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+      setTimeout(function () { path.classList.remove("pulse"); }, 1200);
     }
     Array.from(document.querySelectorAll(".media-card")).forEach(function (el) {
       el.classList.toggle("active", el.dataset.id === id);
@@ -159,7 +228,7 @@
   });
 
   document.getElementById("region-filter").addEventListener("change", function (e) {
-    state.region = e.target.value;
+    state.regionSlug = e.target.value;
     render();
   });
 

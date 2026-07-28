@@ -6,7 +6,6 @@
 <title>Карта медіаспільнот України | ПроМедіа</title>
 <meta name="description" content="Каталог і карта медійних спільнот України: сайти медіа, короткий опис, ключова ідея спільноти та посилання, де на неї підписатися." />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="js/vendor/leaflet/leaflet.css" />
 <link rel="stylesheet" href="css/style.css" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8TM22QR9R"></script>
@@ -32,7 +31,7 @@
   <div class="eyebrow">Каталог і карта медіаспільнот</div>
   <h1>Медійні спільноти України</h1>
   <p class="lede">
-    База посилань на українські медіа та їхні спільноти: де почитати, подивитись і на що підписатися — прив'язана до географії. Натисніть на мітку карти чи картку медіа, щоб перейти до нього.
+    База посилань на українські медіа та їхні спільноти: де почитати, подивитись і на що підписатися — прив'язана до географії. Натисніть на область карти, щоб побачити медіа звідти, або одразу на картку медіа, щоб перейти до нього.
   </p>
 </section>
 
@@ -51,7 +50,10 @@
 <p class="results-count" id="results-count"></p>
 
 <div class="catalog-layout">
-  <div id="map"></div>
+  <div class="oblast-map-wrap">
+    <div class="oblast-map" id="oblast-map" aria-label="Контурна карта областей України"></div>
+    <p class="map-hint" id="map-hint">Натисніть на область, щоб відфільтрувати список. Число всередині — кількість медіа.</p>
+  </div>
   <div class="card-list" id="card-list"></div>
 </div>
 
@@ -59,18 +61,20 @@
   <div class="add-card">
     <div>
       <h2>Не знайшли своє медіа?</h2>
-      <p>Додайте свою медіаспільноту до каталогу — заявка проходить премодерацію команди ПроМедіа перед публікацією.</p>
+      <p>Додайте свою медіаспільноту до каталогу — заявка проходить премодерацію перед публікацією.</p>
     </div>
     <a class="add-btn" href="https://github.com/Ianitskyi/promedia-communities/issues/new?template=add-community.yml" target="_blank" rel="noopener">+ Додати спільноту</a>
   </div>
 </section>
 
-<footer>
-  <img class="wordmark" src="img/promedia-wordmark.svg" alt="ПроМедіа" />
-  <p>Карти: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors. Дані каталогу проходять премодерацію команди ПроМедіа.</p>
+<footer class="site-footer">
+  <a class="footer-brand" href="https://promedia.report" target="_blank" rel="noopener">
+    <span>Ініціатива</span>
+    <img src="img/promedia-wordmark.svg" alt="ГО «ПроМедіа»" class="footer-logo" />
+  </a>
+  <p>Контурна карта областей: адаптовано з <a href="https://mapsvg.com/maps/ukraine" target="_blank" rel="noopener">MapSVG</a> (<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>). Дані каталогу проходять премодерацію.</p>
 </footer>
 
-<script src="js/vendor/leaflet/leaflet.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
