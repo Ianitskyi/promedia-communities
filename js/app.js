@@ -7,6 +7,11 @@
     jti: "🛡️ JTI-сертифіковане"
   };
 
+  var TAG_LABELS = {
+    investigative: "🔍 Розслідувальне медіа",
+    warJournalism: "🎖️ Воєнна журналістика"
+  };
+
   var OBLAST_LABELS = {
     "cherkasy": "Черкаська область",
     "chernihiv": "Чернігівська область",
@@ -39,7 +44,6 @@
   var state = {
     all: [],
     filtered: [],
-    activeBadges: new Set(),
     search: "",
     regionSlug: "",
     activeId: null
@@ -123,11 +127,8 @@
     render();
   }
 
-  function matchesSearchAndBadges(item) {
+  function matchesSearch(item) {
     var q = state.search.trim().toLowerCase();
-    for (var b of state.activeBadges) {
-      if (!item.badges || !item.badges[b]) return false;
-    }
     if (q) {
       var hay = (item.name + " " + item.city + " " + item.region).toLowerCase();
       if (hay.indexOf(q) === -1) return false;
@@ -136,7 +137,7 @@
   }
 
   function render() {
-    var preRegion = state.all.filter(matchesSearchAndBadges);
+    var preRegion = state.all.filter(matchesSearch);
     state.filtered = state.regionSlug
       ? preRegion.filter(function (item) { return item.regionSlug === state.regionSlug; })
       : preRegion;
@@ -181,6 +182,13 @@
         Object.keys(BADGE_LABELS).forEach(function (key) {
           if (item.badges[key]) {
             badgesHtml += '<span class="badge ' + key + '">' + BADGE_LABELS[key] + "</span>";
+          }
+        });
+      }
+      if (item.tags) {
+        item.tags.forEach(function (tag) {
+          if (TAG_LABELS[tag]) {
+            badgesHtml += '<span class="badge tag">' + TAG_LABELS[tag] + "</span>";
           }
         });
       }
@@ -230,20 +238,6 @@
   document.getElementById("region-filter").addEventListener("change", function (e) {
     state.regionSlug = e.target.value;
     render();
-  });
-
-  Array.from(document.querySelectorAll(".badge-toggle")).forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var badge = btn.dataset.badge;
-      if (state.activeBadges.has(badge)) {
-        state.activeBadges.delete(badge);
-        btn.classList.remove("active");
-      } else {
-        state.activeBadges.add(badge);
-        btn.classList.add("active");
-      }
-      render();
-    });
   });
 
   function escapeHtml(str) {

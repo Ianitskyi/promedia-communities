@@ -124,17 +124,20 @@ a { color: inherit; }
 }
 
 h1 {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: clamp(28px, 4vw, 42px);
+  font-family: var(--sans);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
   color: var(--ink);
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
 
 .lede {
   max-width: 720px;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -173,29 +176,6 @@ h1 {
   color: var(--text);
   cursor: pointer;
 }
-
-.badge-filters {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.badge-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  border: 1.5px solid var(--border);
-  background: var(--card);
-  border-radius: var(--radius-pill);
-  padding: 8px 14px;
-  font-size: 12.5px;
-  font-weight: 700;
-  cursor: pointer;
-  user-select: none;
-  transition: border-color .15s, background .15s, color .15s;
-}
-
-.badge-toggle.active { border-color: var(--ink); background: var(--ink); color: #fff; }
 
 .results-count {
   padding: 0 24px;
@@ -377,6 +357,7 @@ path.oblast.active + text.oblast-count {
 .badge.recommended { background: var(--blue-tint); color: var(--blue); }
 .badge.whitelist { background: var(--green-tint); color: var(--green); }
 .badge.jti { background: var(--purple-tint); color: var(--purple); }
+.badge.tag { background: var(--border); color: var(--text); }
 .badge.example { background: var(--accent-tint); color: var(--accent-dark); }
 
 .card-links {

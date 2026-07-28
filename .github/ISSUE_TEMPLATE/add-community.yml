@@ -106,6 +106,13 @@ body:
         - label: На мапі рекомендованих медіа
         - label: У білому списку ЗМІ
         - label: Має міжнародний знак JTI (Journalism Trust Initiative)
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Теги (опційно)
+      options:
+        - label: Розслідувальне медіа
+        - label: Воєнна журналістика
   - type: input
     id: contact
     attributes:
