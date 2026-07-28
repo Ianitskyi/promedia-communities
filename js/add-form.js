@@ -1,19 +1,9 @@
 (function () {
   "use strict";
 
-  var ISSUE_URL = "https://github.com/Ianitskyi/promedia-communities/issues/new?template=add-community.yml";
+  var SUBMIT_URL = "/api/submit-community";
 
-  var platformSelect = document.getElementById("f-platform");
   var regionSelect = document.getElementById("f-region");
-
-  function populatePlatformOptions() {
-    var current = platformSelect.value;
-    Array.prototype.forEach.call(platformSelect.options, function (opt) {
-      var label = tRaw("addForm.platformOptions." + opt.value);
-      if (label) opt.textContent = label;
-    });
-    platformSelect.value = current;
-  }
 
   function populateRegionOptions() {
     var current = regionSelect.value;
@@ -37,65 +27,83 @@
     regionSelect.value = current;
   }
 
-  populatePlatformOptions();
   populateRegionOptions();
 
   var prevOnLangChange = window.onLangChange;
   window.onLangChange = function () {
     if (typeof prevOnLangChange === "function") prevOnLangChange();
-    populatePlatformOptions();
     populateRegionOptions();
     document.querySelector('#f-region option[value=""]').textContent = t("addForm.region.placeholder");
   };
 
-  document.getElementById("community-form").addEventListener("submit", function (e) {
+  var form = document.getElementById("community-form");
+  var submitBtn = document.getElementById("submit-btn");
+  var errorEl = document.getElementById("form-error");
+  var successEl = document.getElementById("form-success");
+
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     var fields = {
       name: document.getElementById("f-name").value.trim(),
       website: document.getElementById("f-website").value.trim(),
-      "community-url": document.getElementById("f-community-url").value.trim(),
-      platform: platformSelect.value,
+      communityUrl: document.getElementById("f-community-url").value.trim(),
       description: document.getElementById("f-description").value.trim(),
-      "community-idea": document.getElementById("f-community-idea").value.trim(),
+      communityIdea: document.getElementById("f-community-idea").value.trim(),
       city: document.getElementById("f-city").value.trim(),
-      region: regionSelect.value,
-      contact: document.getElementById("f-contact").value.trim()
+      regionSlug: regionSelect.value,
+      contact: document.getElementById("f-contact").value.trim(),
+      badges: {
+        recommended: document.getElementById("f-badge-recommended").checked,
+        whitelist: document.getElementById("f-badge-whitelist").checked,
+        jti: document.getElementById("f-badge-jti").checked
+      },
+      tags: [],
+      company: document.getElementById("f-company").value // honeypot
     };
 
-    var required = ["name", "website", "community-url", "description", "community-idea", "city", "region"];
+    if (document.getElementById("f-tag-investigative").checked) fields.tags.push("investigative");
+    if (document.getElementById("f-tag-war").checked) fields.tags.push("warJournalism");
+
+    var required = ["name", "website", "communityUrl", "description", "communityIdea", "city", "regionSlug"];
     var missing = required.some(function (key) { return !fields[key]; });
-    var errorEl = document.getElementById("form-error");
+
+    errorEl.hidden = true;
+    successEl.hidden = true;
+
     if (missing) {
       errorEl.hidden = false;
       errorEl.scrollIntoView({ behavior: "smooth", block: "center" });
       return;
     }
-    errorEl.hidden = true;
 
-    // GitHub Issue Forms очікують значення dropdown "Область" українською —
-    // саме тими рядками, що прописані в add-community.yml, незалежно від
-    // поточної мови інтерфейсу цієї сторінки.
-    var regionLabelUk = I18N.uk.oblasts[fields.region] || fields.region;
+    submitBtn.disabled = true;
+    var originalLabel = submitBtn.textContent;
+    submitBtn.textContent = t("addForm.submitting");
 
-    var params = new URLSearchParams();
-    params.set("name", fields.name);
-    params.set("website", fields.website);
-    params.set("community-url", fields["community-url"]);
-    params.set("platform", fields.platform);
-    params.set("description", fields.description);
-    params.set("community-idea", fields["community-idea"]);
-    params.set("city", fields.city);
-    params.set("region", regionLabelUk);
-    if (fields.contact) params.set("contact", fields.contact);
-
-    var url = ISSUE_URL + "&" + params.toString();
-    window.open(url, "_blank", "noopener");
-
-    var note = document.querySelector(".form-note");
-    if (note) {
-      note.textContent = t("addForm.note");
-      note.classList.add("form-note-highlight");
-    }
+    fetch(SUBMIT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(fields)
+    })
+      .then(function (r) {
+        if (!r.ok) throw new Error("submit_failed");
+        return r.json();
+      })
+      .then(function () {
+        successEl.hidden = false;
+        successEl.scrollIntoView({ behavior: "smooth", block: "center" });
+        form.reset();
+        submitBtn.textContent = originalLabel;
+        submitBtn.disabled = false;
+      })
+      .catch(function (err) {
+        console.error(err);
+        errorEl.textContent = t("addForm.submitError");
+        errorEl.hidden = false;
+        errorEl.scrollIntoView({ behavior: "smooth", block: "center" });
+        submitBtn.textContent = originalLabel;
+        submitBtn.disabled = false;
+      });
   });
 })();

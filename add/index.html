@@ -31,7 +31,7 @@
   <div class="eyebrow" data-i18n="addForm.eyebrow">Додати спільноту</div>
   <h1 data-i18n="addForm.title">Додайте свою медіаспільноту</h1>
   <p class="lede" data-i18n="addForm.lede">
-    Заповніть форму нижче — далі ми відкриємо GitHub, де залишиться лише натиснути «Submit new issue», щоб завершити подачу. Заявка проходить премодерацію, зазвичай публікуємо за 1-2 робочих дні.
+    Заповніть форму нижче й надішліть — заявка проходить премодерацію, зазвичай публікуємо за 1-2 робочих дні.
   </p>
 </section>
 
@@ -52,19 +52,6 @@
       <span data-i18n="addForm.communityUrl.label">Посилання на спільноту (де підписатися)</span>
       <small data-i18n="addForm.communityUrl.hint">Telegram, Facebook-група, YouTube тощо — саме те посилання, куди підписник має перейти.</small>
       <input type="url" id="f-community-url" data-i18n-placeholder="addForm.communityUrl.placeholder" placeholder="https://t.me/example" required />
-    </label>
-
-    <label class="form-field">
-      <span data-i18n="addForm.platform.label">Платформа спільноти</span>
-      <select class="select-input" id="f-platform" required>
-        <option value="telegram">Telegram</option>
-        <option value="facebook">Facebook</option>
-        <option value="instagram">Instagram</option>
-        <option value="youtube">YouTube</option>
-        <option value="viber">Viber</option>
-        <option value="website">Сайт</option>
-        <option value="other">Інше</option>
-      </select>
     </label>
 
     <label class="form-field">
@@ -92,7 +79,18 @@
       </select>
     </label>
 
-    <p class="badges-hint" data-i18n="addForm.badgesHint">Позначки (рекомендоване/білий список/JTI) і теги (розслідувальне/воєнна журналістика) можна буде додатково відмітити на наступному кроці — на сторінці GitHub.</p>
+    <fieldset class="form-field checkbox-group">
+      <legend data-i18n="addForm.badgesLabel">Позначки (якщо застосовно)</legend>
+      <label><input type="checkbox" id="f-badge-recommended" /> <span data-i18n="addForm.badgeRecommended">На мапі рекомендованих медіа</span></label>
+      <label><input type="checkbox" id="f-badge-whitelist" /> <span data-i18n="addForm.badgeWhitelist">У білому списку ЗМІ</span></label>
+      <label><input type="checkbox" id="f-badge-jti" /> <span data-i18n="addForm.badgeJti">Має міжнародний знак JTI (Journalism Trust Initiative)</span></label>
+    </fieldset>
+
+    <fieldset class="form-field checkbox-group">
+      <legend data-i18n="addForm.tagsLabel">Теги (опційно)</legend>
+      <label><input type="checkbox" id="f-tag-investigative" /> <span data-i18n="addForm.tagInvestigative">Розслідувальне медіа</span></label>
+      <label><input type="checkbox" id="f-tag-war" /> <span data-i18n="addForm.tagWarJournalism">Воєнна журналістика</span></label>
+    </fieldset>
 
     <label class="form-field">
       <span data-i18n="addForm.contact.label">Контакт заявника (email або телефон)</span>
@@ -100,10 +98,15 @@
       <input type="text" id="f-contact" />
     </label>
 
-    <p class="form-error" id="form-error" data-i18n="addForm.requiredError" hidden>Заповніть, будь ласка, усі обов'язкові поля.</p>
+    <div class="honeypot-field" aria-hidden="true">
+      <label>Company<input type="text" id="f-company" name="company" tabindex="-1" autocomplete="off" /></label>
+    </div>
 
-    <button class="add-btn submit-btn" type="submit" data-i18n="addForm.submit">Продовжити на GitHub →</button>
-    <p class="form-note" data-i18n="addForm.note">Останній крок подачі відбувається на GitHub.com — там потрібно натиснути «Submit new issue», щоб завершити заявку. Це безкоштовно, реєстрація займає хвилину. Немає й не хочете створювати акаунт? Напишіть нам напряму: info@promedia.report</p>
+    <p class="form-error" id="form-error" data-i18n="addForm.requiredError" hidden>Заповніть, будь ласка, усі обов'язкові поля.</p>
+    <p class="form-success" id="form-success" data-i18n="addForm.success" hidden>Дякуємо! Заявку надіслано, вона на розгляді модератора.</p>
+
+    <button class="add-btn submit-btn" type="submit" id="submit-btn" data-i18n="addForm.submit">Надіслати заявку</button>
+    <p class="form-note" data-i18n="addForm.note">Заявка проходить премодерацію — зазвичай публікуємо за 1-2 робочих дні.</p>
   </form>
 </section>
 
