@@ -1,0 +1,178 @@
+name: Process new community submission
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process:
+    if: contains(github.event.issue.labels.*.name, 'new-community')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse issue and append to data/communities.json
+        id: process
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            const OBLAST_MAP = {
+              "Вінницька область": "vinnytsia",
+              "Волинська область": "volyn",
+              "Дніпропетровська область": "dnipropetrovsk",
+              "Донецька область": "donetsk",
+              "Житомирська область": "zhytomyr",
+              "Закарпатська область": "zakarpattia",
+              "Запорізька область": "zaporizhia",
+              "Івано-Франківська область": "ivano-frankivsk",
+              "м. Київ": "kyiv-city",
+              "Київська область": "kyiv",
+              "Кіровоградська область": "kirovohrad",
+              "Луганська область": "luhansk",
+              "Львівська область": "lviv",
+              "Миколаївська область": "mykolaiv",
+              "Одеська область": "odessa",
+              "Полтавська область": "poltava",
+              "Рівненська область": "rivne",
+              "Сумська область": "sumy",
+              "Тернопільська область": "ternopil",
+              "Харківська область": "kharkiv",
+              "Херсонська область": "kherson",
+              "Хмельницька область": "khmelnytskyi",
+              "Черкаська область": "cherkasy",
+              "Чернівецька область": "chernivtsi",
+              "Чернігівська область": "chernihiv",
+              "Автономна Республіка Крим": "crimea"
+            };
+
+            function section(body, label) {
+              const escaped = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+              const re = new RegExp("### " + escaped + "\\s*\\n\\n([\\s\\S]*?)(?=\\n### |$)");
+              const m = body.match(re);
+              if (!m) return "";
+              const value = m[1].trim();
+              return value === "_No response_" ? "" : value;
+            }
+
+            function checked(body, label, optionLabel) {
+              const block = section(body, label);
+              const escaped = optionLabel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+              const re = new RegExp("- \\[(x|X| )\\] " + escaped);
+              const m = block.match(re);
+              return !!(m && m[1].toLowerCase() === "x");
+            }
+
+            function slugify(str) {
+              return str
+                .toLowerCase()
+                .replace(/[^\p{L}\p{N}]+/gu, "-")
+                .replace(/^-+|-+$/g, "")
+                .slice(0, 40);
+            }
+
+            const issue = context.payload.issue;
+            const body = issue.body || "";
+
+            const name = section(body, "Назва медіа");
+            const website = section(body, "Сайт медіа");
+            const communityUrl = section(body, "Посилання на спільноту (де підписатися)");
+            const platform = section(body, "Платформа спільноти");
+            const description = section(body, "Короткий опис медіа");
+            const communityIdea = section(body, "Ключова ідея спільноти");
+            const city = section(body, "Місто");
+            const region = section(body, "Область");
+
+            const missing = [];
+            if (!name) missing.push("Назва медіа");
+            if (!website) missing.push("Сайт медіа");
+            if (!communityUrl) missing.push("Посилання на спільноту");
+            if (!description) missing.push("Короткий опис медіа");
+            if (!communityIdea) missing.push("Ключова ідея спільноти");
+            if (!city) missing.push("Місто");
+            if (!region || !OBLAST_MAP[region]) missing.push("Область (не розпізнано)");
+
+            if (missing.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: "⚠️ Не вдалося автоматично розпізнати заявку — не вистачає або незрозумілі поля: " + missing.join(", ") + ".\n\nМодератору потрібно додати цей запис у `data/communities.json` вручну."
+              });
+              return;
+            }
+
+            const badges = {
+              recommended: checked(body, "Позначки (якщо застосовно)", "На мапі рекомендованих медіа"),
+              whitelist: checked(body, "Позначки (якщо застосовно)", "У білому списку ЗМІ"),
+              jti: checked(body, "Позначки (якщо застосовно)", "Має міжнародний знак JTI (Journalism Trust Initiative)")
+            };
+
+            const tags = [];
+            if (checked(body, "Теги (опційно)", "Розслідувальне медіа")) tags.push("investigative");
+            if (checked(body, "Теги (опційно)", "Воєнна журналістика")) tags.push("warJournalism");
+
+            const dataPath = "data/communities.json";
+            const list = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+
+            let id = slugify(name) || ("community-" + issue.number);
+            if (list.some(item => item.id === id)) id = id + "-" + issue.number;
+
+            const entry = {
+              id,
+              name,
+              region,
+              regionSlug: OBLAST_MAP[region],
+              city,
+              website,
+              description,
+              communityIdea,
+              communityUrl,
+              platform: platform || "other",
+              badges,
+              tags,
+              status: "pending",
+              example: false,
+              sourceIssue: issue.number,
+              sourceIssueUrl: issue.html_url
+            };
+
+            list.push(entry);
+            fs.writeFileSync(dataPath, JSON.stringify(list, null, 2) + "\n");
+
+            core.setOutput("added", "true");
+            core.setOutput("id", id);
+            core.setOutput("name", name);
+
+      - name: Commit new pending entry
+        if: steps.process.outputs.added == 'true'
+        run: |
+          git config user.name "promedia-communities-bot"
+          git config user.email "actions@github.com"
+          git add data/communities.json
+          git commit -m "Нова заявка (pending): ${{ steps.process.outputs.name }} (issue #${{ github.event.issue.number }})"
+          git push
+
+      - name: Comment on issue
+        if: steps.process.outputs.added == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: "✅ Заявку додано в `data/communities.json` зі статусом `pending` (id: `${{ steps.process.outputs.id }}`). Вона поки не показується на сайті. Модератор перевірить і опублікує через [/admin](https://communities.promedia.report/admin/)."
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              state: "closed",
+              state_reason: "completed"
+            });

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title data-i18n="admin.title">Адмін-панель каталогу | ПроМедіа</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<div class="utility-bar">
+  <a class="home-btn" href="https://promedia.report" data-i18n="nav.promedia">← ПроМедіа</a>
+  <a class="nav-link" href="../" data-i18n="addForm.backToMap">← До карти</a>
+  <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language / Мова">
+    <button class="lang-btn" data-lang="uk" type="button">UA</button>
+    <button class="lang-btn" data-lang="en" type="button">EN</button>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="eyebrow" data-i18n="admin.eyebrow">Тільки для команди ПроМедіа</div>
+  <h1 data-i18n="admin.title">Адмін-панель каталогу</h1>
+  <p class="lede" data-i18n="admin.ledeHtml">
+    Нові заявки потрапляють сюди зі статусом «на розгляді» й не показуються на сайті. Щоб опублікувати — натисніть «Редагувати на GitHub», змініть <code>"status": "pending"</code> на <code>"status": "approved"</code> і закомітьте. Щоб зняти опубліковану спільноту — так само зміните <code>status</code> на щось інше (наприклад <code>"disabled"</code>).
+  </p>
+</section>
+
+<section class="admin-section">
+  <h2 data-i18n="admin.pendingTitle">На розгляді</h2>
+  <div class="admin-list" id="pending-list"></div>
+</section>
+
+<section class="admin-section">
+  <h2 data-i18n="admin.approvedTitle">Опубліковано на сайті</h2>
+  <div class="admin-list" id="approved-list"></div>
+</section>
+
+<section class="admin-section">
+  <h2 data-i18n="admin.otherTitle">Інше (не опубліковано, не на розгляді)</h2>
+  <div class="admin-list" id="other-list"></div>
+</section>
+
+<footer class="site-footer">
+  <a class="footer-brand" href="https://promedia.report" target="_blank" rel="noopener">
+    <span data-i18n="footer.initiative">Ініціатива</span>
+    <img src="../img/promedia-wordmark.svg" alt="ГО «ПроМедіа»" class="footer-logo" data-i18n-alt="footer.wordmarkAlt" />
+  </a>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

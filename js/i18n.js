@@ -9,7 +9,8 @@ const I18N = {
   uk: {
     nav: {
       promedia: "← ПроМедіа",
-      addCommunity: "+ Додати спільноту"
+      addCommunity: "+ Додати спільноту",
+      aboutCommunities: "Що таке медійна спільнота"
     },
     meta: {
       title: "Карта медіаспільнот України | ПроМедіа",
@@ -19,6 +20,26 @@ const I18N = {
       eyebrow: "Каталог і карта медіаспільнот",
       title: "Медійні спільноти України",
       lede: "Незалежні медіа — це критична інфраструктура демократії. Знайди та підтримай улюблену редакцію!"
+    },
+    explainer: {
+      eyebrow: "Довідка",
+      title: "Що таке медійна спільнота?",
+      q1: {
+        q: "Що таке медійна спільнота?",
+        aHtml: "Медіаспільноти (media communities) ще називають «клубами читачів», «друзями медіа», «моделями членства» тощо. Згідно з визначенням The Membership Puzzle Project (2020), це соціальний договір між новинною організацією та членами її спільноти, за яким члени спільноти виділяють свій час, гроші, енергію, досвід та зв'язки для підтримки справи, в яку вони вірять. Натомість новинна організація пропонує прозорість та можливості зробити значний внесок у стабільність та вплив організації. Джерело: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>"
+      },
+      q2: {
+        q: "Чим медійна спільнота відрізняється від підписки?",
+        aHtml: "Підписка на медіа — це виключно ділова, транзакційна угода. Ви платите журналістам гроші та отримуєте свою газету, журнал, доступ до текстів або відео на сайті. У спільноті ви платите журналістам гроші, тому що хочете підтримати медіа задля спільної мети. Вам подобається, що робить ця редакція, які погляди вона сповідує, ви вважаєте роботу цієї редакції корисною або вона закриває ваші емоційні або екзистенційні потреби."
+      },
+      q3: {
+        q: "Як створити свою спільноту?",
+        aHtml: "Громадська організація «ПроМедіа» допомагає медіа створювати та розвивати спільноти читачів. Ми також проводимо вебінари та офлайнове навчання на замовлення міжнародної організації Institute for War and Peace Reporting. У 2026 році ми долучилися до створення посібника з розвитку спільнот, ви можете знайти pdf-версію за посиланням: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
+      },
+      q4: {
+        q: "Як додати спільноту свого медіа на карту?",
+        aHtml: "Якщо ви згуртували спільноту прихильників навколо свого медіа та хочете розповісти про неї світу, ви можете додати посилання на цю карту. Для цього потрібно заповнити коротку анкету, наші модератори перевірять наведені дані і додадуть редакцію на карту. Зазвичай ми робимо це за 1-2 робочих дні."
+      }
     },
     controls: {
       searchPlaceholder: "Пошук за назвою чи містом…",
@@ -86,12 +107,51 @@ const I18N = {
       "zakarpattia": "Закарпатська область",
       "zaporizhia": "Запорізька область",
       "zhytomyr": "Житомирська область"
+    },
+    addForm: {
+      eyebrow: "Додати спільноту",
+      title: "Додайте свою медіаспільноту",
+      lede: "Заповніть форму нижче — далі ми відкриємо GitHub, де залишиться лише натиснути «Submit new issue», щоб завершити подачу. Заявка проходить премодерацію, зазвичай публікуємо за 1-2 робочих дні.",
+      backToMap: "← До карти",
+      name: { label: "Назва медіа", placeholder: "Наприклад: Суспільне Новини" },
+      website: { label: "Сайт медіа", placeholder: "https://example.com" },
+      communityUrl: { label: "Посилання на спільноту (де підписатися)", hint: "Telegram, Facebook-група, YouTube тощо — саме те посилання, куди підписник має перейти.", placeholder: "https://t.me/example" },
+      platform: { label: "Платформа спільноти" },
+      description: { label: "Короткий опис медіа", hint: "1-2 речення: що це за медіа." },
+      communityIdea: { label: "Ключова ідея спільноти", hint: "Чому варто підписатися — фокус, місія, унікальність." },
+      city: { label: "Місто", placeholder: "Львів" },
+      region: { label: "Область", placeholder: "Оберіть область", hint: "Медіа на карті прив'язується до області (контурна схематична карта, без точних координат)." },
+      badgesHint: "Позначки (рекомендоване/білий список/JTI) і теги (розслідувальне/воєнна журналістика) можна буде додатково відмітити на наступному кроці — на сторінці GitHub.",
+      contact: { label: "Контакт заявника (email або телефон)", hint: "Щоб ми могли зв'язатися, якщо виникнуть питання щодо заявки." },
+      submit: "Продовжити на GitHub →",
+      note: "Останній крок подачі відбувається на GitHub.com — там потрібно натиснути «Submit new issue», щоб завершити заявку. Це безкоштовно, реєстрація займає хвилину. Немає й не хочете створювати акаунт? Напишіть нам напряму: info@promedia.report",
+      requiredError: "Заповніть, будь ласка, усі обов'язкові поля.",
+      platformOptions: {
+        telegram: "Telegram", facebook: "Facebook", instagram: "Instagram",
+        youtube: "YouTube", viber: "Viber", website: "Сайт", other: "Інше"
+      }
+    },
+    admin: {
+      eyebrow: "Тільки для команди ПроМедіа",
+      title: "Адмін-панель каталогу",
+      ledeHtml: "Нові заявки потрапляють сюди зі статусом «на розгляді» й не показуються на сайті. Щоб опублікувати — натисніть «Редагувати на GitHub», змініть <code>\"status\": \"pending\"</code> на <code>\"status\": \"approved\"</code> і закомітьте. Щоб зняти опубліковану спільноту — так само зміните <code>status</code> на щось інше (наприклад <code>\"disabled\"</code>).",
+      pendingTitle: "На розгляді",
+      approvedTitle: "Опубліковано на сайті",
+      otherTitle: "Інше (не опубліковано, не на розгляді)",
+      empty: "Порожньо.",
+      loadError: "Не вдалося завантажити дані каталогу.",
+      editOnGithub: "Редагувати на GitHub →",
+      sourceIssue: "Джерело: issue",
+      statusPending: "на розгляді",
+      statusApproved: "опубліковано",
+      example: "приклад"
     }
   },
   en: {
     nav: {
       promedia: "← ProMedia",
-      addCommunity: "+ Add a community"
+      addCommunity: "+ Add a community",
+      aboutCommunities: "What is a media community"
     },
     meta: {
       title: "Map of Ukrainian Media Communities | ProMedia",
@@ -101,6 +161,26 @@ const I18N = {
       eyebrow: "Catalog and map of media communities",
       title: "Media Communities of Ukraine",
       lede: "Independent media are critical democratic infrastructure. Find and support your favorite outlet!"
+    },
+    explainer: {
+      eyebrow: "Guide",
+      title: "What is a media community?",
+      q1: {
+        q: "What is a media community?",
+        aHtml: "Media communities are also called \"reader clubs,\" \"friends of the media,\" \"membership models,\" and similar names. According to a 2020 definition by The Membership Puzzle Project, it's a social contract between a news organization and members of its community, where members contribute their time, money, energy, expertise, and connections to support a cause they believe in. In return, the news organization offers transparency and opportunities to make a meaningful contribution to the organization's stability and impact. Source: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>"
+      },
+      q2: {
+        q: "How is a media community different from a subscription?",
+        aHtml: "A media subscription is a purely business, transactional deal — you pay journalists money and get your newspaper, magazine, or access to articles and videos on the website. In a community, you pay journalists money because you want to support the media outlet for a shared cause. You like what the newsroom does, the views it holds, you find its work valuable, or it meets your emotional or existential needs."
+      },
+      q3: {
+        q: "How do I build my own community?",
+        aHtml: "The NGO \"ProMedia\" helps media outlets build and grow reader communities. We also run webinars and offline training commissioned by the international Institute for War and Peace Reporting. In 2026 we contributed to a community-building handbook — you can find the PDF version here: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
+      },
+      q4: {
+        q: "How do I add my media's community to the map?",
+        aHtml: "If you've built a community of supporters around your media outlet and want to tell the world about it, you can add a link to this map. Just fill out a short form — our moderators will verify the details and add your outlet to the map. This usually takes 1-2 business days."
+      }
     },
     controls: {
       searchPlaceholder: "Search by name or city…",
@@ -168,9 +248,55 @@ const I18N = {
       "zakarpattia": "Zakarpattia Oblast",
       "zaporizhia": "Zaporizhzhia Oblast",
       "zhytomyr": "Zhytomyr Oblast"
+    },
+    addForm: {
+      eyebrow: "Add a community",
+      title: "Add your media community",
+      lede: "Fill out the form below — next we'll open GitHub, where all that's left is to click \"Submit new issue\" to finish. Submissions go through pre-moderation, usually published within 1-2 business days.",
+      backToMap: "← Back to the map",
+      name: { label: "Media name", placeholder: "E.g.: Suspilne News" },
+      website: { label: "Media website", placeholder: "https://example.com" },
+      communityUrl: { label: "Community link (where to subscribe)", hint: "Telegram, Facebook group, YouTube, etc. — the exact link a subscriber should follow.", placeholder: "https://t.me/example" },
+      platform: { label: "Community platform" },
+      description: { label: "Short description of the media", hint: "1-2 sentences: what this outlet is." },
+      communityIdea: { label: "Community's key idea", hint: "Why it's worth subscribing — focus, mission, what makes it unique." },
+      city: { label: "City", placeholder: "Lviv" },
+      region: { label: "Oblast", placeholder: "Choose an oblast", hint: "Media on the map is linked to an oblast (schematic outline map, no exact coordinates)." },
+      badgesHint: "Badges (recommended/whitelist/JTI) and tags (investigative/war journalism) can be checked in the next step — on the GitHub page.",
+      contact: { label: "Applicant contact (email or phone)", hint: "So we can reach you if we have questions about the submission." },
+      submit: "Continue on GitHub →",
+      note: "The final submission step happens on GitHub.com — you'll need to click \"Submit new issue\" there to finish. It's free, sign-up takes a minute. Don't have or don't want a GitHub account? Email us directly: info@promedia.report",
+      requiredError: "Please fill in all required fields.",
+      platformOptions: {
+        telegram: "Telegram", facebook: "Facebook", instagram: "Instagram",
+        youtube: "YouTube", viber: "Viber", website: "Website", other: "Other"
+      }
+    },
+    admin: {
+      eyebrow: "ProMedia team only",
+      title: "Catalog admin panel",
+      ledeHtml: "New submissions land here with \"pending\" status and don't show on the site. To publish — click \"Edit on GitHub\", change <code>\"status\": \"pending\"</code> to <code>\"status\": \"approved\"</code>, and commit. To take a published community down, change <code>status</code> to anything else (e.g. <code>\"disabled\"</code>).",
+      pendingTitle: "Pending review",
+      approvedTitle: "Published on the site",
+      otherTitle: "Other (not published, not pending)",
+      empty: "Empty.",
+      loadError: "Failed to load catalog data.",
+      editOnGithub: "Edit on GitHub →",
+      sourceIssue: "Source: issue",
+      statusPending: "pending",
+      statusApproved: "published",
+      example: "example"
     }
   }
 };
+
+const OBLAST_SLUGS = [
+  "cherkasy", "chernihiv", "chernivtsi", "crimea", "dnipropetrovsk",
+  "donetsk", "ivano-frankivsk", "kharkiv", "kherson", "khmelnytskyi",
+  "kirovohrad", "kyiv", "kyiv-city", "luhansk", "lviv", "mykolaiv",
+  "odessa", "poltava", "rivne", "sumy", "ternopil", "vinnytsia",
+  "volyn", "zakarpattia", "zaporizhia", "zhytomyr"
+];
 
 function getLang() {
   const urlLang = new URLSearchParams(location.search).get("lang");

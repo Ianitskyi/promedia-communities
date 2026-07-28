@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title data-i18n="addForm.title">Додайте свою медіаспільноту | ПроМедіа</title>
+<meta name="description" content="Додайте медіаспільноту до каталогу медіаспільнот України." data-i18n-content="addForm.title" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../css/style.css" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D8TM22QR9R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D8TM22QR9R');
+</script>
+</head>
+<body>
+
+<div class="utility-bar">
+  <a class="home-btn" href="https://promedia.report" data-i18n="nav.promedia">← ПроМедіа</a>
+  <a class="nav-link" href="../" data-i18n="addForm.backToMap">← До карти</a>
+  <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language / Мова">
+    <button class="lang-btn" data-lang="uk" type="button">UA</button>
+    <button class="lang-btn" data-lang="en" type="button">EN</button>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="eyebrow" data-i18n="addForm.eyebrow">Додати спільноту</div>
+  <h1 data-i18n="addForm.title">Додайте свою медіаспільноту</h1>
+  <p class="lede" data-i18n="addForm.lede">
+    Заповніть форму нижче — далі ми відкриємо GitHub, де залишиться лише натиснути «Submit new issue», щоб завершити подачу. Заявка проходить премодерацію, зазвичай публікуємо за 1-2 робочих дні.
+  </p>
+</section>
+
+<section class="form-section">
+  <form class="community-form" id="community-form" novalidate>
+
+    <label class="form-field">
+      <span data-i18n="addForm.name.label">Назва медіа</span>
+      <input type="text" id="f-name" data-i18n-placeholder="addForm.name.placeholder" placeholder="Наприклад: Суспільне Новини" required />
+    </label>
+
+    <label class="form-field">
+      <span data-i18n="addForm.website.label">Сайт медіа</span>
+      <input type="url" id="f-website" data-i18n-placeholder="addForm.website.placeholder" placeholder="https://example.com" required />
+    </label>
+
+    <label class="form-field">
+      <span data-i18n="addForm.communityUrl.label">Посилання на спільноту (де підписатися)</span>
+      <small data-i18n="addForm.communityUrl.hint">Telegram, Facebook-група, YouTube тощо — саме те посилання, куди підписник має перейти.</small>
+      <input type="url" id="f-community-url" data-i18n-placeholder="addForm.communityUrl.placeholder" placeholder="https://t.me/example" required />
+    </label>
+
+    <label class="form-field">
+      <span data-i18n="addForm.platform.label">Платформа спільноти</span>
+      <select class="select-input" id="f-platform" required>
+        <option value="telegram">Telegram</option>
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="youtube">YouTube</option>
+        <option value="viber">Viber</option>
+        <option value="website">Сайт</option>
+        <option value="other">Інше</option>
+      </select>
+    </label>
+
+    <label class="form-field">
+      <span data-i18n="addForm.description.label">Короткий опис медіа</span>
+      <small data-i18n="addForm.description.hint">1-2 речення: що це за медіа.</small>
+      <textarea id="f-description" rows="3" required></textarea>
+    </label>
+
+    <label class="form-field">
+      <span data-i18n="addForm.communityIdea.label">Ключова ідея спільноти</span>
+      <small data-i18n="addForm.communityIdea.hint">Чому варто підписатися — фокус, місія, унікальність.</small>
+      <textarea id="f-community-idea" rows="3" required></textarea>
+    </label>
+
+    <label class="form-field">
+      <span data-i18n="addForm.city.label">Місто</span>
+      <input type="text" id="f-city" data-i18n-placeholder="addForm.city.placeholder" placeholder="Львів" required />
+    </label>
+
+    <label class="form-field">
+      <span data-i18n="addForm.region.label">Область</span>
+      <small data-i18n="addForm.region.hint">Медіа на карті прив'язується до області (контурна схематична карта, без точних координат).</small>
+      <select class="select-input" id="f-region" required>
+        <option value="" data-i18n="addForm.region.placeholder">Оберіть область</option>
+      </select>
+    </label>
+
+    <p class="badges-hint" data-i18n="addForm.badgesHint">Позначки (рекомендоване/білий список/JTI) і теги (розслідувальне/воєнна журналістика) можна буде додатково відмітити на наступному кроці — на сторінці GitHub.</p>
+
+    <label class="form-field">
+      <span data-i18n="addForm.contact.label">Контакт заявника (email або телефон)</span>
+      <small data-i18n="addForm.contact.hint">Щоб ми могли зв'язатися, якщо виникнуть питання щодо заявки.</small>
+      <input type="text" id="f-contact" />
+    </label>
+
+    <p class="form-error" id="form-error" data-i18n="addForm.requiredError" hidden>Заповніть, будь ласка, усі обов'язкові поля.</p>
+
+    <button class="add-btn submit-btn" type="submit" data-i18n="addForm.submit">Продовжити на GitHub →</button>
+    <p class="form-note" data-i18n="addForm.note">Останній крок подачі відбувається на GitHub.com — там потрібно натиснути «Submit new issue», щоб завершити заявку. Це безкоштовно, реєстрація займає хвилину. Немає й не хочете створювати акаунт? Напишіть нам напряму: info@promedia.report</p>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <a class="footer-brand" href="https://promedia.report" target="_blank" rel="noopener">
+    <span data-i18n="footer.initiative">Ініціатива</span>
+    <img src="../img/promedia-wordmark.svg" alt="ГО «ПроМедіа»" class="footer-logo" data-i18n-alt="footer.wordmarkAlt" />
+  </a>
+</footer>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/add-form.js"></script>
+</body>
+</html>

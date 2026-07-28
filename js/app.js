@@ -3,13 +3,7 @@
 
   var BADGE_KEYS = ["recommended", "whitelist", "jti"];
   var TAG_KEYS = ["investigative", "warJournalism"];
-  var OBLAST_SLUGS = [
-    "cherkasy", "chernihiv", "chernivtsi", "crimea", "dnipropetrovsk",
-    "donetsk", "ivano-frankivsk", "kharkiv", "kherson", "khmelnytskyi",
-    "kirovohrad", "kyiv", "kyiv-city", "luhansk", "lviv", "mykolaiv",
-    "odessa", "poltava", "rivne", "sumy", "ternopil", "vinnytsia",
-    "volyn", "zakarpattia", "zaporizhia", "zhytomyr"
-  ];
+  // OBLAST_SLUGS — спільний глобальний масив, визначений у js/i18n.js
 
   var state = {
     all: [],
