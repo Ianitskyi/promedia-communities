@@ -16,9 +16,12 @@
   var oblastPaths = {};
   var oblastLabels = {};
 
-  populateRegionSelect();
-  loadMap();
-  loadData();
+  function boot() {
+    populateRegionSelect();
+    loadMap();
+    loadData();
+    bindEvents();
+  }
 
   function populateRegionSelect() {
     var select = document.getElementById("region-filter");
@@ -209,21 +212,23 @@
     });
   }
 
-  document.getElementById("search").addEventListener("input", function (e) {
-    state.search = e.target.value;
-    render();
-  });
+  function bindEvents() {
+    document.getElementById("search").addEventListener("input", function (e) {
+      state.search = e.target.value;
+      render();
+    });
 
-  document.getElementById("region-filter").addEventListener("change", function (e) {
-    state.regionSlug = e.target.value;
-    render();
-  });
+    document.getElementById("region-filter").addEventListener("change", function (e) {
+      state.regionSlug = e.target.value;
+      render();
+    });
 
-  window.onLangChange = function () {
-    populateRegionSelect();
-    updateMapTitles();
-    render();
-  };
+    window.onLangChange = function () {
+      populateRegionSelect();
+      updateMapTitles();
+      render();
+    };
+  }
 
   function escapeHtml(str) {
     return String(str || "").replace(/[&<>"']/g, function (c) {
@@ -234,4 +239,6 @@
   function escapeAttr(str) {
     return escapeHtml(str);
   }
+
+  (window.siteContentReady || Promise.resolve()).then(boot);
 })();

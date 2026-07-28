@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "admin": {
+    "label": "communities.promedia.report",
+    "repository": "Ianitskyi/promedia-communities",
+    "editableFile": "content/site.json",
+    "description": "Text and SEO overrides for the media communities catalog. The CMS admin can edit this file through the GitHub API without touching application code."
+  },
+  "i18n": {
+    "uk": {
+      "meta": {
+        "title": "Карта медіаспільнот України | ПроМедіа",
+        "desc": "Каталог і карта медійних спільнот України: сайти медіа, короткий опис, ключова ідея спільноти та посилання, де на неї підписатися."
+      },
+      "hero": {
+        "eyebrow": "Каталог і карта медіаспільнот",
+        "title": "Медійні спільноти України",
+        "lede": "Незалежні медіа — це критична інфраструктура демократії. Знайди та підтримай улюблену редакцію!"
+      },
+      "addSection": {
+        "title": "Не знайшли своє медіа?",
+        "text": "Додайте свою медіаспільноту до каталогу — заявка проходить премодерацію перед публікацією."
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "Map of Ukrainian Media Communities | ProMedia",
+        "desc": "Catalog and map of Ukrainian media communities: outlet websites, short descriptions, the community's key idea, and where to subscribe."
+      },
+      "hero": {
+        "eyebrow": "Catalog and map of media communities",
+        "title": "Media Communities of Ukraine",
+        "lede": "Independent media are critical democratic infrastructure. Find and support your favorite outlet!"
+      },
+      "addSection": {
+        "title": "Didn't find your media?",
+        "text": "Add your media community to the catalog — submissions go through pre-moderation before publishing."
+      }
+    }
+  }
+}
