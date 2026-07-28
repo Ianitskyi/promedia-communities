@@ -232,6 +232,13 @@ h1 {
 
 .faq-item div a { color: var(--ink); text-decoration: underline; }
 
+.faq-cta {
+  display: inline-flex;
+  margin: 0 0 16px;
+  font-size: 12.5px;
+  padding: 8px 16px;
+}
+
 /* ---------- controls ---------- */
 
 .controls {

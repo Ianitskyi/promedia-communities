@@ -36,6 +36,23 @@
   </p>
 </section>
 
+<div class="controls">
+  <input class="search-input" id="search" type="text" placeholder="Пошук за назвою чи містом…" data-i18n-placeholder="controls.searchPlaceholder" />
+  <select class="select-input" id="region-filter">
+    <option value="" data-i18n="controls.allRegions">Усі області</option>
+  </select>
+</div>
+
+<p class="results-count" id="results-count"></p>
+
+<div class="catalog-layout">
+  <div class="oblast-map-wrap">
+    <div class="oblast-map" id="oblast-map" aria-label="Контурна карта областей України" data-i18n-aria-label="map.ariaLabel"></div>
+    <p class="map-hint" id="map-hint" data-i18n="map.hint">Натисніть на область, щоб відфільтрувати список. Число всередині — кількість медіа.</p>
+  </div>
+  <div class="card-list" id="card-list"></div>
+</div>
+
 <section class="explainer" id="about-communities">
   <div class="eyebrow" data-i18n="explainer.eyebrow">Довідка</div>
   <h2 data-i18n="explainer.title">Що таке медійна спільнота?</h2>
@@ -63,26 +80,10 @@
       <div data-i18n-html="explainer.q4.aHtml">
         Якщо ви згуртували спільноту прихильників навколо свого медіа та хочете розповісти про неї світу, ви можете додати посилання на цю карту. Для цього потрібно заповнити коротку анкету, наші модератори перевірять наведені дані і додадуть редакцію на карту. Зазвичай ми робимо це за 1-2 робочих дні.
       </div>
+      <a class="add-btn faq-cta" href="https://communities.promedia.report/add/" data-i18n="nav.addCommunity">+ Додати спільноту</a>
     </details>
   </div>
 </section>
-
-<div class="controls">
-  <input class="search-input" id="search" type="text" placeholder="Пошук за назвою чи містом…" data-i18n-placeholder="controls.searchPlaceholder" />
-  <select class="select-input" id="region-filter">
-    <option value="" data-i18n="controls.allRegions">Усі області</option>
-  </select>
-</div>
-
-<p class="results-count" id="results-count"></p>
-
-<div class="catalog-layout">
-  <div class="oblast-map-wrap">
-    <div class="oblast-map" id="oblast-map" aria-label="Контурна карта областей України" data-i18n-aria-label="map.ariaLabel"></div>
-    <p class="map-hint" id="map-hint" data-i18n="map.hint">Натисніть на область, щоб відфільтрувати список. Число всередині — кількість медіа.</p>
-  </div>
-  <div class="card-list" id="card-list"></div>
-</div>
 
 <section class="add-section">
   <div class="add-card">
