@@ -192,6 +192,11 @@ h1 {
   color: var(--muted);
 }
 
+.legend-item a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .legend-emoji {
   font-size: 14px;
 }

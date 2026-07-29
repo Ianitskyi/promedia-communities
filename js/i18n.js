@@ -68,7 +68,7 @@ const I18N = {
       example: "приклад — уточнюється"
     },
     badges: {
-      recommended: "Рекомендоване медіа",
+      recommended: "Медіа є на Мапі рекомендованих видань",
       whitelist: "Білий список ЗМІ",
       jti: "JTI-сертифіковане"
     },
@@ -78,7 +78,7 @@ const I18N = {
       culture: "Медіа про культуру"
     },
     legend: {
-      recommended: "рекомендоване медіа",
+      recommended: "медіа є на Мапі рекомендованих видань",
       whitelist: "білий список ЗМІ",
       jti: "JTI-сертифіковане"
     },
@@ -243,7 +243,7 @@ const I18N = {
       example: "example — to be verified"
     },
     badges: {
-      recommended: "Recommended media",
+      recommended: "This media is on the Recommended Media Map",
       whitelist: "Media whitelist",
       jti: "JTI-certified"
     },
@@ -253,7 +253,7 @@ const I18N = {
       culture: "Culture media"
     },
     legend: {
-      recommended: "recommended media",
+      recommended: "this media is on the Recommended Media Map",
       whitelist: "media whitelist",
       jti: "JTI-certified"
     },
