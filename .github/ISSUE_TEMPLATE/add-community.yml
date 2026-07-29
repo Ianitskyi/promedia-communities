@@ -25,7 +25,7 @@ body:
     id: community-url
     attributes:
       label: Посилання на спільноту (де підписатися)
-      description: "Telegram, Facebook-група, YouTube тощо — саме те посилання, куди підписник має перейти."
+      description: "Посилання, за яким можна переказати гроші та долучитися до спільноти"
       placeholder: "https://t.me/example"
     validations:
       required: true

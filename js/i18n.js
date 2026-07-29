@@ -36,6 +36,14 @@ const I18N = {
       q3: {
         q: "Як створити свою спільноту?",
         aHtml: "Громадська організація «ПроМедіа» допомагає медіа створювати та розвивати спільноти читачів. Ми також проводимо вебінари та офлайнове навчання на замовлення міжнародної організації Institute for War and Peace Reporting. У 2026 році ми долучилися до створення посібника з розвитку спільнот, ви можете знайти pdf-версію за посиланням: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
+      },
+      q4: {
+        q: "Чому на карті немає УП, НВ, Ліги та Forbes?",
+        aHtml: "Бо ці медіа пропонують підписку, а не спільноту. У випадку цих видань йдеться про платний доступ до основного контенту. А формування спільноти навколо медіа не передбачає, що доступ до ключових матеріалів видання платний. Можливий додатковий бонусний контент для членів спільноти, але сама ідея спільноти полягає в тому, що фанати медіа підтримують його діяльність для збільшення впливу."
+      },
+      q5: {
+        q: "Що означають позначки «рекомендоване», «білий список», «сертифіковане»?",
+        aHtml: "На картках медіа можна побачити позначки, які підтверджують довіру до видання:<br>🗺️ <strong>Рекомендоване медіа</strong> — видання входить до Мапи рекомендованих медіа, яку ведуть Детектор медіа та Інститут масової інформації (ІМІ): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>Білий список ЗМІ</strong> — видання входить до білого списку ІМІ, який визначає медіа з високими стандартами якості: <a href=\"https://imi.org.ua/\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-сертифіковане</strong> — видання пройшло сертифікацію за стандартом Journalism Trust Initiative, що підтверджує прозорість і етичність редакційних процесів: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
       }
     },
     controls: {
@@ -113,7 +121,7 @@ const I18N = {
       backToMap: "← До карти",
       name: { label: "Назва медіа", placeholder: "Наприклад: Суспільне Новини" },
       website: { label: "Сайт медіа", placeholder: "https://example.com" },
-      communityUrl: { label: "Посилання на спільноту (де підписатися)", hint: "Telegram, Facebook-група, YouTube тощо — саме те посилання, куди підписник має перейти.", placeholder: "https://t.me/example" },
+      communityUrl: { label: "Посилання на спільноту (де підписатися)", hint: "Посилання, за яким можна переказати гроші та долучитися до спільноти", placeholder: "https://t.me/example" },
       description: { label: "Короткий опис медіа", hint: "1-2 речення: що це за медіа." },
       communityIdea: { label: "Ключова ідея спільноти", hint: "Чому варто підписатися — фокус, місія, унікальність." },
       city: { label: "Місто", placeholder: "Львів" },
@@ -179,6 +187,14 @@ const I18N = {
       q3: {
         q: "How do I build my own community?",
         aHtml: "The NGO “ProMedia” helps media outlets build and grow reader communities. We also run webinars and offline training commissioned by the international Institute for War and Peace Reporting. In 2026 we contributed to a community-building handbook — you can find the PDF version here: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
+      },
+      q4: {
+        q: "Why aren't Ukrainska Pravda, NV, Liga, or Forbes on the map?",
+        aHtml: "Because these outlets offer a subscription, not a community. For them, it's about paid access to core content. Building a community around a media outlet doesn't mean charging for access to its key materials — there can be extra bonus content for community members, but the core idea of a community is that fans support the outlet's work to help grow its impact."
+      },
+      q5: {
+        q: "What do the “recommended,” “white list,” and “certified” badges mean?",
+        aHtml: "Cards can show badges that confirm an outlet's credibility:<br>🗺️ <strong>Recommended media</strong> — listed on the Recommended Media Map run by Detector Media and the Institute of Mass Information (IMI): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>White list</strong> — included in IMI's white list of media with high quality standards: <a href=\"https://imi.org.ua/\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-certified</strong> — certified under the Journalism Trust Initiative standard, confirming transparency and ethical editorial processes: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
       }
     },
     controls: {
@@ -256,7 +272,7 @@ const I18N = {
       backToMap: "← Back to the map",
       name: { label: "Media name", placeholder: "E.g.: Suspilne News" },
       website: { label: "Media website", placeholder: "https://example.com" },
-      communityUrl: { label: "Community link (where to subscribe)", hint: "Telegram, Facebook group, YouTube, etc. — the exact link a subscriber should follow.", placeholder: "https://t.me/example" },
+      communityUrl: { label: "Community link (where to subscribe)", hint: "The link people use to send money and join the community", placeholder: "https://t.me/example" },
       description: { label: "Short description of the media", hint: "1-2 sentences: what this outlet is." },
       communityIdea: { label: "Community's key idea", hint: "Why it's worth subscribing — focus, mission, what makes it unique." },
       city: { label: "City", placeholder: "Lviv" },
