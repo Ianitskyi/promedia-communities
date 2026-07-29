@@ -50,7 +50,7 @@ python -m http.server 8080
     "whitelist": false,   // у білому списку ЗМІ
     "jti": false          // сертифікація Journalism Trust Initiative
   },
-  "tags": ["investigative", "warJournalism"], // опційно, будь-яка підмножина — див. I18N.*.tags у js/i18n.js
+  "tags": ["investigative", "warJournalism", "culture"], // опційно, будь-яка підмножина — див. I18N.*.tags у js/i18n.js
   "status": "approved",   // "approved" = видно на сайті; "pending" = нова заявка, ще не перевірена; будь-що інше = знято з публікації
   "example": false,       // true лише для ілюстративних seed-записів
   "logo": "https://www.google.com/s2/favicons?domain=example.com&sz=128", // опційно — іконка на картці, автоматично з фавікону сайту (без хостингу власних файлів)

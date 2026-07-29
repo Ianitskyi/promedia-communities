@@ -44,7 +44,7 @@ const OBLAST_LABELS_UK = {
 };
 
 const REQUIRED_FIELDS = ["name", "website", "communityUrl", "description", "communityIdea", "city", "regionSlug"];
-const ALLOWED_TAGS = ["investigative", "warJournalism"];
+const ALLOWED_TAGS = ["investigative", "warJournalism", "culture"];
 
 export default {
   async fetch(request, env) {

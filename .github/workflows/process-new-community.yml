@@ -116,6 +116,7 @@ jobs:
             const tags = [];
             if (checked(body, "Теги (опційно)", "Розслідувальне медіа")) tags.push("investigative");
             if (checked(body, "Теги (опційно)", "Воєнна журналістика")) tags.push("warJournalism");
+            if (checked(body, "Теги (опційно)", "Медіа про культуру")) tags.push("culture");
 
             const dataPath = "data/communities.json";
             const list = JSON.parse(fs.readFileSync(dataPath, "utf8"));

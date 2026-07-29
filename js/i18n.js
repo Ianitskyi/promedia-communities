@@ -74,7 +74,8 @@ const I18N = {
     },
     tags: {
       investigative: "🔍 Розслідувальне медіа",
-      warJournalism: "🎖️ Воєнна журналістика"
+      warJournalism: "🎖️ Воєнна журналістика",
+      culture: "🎨 Медіа про культуру"
     },
     addSection: {
       title: "Не знайшли своє медіа?",
@@ -133,6 +134,7 @@ const I18N = {
       tagsLabel: "Теги (опційно)",
       tagInvestigative: "Розслідувальне медіа",
       tagWarJournalism: "Воєнна журналістика",
+      tagCulture: "Медіа про культуру",
       contact: { label: "Контакт заявника (email або телефон)", hint: "Щоб ми могли зв'язатися, якщо виникнуть питання щодо заявки." },
       submit: "Надіслати заявку",
       submitting: "Надсилаємо…",
@@ -225,7 +227,8 @@ const I18N = {
     },
     tags: {
       investigative: "🔍 Investigative media",
-      warJournalism: "🎖️ War journalism"
+      warJournalism: "🎖️ War journalism",
+      culture: "🎨 Culture media"
     },
     addSection: {
       title: "Didn't find your media?",
@@ -284,6 +287,7 @@ const I18N = {
       tagsLabel: "Tags (optional)",
       tagInvestigative: "Investigative media",
       tagWarJournalism: "War journalism",
+      tagCulture: "Culture media",
       contact: { label: "Applicant contact (email or phone)", hint: "So we can reach you if we have questions about the submission." },
       submit: "Submit application",
       submitting: "Submitting…",

@@ -2,7 +2,7 @@
   "use strict";
 
   var BADGE_KEYS = ["recommended", "whitelist", "jti"];
-  var TAG_KEYS = ["investigative", "warJournalism"];
+  var TAG_KEYS = ["investigative", "warJournalism", "culture"];
   // OBLAST_SLUGS — спільний глобальний масив, визначений у js/i18n.js
 
   var state = {
