@@ -964,5 +964,28 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.kunsht.com.ua&sz=128"
+  },
+  {
+    "id": "vuzol-media",
+    "name": "Vuzol.Media",
+    "region": "м. Київ",
+    "regionSlug": "kyiv-city",
+    "city": "Київ",
+    "website": "https://www.instagram.com/vuzol.media/",
+    "description": "Медіа про історію української музики",
+    "communityIdea": "Сплітаємо людей музикою та її історією",
+    "communityUrl": "https://base.monobank.ua/9Xzx4fziitEhfT?utm_content=link_in_bio&fbclid=PAdGRleASxxTRwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp7Xw1QuslnPWU8Adrwdnd_YDOIoPmtz-rmosTwTTFU6Mq54iXxPeJvJDHC83_aem_uvxVt-wtw63UNQtxJLHhbQ#subscriptions",
+    "platform": "other",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [
+      "culture"
+    ],
+    "status": "pending",
+    "example": false,
+    "contact": "a.ianitskyi@gmail.com"
   }
 ]
