@@ -11,9 +11,9 @@
     "communityUrl": "https://nikvesti.com/donate",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": true
     },
     "tags": [],
     "status": "approved",
@@ -32,9 +32,9 @@
     "communityUrl": "https://hromadske.radio/donate",
     "platform": "website",
     "badges": {
-      "recommended": false,
-      "whitelist": false,
-      "jti": false
+      "recommended": true,
+      "whitelist": true,
+      "jti": true
     },
     "tags": [],
     "status": "approved",
@@ -74,7 +74,7 @@
     "communityUrl": "https://v-variant.com.ua/ua/membership/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -95,7 +95,7 @@
     "communityUrl": "https://dostyp.com.ua/spilnota/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -116,7 +116,7 @@
     "communityUrl": "https://lyuk.media/donate/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -137,7 +137,7 @@
     "communityUrl": "https://most.ks.ua/donate/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -158,7 +158,7 @@
     "communityUrl": "https://18000.com.ua/donate/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -179,7 +179,7 @@
     "communityUrl": "https://mahala.com.ua/pidtrymayte-mahala/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -200,7 +200,7 @@
     "communityUrl": "https://base.monobank.ua/8T1qcHACat9r2K#subscriptions",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -221,9 +221,9 @@
     "communityUrl": "https://gwaramedia.com/members/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": true
     },
     "tags": [],
     "status": "approved",
@@ -242,7 +242,7 @@
     "communityUrl": "https://vgoru.org/support-us",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -284,7 +284,7 @@
     "communityUrl": "https://base.monobank.ua/kLCm7updfChme#subscriptions",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -305,7 +305,7 @@
     "communityUrl": "https://spilnota.nakypilo.ua/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -326,7 +326,7 @@
     "communityUrl": "https://druzi.rayon.in.ua/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -348,7 +348,7 @@
     "platform": "website",
     "badges": {
       "recommended": false,
-      "whitelist": false,
+      "whitelist": true,
       "jti": false
     },
     "tags": [],
@@ -368,7 +368,7 @@
     "communityUrl": "https://freeradio.com.ua/community/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -389,7 +389,7 @@
     "communityUrl": "https://base.monobank.ua/ANwiZ3whMccPTT#subscriptions",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -410,9 +410,9 @@
     "communityUrl": "https://sense.ngo/donate",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": true
     },
     "tags": [],
     "status": "approved",
@@ -431,9 +431,9 @@
     "communityUrl": "https://www.slk.kh.ua/community.html",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": true
     },
     "tags": [],
     "status": "approved",
@@ -473,9 +473,9 @@
     "communityUrl": "https://1kr.ua/ua/donate.html",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": true
     },
     "tags": [],
     "status": "approved",
@@ -494,7 +494,7 @@
     "communityUrl": "https://club.cukr.city/join",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -515,7 +515,7 @@
     "communityUrl": "https://secure.wayforpay.com/sub/sd.ua.donate",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -537,7 +537,7 @@
     "platform": "website",
     "badges": {
       "recommended": false,
-      "whitelist": false,
+      "whitelist": true,
       "jti": false
     },
     "tags": [],
@@ -557,7 +557,7 @@
     "communityUrl": "https://varosh.com.ua/community/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -599,7 +599,7 @@
     "communityUrl": "https://base.monobank.ua/6vxph8uiJRitw6#subscriptions",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -620,7 +620,7 @@
     "communityUrl": "https://base.monobank.ua/CQhL6ULTzSXtjj#subscriptions",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -704,7 +704,7 @@
     "communityUrl": "https://base.monobank.ua/6EnqQDpo8DsgfW#subscriptions",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
@@ -788,7 +788,7 @@
     "communityUrl": "https://sylapravdy.com/donate/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
