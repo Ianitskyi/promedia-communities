@@ -43,7 +43,7 @@ const I18N = {
       },
       q5: {
         q: "Що означають позначки «рекомендоване», «білий список», «сертифіковане»?",
-        aHtml: "На картках медіа можна побачити позначки, які підтверджують довіру до видання:<br>🗺️ <strong>Рекомендоване медіа</strong> — видання входить до Мапи рекомендованих медіа, яку ведуть Детектор медіа та Інститут масової інформації (ІМІ): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>Білий список ЗМІ</strong> — видання входить до білого списку ІМІ, який визначає медіа з високими стандартами якості: <a href=\"https://imi.org.ua/\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-сертифіковане</strong> — видання пройшло сертифікацію за стандартом Journalism Trust Initiative, що підтверджує прозорість і етичність редакційних процесів: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
+        aHtml: "На картках медіа можна побачити позначки, які підтверджують довіру до видання:<br>🗺️ <strong>Рекомендоване медіа</strong> — видання входить до Мапи рекомендованих медіа, яку ведуть Детектор медіа та Інститут масової інформації (ІМІ): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>Білий список ЗМІ</strong> — видання входить до білого списку ІМІ, який визначає медіа з високими стандартами якості: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-сертифіковане</strong> — видання пройшло сертифікацію за стандартом Journalism Trust Initiative, що підтверджує прозорість і етичність редакційних процесів: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
       }
     },
     controls: {
@@ -69,7 +69,7 @@ const I18N = {
     },
     badges: {
       recommended: "Медіа є на Мапі рекомендованих видань",
-      whitelist: "Білий список ЗМІ",
+      whitelist: "Медіа у Білому списку",
       jti: "JTI-сертифіковане"
     },
     tags: {
@@ -79,7 +79,7 @@ const I18N = {
     },
     legend: {
       recommended: "медіа є на Мапі рекомендованих видань",
-      whitelist: "білий список ЗМІ",
+      whitelist: "медіа у Білому списку",
       jti: "JTI-сертифіковане"
     },
     addSection: {
@@ -218,7 +218,7 @@ const I18N = {
       },
       q5: {
         q: "What do the “recommended,” “white list,” and “certified” badges mean?",
-        aHtml: "Cards can show badges that confirm an outlet's credibility:<br>🗺️ <strong>Recommended media</strong> — listed on the Recommended Media Map run by Detector Media and the Institute of Mass Information (IMI): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>White list</strong> — included in IMI's white list of media with high quality standards: <a href=\"https://imi.org.ua/\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-certified</strong> — certified under the Journalism Trust Initiative standard, confirming transparency and ethical editorial processes: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
+        aHtml: "Cards can show badges that confirm an outlet's credibility:<br>🗺️ <strong>Recommended media</strong> — listed on the Recommended Media Map run by Detector Media and the Institute of Mass Information (IMI): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>White list</strong> — included in IMI's white list of media with high quality standards: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-certified</strong> — certified under the Journalism Trust Initiative standard, confirming transparency and ethical editorial processes: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
       }
     },
     controls: {
@@ -244,7 +244,7 @@ const I18N = {
     },
     badges: {
       recommended: "This media is on the Recommended Media Map",
-      whitelist: "Media whitelist",
+      whitelist: "This media is on the White List",
       jti: "JTI-certified"
     },
     tags: {
@@ -254,7 +254,7 @@ const I18N = {
     },
     legend: {
       recommended: "this media is on the Recommended Media Map",
-      whitelist: "media whitelist",
+      whitelist: "this media is on the White List",
       jti: "JTI-certified"
     },
     addSection: {
