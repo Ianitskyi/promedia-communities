@@ -68,9 +68,9 @@ const I18N = {
       example: "приклад — уточнюється"
     },
     badges: {
-      recommended: "Медіа є на Мапі рекомендованих видань",
+      recommended: "Медіа на Мапі рекомендованих",
       whitelist: "Медіа у Білому списку",
-      jti: "JTI-сертифіковане"
+      jti: "Сертифікат Journalism Trust Initiative"
     },
     tags: {
       investigative: "Розслідувальне медіа",
@@ -78,9 +78,9 @@ const I18N = {
       culture: "Медіа про культуру"
     },
     legend: {
-      recommended: "медіа є на Мапі рекомендованих видань",
+      recommended: "медіа на Мапі рекомендованих",
       whitelist: "медіа у Білому списку",
-      jti: "JTI-сертифіковане"
+      jti: "сертифікат Journalism Trust Initiative"
     },
     addSection: {
       title: "Не знайшли своє медіа?",
@@ -245,7 +245,7 @@ const I18N = {
     badges: {
       recommended: "This media is on the Recommended Media Map",
       whitelist: "This media is on the White List",
-      jti: "JTI-certified"
+      jti: "Journalism Trust Initiative certified"
     },
     tags: {
       investigative: "Investigative media",
@@ -255,7 +255,7 @@ const I18N = {
     legend: {
       recommended: "this media is on the Recommended Media Map",
       whitelist: "this media is on the White List",
-      jti: "JTI-certified"
+      jti: "Journalism Trust Initiative certificate"
     },
     addSection: {
       title: "Didn't find your media?",
