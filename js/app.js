@@ -178,9 +178,14 @@
         badgesHtml += '<span class="badge example">' + escapeHtml(t("card.example")) + "</span>";
       }
 
+      var logoHtml = item.logo
+        ? '<img class="media-logo" src="' + escapeAttr(item.logo) + '" alt="" loading="lazy" onerror="this.remove()" />'
+        : "";
+      var locationText = item.city === item.region ? item.city : item.city + ", " + item.region;
+
       card.innerHTML =
-        '<div class="media-card-top"><div><h3>' + escapeHtml(item.name) + "</h3>" +
-        '<div class="location">' + escapeHtml(item.city) + ", " + escapeHtml(item.region) + "</div></div></div>" +
+        '<div class="media-card-top">' + logoHtml + '<div><h3>' + escapeHtml(item.name) + "</h3>" +
+        '<div class="location">' + escapeHtml(locationText) + "</div></div></div>" +
         (badgesHtml ? '<div class="badge-row">' + badgesHtml + "</div>" : "") +
         '<p class="desc">' + escapeHtml(item.description) + "</p>" +
         '<p class="idea">' + escapeHtml(item.communityIdea) + "</p>" +

@@ -404,9 +404,19 @@ path.oblast.active + text.oblast-count {
 
 .media-card-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
+}
+
+.media-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  object-fit: contain;
+  background: #fff;
+  flex: 0 0 auto;
 }
 
 .media-card h3 {
