@@ -19,7 +19,8 @@ const I18N = {
     hero: {
       eyebrow: "Каталог і карта медіаспільнот",
       title: "Медійні спільноти України",
-      lede: "Незалежні медіа — це критична інфраструктура демократії. Знайди та підтримай улюблену редакцію!"
+      lede: "Незалежні медіа — це критична інфраструктура демократії. Знайди та підтримай улюблену редакцію!",
+      stat: "{total} медіаспільнот у каталозі"
     },
     explainer: {
       eyebrow: "Довідка",
@@ -161,7 +162,8 @@ const I18N = {
     hero: {
       eyebrow: "Catalog and map of media communities",
       title: "Media Communities of Ukraine",
-      lede: "Independent media are critical democratic infrastructure. Find and support your favorite outlet!"
+      lede: "Independent media are critical democratic infrastructure. Find and support your favorite outlet!",
+      stat: "{total} media communities in the catalog"
     },
     explainer: {
       eyebrow: "Guide",

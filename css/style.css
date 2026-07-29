@@ -166,6 +166,17 @@ h1 {
   margin: 0;
 }
 
+.hero-stat {
+  display: inline-block;
+  margin: 14px 0 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--accent-tint);
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 700;
+}
+
 /* ---------- explainer / FAQ ---------- */
 
 .explainer {

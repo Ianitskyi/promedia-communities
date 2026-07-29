@@ -129,6 +129,13 @@
 
     document.getElementById("results-count").textContent =
       t("results.count", { count: state.filtered.length, total: state.all.length });
+
+    var heroStat = document.getElementById("hero-stat");
+    if (heroStat) {
+      heroStat.textContent = state.all.length
+        ? t("hero.stat", { total: state.all.length })
+        : "";
+    }
   }
 
   function renderMapCounts(preRegion) {
