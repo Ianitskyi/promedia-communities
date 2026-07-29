@@ -3,6 +3,8 @@
 
   var BADGE_KEYS = ["recommended", "whitelist", "jti"];
   var TAG_KEYS = ["investigative", "warJournalism", "culture"];
+  var BADGE_EMOJI = { recommended: "🗺️", whitelist: "✅", jti: "🛡️" };
+  var TAG_EMOJI = { investigative: "🔍", warJournalism: "🎖️", culture: "🎨" };
   // OBLAST_SLUGS — спільний глобальний масив, визначений у js/i18n.js
 
   var state = {
@@ -170,14 +172,14 @@
       if (item.badges) {
         BADGE_KEYS.forEach(function (key) {
           if (item.badges[key]) {
-            badgesHtml += '<span class="badge ' + key + '">' + tRaw("badges." + key) + "</span>";
+            badgesHtml += '<span class="badge ' + key + '" title="' + escapeAttr(tRaw("badges." + key)) + '">' + BADGE_EMOJI[key] + "</span>";
           }
         });
       }
       if (item.tags) {
         item.tags.forEach(function (tag) {
           if (TAG_KEYS.indexOf(tag) !== -1) {
-            badgesHtml += '<span class="badge tag">' + tRaw("tags." + tag) + "</span>";
+            badgesHtml += '<span class="badge tag" title="' + escapeAttr(tRaw("tags." + tag)) + '">' + TAG_EMOJI[tag] + "</span>";
           }
         });
       }

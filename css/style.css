@@ -177,6 +177,25 @@ h1 {
   font-weight: 700;
 }
 
+.badge-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 10px 0 0;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.legend-emoji {
+  font-size: 14px;
+}
+
 /* ---------- explainer / FAQ ---------- */
 
 .explainer {
