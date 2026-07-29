@@ -13,8 +13,8 @@
       },
       analysis: {
         eyebrow: "Практикум",
-        title: "Сім питань для аналізу спільноти",
-        lede: "Заповніть відповіді, сформуйте PDF з лого ПроМедіа, роздрукуйте його або надішліть собі.",
+        title: "Сім питань для аналізу спільноти медіа",
+        lede: "Заповніть відповіді, сформуйте PDF, роздрукуйте його або надішліть собі на пошту.",
         fields: {
           name: {
             label: "Назва медіа або спільноти",
@@ -72,8 +72,8 @@
       },
       analysis: {
         eyebrow: "Worksheet",
-        title: "Seven Questions for Community Analysis",
-        lede: "Fill in your answers, generate a ProMedia-branded PDF, print it, or send it to yourself.",
+        title: "Seven Questions for Media Community Analysis",
+        lede: "Fill in your answers, generate a PDF, print it, or email it to yourself.",
         fields: {
           name: {
             label: "Media outlet or community name",
