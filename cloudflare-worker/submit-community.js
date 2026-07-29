@@ -33,7 +33,7 @@ const OBLAST_LABELS_UK = {
   "khmelnytskyi": "Хмельницька область",
   "kirovohrad": "Кіровоградська область",
   "kyiv": "Київська область",
-  "kyiv-city": "м. Київ",
+  "kyiv-city": "Київ",
   "luhansk": "Луганська область",
   "lviv": "Львівська область",
   "mykolaiv": "Миколаївська область",

@@ -162,7 +162,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "investigative"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=18000.com.ua&sz=128"
@@ -295,7 +297,7 @@
   },
   {
     "id": "накіпело",
-    "name": "Накіпело",
+    "name": "Накипіло",
     "region": "Харків",
     "regionSlug": "kharkiv",
     "city": "Харків",
@@ -351,7 +353,9 @@
       "whitelist": true,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "warJournalism"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.frontliner.com.ua&sz=128"
@@ -582,7 +586,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.neformat.com.ua&sz=128"
@@ -792,7 +798,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "investigative"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=sylapravdy.com&sz=128"
@@ -813,7 +821,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "investigative"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=ngl.media&sz=128"
@@ -834,7 +844,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "investigative"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=bihus.info&sz=128"
@@ -855,7 +867,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "investigative"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.slidstvo.info&sz=128"
@@ -897,7 +911,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.ukrainer.net&sz=128"
@@ -918,7 +934,9 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "culture"
+    ],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=chytomo.com&sz=128"
@@ -968,7 +986,7 @@
   {
     "id": "vuzol-media",
     "name": "Vuzol.Media",
-    "region": "м. Київ",
+    "region": "Київ",
     "regionSlug": "kyiv-city",
     "city": "Київ",
     "website": "https://www.instagram.com/vuzol.media/",
