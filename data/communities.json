@@ -987,5 +987,28 @@
     "status": "approved",
     "example": false,
     "contact": "a.ianitskyi@gmail.com"
+  },
+  {
+    "id": "четверта-влада",
+    "name": "Четверта влада",
+    "region": "Рівне",
+    "regionSlug": "rivne",
+    "city": "Рівне",
+    "website": "https://4vlada.com/",
+    "description": "Єдине розслідувальницьке незалежне онлайн-медіа Рівненщини — виникло на основі Рівненської агенції журналістських розслідувань «Четверта влада»; висвітлює антикорупційні теми та моніторить державні закупівлі.",
+    "communityIdea": "Фінансова підтримка читачів забезпечує незалежність і розвиток редакції.",
+    "communityUrl": "https://donate.4vlada.com/",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [
+      "investigative"
+    ],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=4vlada.com&sz=128"
   }
 ]
