@@ -187,8 +187,8 @@
         '<div class="media-card-top">' + logoHtml + '<div><h3>' + escapeHtml(item.name) + "</h3>" +
         '<div class="location">' + escapeHtml(locationText) + "</div></div></div>" +
         (badgesHtml ? '<div class="badge-row">' + badgesHtml + "</div>" : "") +
-        '<p class="desc">' + escapeHtml(item.description) + "</p>" +
-        '<p class="idea">' + escapeHtml(item.communityIdea) + "</p>" +
+        (item.description ? '<p class="desc">' + escapeHtml(item.description) + "</p>" : "") +
+        (item.communityIdea ? '<p class="idea">' + escapeHtml(item.communityIdea) + "</p>" : "") +
         '<div class="card-links">' +
         '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.subscribe")) + "</a>" +
         '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.website")) + "</a>" +
