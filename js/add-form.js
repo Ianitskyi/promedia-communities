@@ -49,7 +49,7 @@
       website: document.getElementById("f-website").value.trim(),
       communityUrl: document.getElementById("f-community-url").value.trim(),
       description: document.getElementById("f-description").value.trim(),
-      communityIdea: document.getElementById("f-community-idea").value.trim(),
+      communityIdea: "",
       city: document.getElementById("f-city").value.trim(),
       regionSlug: regionSelect.value,
       contact: document.getElementById("f-contact").value.trim(),
@@ -66,7 +66,7 @@
     if (document.getElementById("f-tag-war").checked) fields.tags.push("warJournalism");
     if (document.getElementById("f-tag-culture").checked) fields.tags.push("culture");
 
-    var required = ["name", "website", "communityUrl", "description", "communityIdea", "city", "regionSlug"];
+    var required = ["name", "website", "communityUrl", "description", "city", "regionSlug"];
     var missing = required.some(function (key) { return !fields[key]; });
 
     errorEl.hidden = true;

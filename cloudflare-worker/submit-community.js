@@ -43,7 +43,7 @@ const OBLAST_LABELS_UK = {
   "zhytomyr": "Житомирська область"
 };
 
-const REQUIRED_FIELDS = ["name", "website", "communityUrl", "description", "communityIdea", "city", "regionSlug"];
+const REQUIRED_FIELDS = ["name", "website", "communityUrl", "description", "city", "regionSlug"];
 const ALLOWED_TAGS = ["investigative", "warJournalism", "culture"];
 
 // Worker викликається з communities.promedia.report через workers.dev-адресу
