@@ -179,6 +179,14 @@ const I18N = {
       statusPending: "на розгляді",
       statusApproved: "опубліковано",
       example: "приклад"
+    },
+    media: {
+      titleFallback: "Медіа | Каталог медіаспільнот ПроМедіа",
+      titleSuffix: "Каталог медіаспільнот ПроМедіа",
+      backToCatalog: "← До каталогу",
+      loading: "Завантаження…",
+      loadError: "Не вдалося завантажити дані.",
+      notFound: "Медіа не знайдено або ще не опубліковано."
     }
   },
   en: {
@@ -354,6 +362,14 @@ const I18N = {
       statusPending: "pending",
       statusApproved: "published",
       example: "example"
+    },
+    media: {
+      titleFallback: "Media | ProMedia Media Communities Catalog",
+      titleSuffix: "ProMedia Media Communities Catalog",
+      backToCatalog: "← Back to catalog",
+      loading: "Loading…",
+      loadError: "Failed to load data.",
+      notFound: "Media not found or not yet published."
     }
   }
 };

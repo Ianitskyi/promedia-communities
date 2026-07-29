@@ -193,7 +193,7 @@
       var locationText = item.city === item.region ? item.city : item.city + ", " + item.region;
 
       card.innerHTML =
-        '<div class="media-card-top">' + logoHtml + '<div><h3>' + escapeHtml(item.name) + "</h3>" +
+        '<div class="media-card-top">' + logoHtml + '<div><h3><a href="media/?id=' + escapeAttr(item.id) + '">' + escapeHtml(item.name) + "</a></h3>" +
         '<div class="location">' + escapeHtml(locationText) + "</div></div></div>" +
         (badgesHtml ? '<div class="badge-row">' + badgesHtml + "</div>" : "") +
         (item.description ? '<p class="desc">' + escapeHtml(item.description) + "</p>" : "") +
