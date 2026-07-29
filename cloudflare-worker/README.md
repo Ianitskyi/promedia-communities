@@ -5,8 +5,10 @@
 Відвідувач сайту не бачить GitHub і не потребує акаунту — секретний
 GitHub-токен живе тільки в цьому Worker'і.
 
-Ви вже маєте акаунт Cloudflare (там налаштований DNS для promedia.report) —
-новий акаунт не потрібен.
+Домен `promedia.report` не є зоною в Cloudflare (DNS для GitHub Pages
+налаштований напряму в реєстратора), тож Worker підключений не через Route
+на тій самій зоні, а напряму за його `workers.dev`-адресою — з CORS-заголовками,
+які дозволяють запити з `communities.promedia.report`.
 
 ## Деплой (один раз)
 
@@ -32,21 +34,16 @@ GitHub-токен живе тільки в цьому Worker'і.
    тип **Secret**, ім'я `GITHUB_TOKEN`, значення — токен з кроку 1.
 2. Збережіть (Deploy).
 
-### 4. Підключіть до `communities.promedia.report/api/submit-community`
+### 4. Адреса Worker'а
 
-Найпростіше — через **Route**, щоб не морочитися з CORS (Worker працює на
-тому самому домені, що й сайт):
+Нічого підключати додатково не треба — сайт звертається напряму на
+дефолтну адресу Worker'а (`https://promedia-submit-community.<ваш-субдомен>.workers.dev`),
+яка вже прописана в `js/add-form.js` (`SUBMIT_URL`). Якщо перестворите
+Worker з іншою назвою чи субдоменом акаунту — оновіть цей рядок.
 
-1. Worker → **Settings → Domains & Routes** → **Add** → **Route**.
-2. Route: `communities.promedia.report/api/submit-community`
-3. Zone: `promedia.report`.
-4. Збережіть.
-
-Якщо з якоїсь причини Route не спрацює, альтернатива — використати
-дефолтний URL Worker'а (`https://promedia-submit-community.<ваш-субдомен>.workers.dev`)
-і прописати його в `js/add-form.js` замість відносного шляху `/api/submit-community`
-(тоді доведеться додати CORS-заголовки в Worker — напишіть мені, якщо
-знадобиться такий варіант).
+CORS обмежено конкретним origin (`ALLOWED_ORIGIN` у `submit-community.js`,
+зараз `https://communities.promedia.report`) — якщо колись переїдете на
+інший домен, поміняйте це значення й у Worker'і, і в `js/add-form.js`.
 
 ## Перевірка
 

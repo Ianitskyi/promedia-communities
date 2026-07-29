@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var SUBMIT_URL = "/api/submit-community";
+  var SUBMIT_URL = "https://promedia-submit-community.a-ianitskyi.workers.dev";
 
   var regionSelect = document.getElementById("f-region");
 

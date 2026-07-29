@@ -46,9 +46,18 @@ const OBLAST_LABELS_UK = {
 const REQUIRED_FIELDS = ["name", "website", "communityUrl", "description", "communityIdea", "city", "regionSlug"];
 const ALLOWED_TAGS = ["investigative", "warJournalism", "culture"];
 
+// Worker викликається з communities.promedia.report через workers.dev-адресу
+// (крос-доменно), а не через Route на тій самій зоні — тож потрібні CORS-заголовки.
+const ALLOWED_ORIGIN = "https://communities.promedia.report";
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type"
+};
+
 export default {
   async fetch(request, env) {
-    if (request.method === "OPTIONS") return new Response(null, { status: 204 });
+    if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: CORS_HEADERS });
     if (request.method !== "POST") return json({ ok: false, error: "method_not_allowed" }, 405);
 
     let payload;
@@ -157,7 +166,7 @@ export default {
 function json(obj, status) {
   return new Response(JSON.stringify(obj), {
     status: status || 200,
-    headers: { "Content-Type": "application/json" }
+    headers: { "Content-Type": "application/json", ...CORS_HEADERS }
   });
 }
 
