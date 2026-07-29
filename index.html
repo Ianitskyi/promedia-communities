@@ -21,6 +21,7 @@
 <div class="utility-bar">
   <a class="home-btn" href="https://promedia.report" data-i18n="nav.promedia">← ПроМедіа</a>
   <a class="nav-link" href="#about-communities" data-i18n="nav.aboutCommunities">Що таке медійна спільнота</a>
+  <a class="nav-link" href="#community-analysis" data-analysis-i18n="nav.analysis">Аналіз спільноти</a>
   <a class="add-btn" href="add/" data-i18n="nav.addCommunity">+ Додати спільноту</a>
   <div class="lang-toggle" id="lang-toggle" role="group" aria-label="Language / Мова">
     <button class="lang-btn" data-lang="uk" type="button">UA</button>
@@ -78,6 +79,78 @@
   </div>
 </section>
 
+<section class="analysis-tool" id="community-analysis">
+  <div class="analysis-card">
+    <div class="analysis-head">
+      <div>
+        <div class="eyebrow" data-analysis-i18n="analysis.eyebrow">Практикум</div>
+        <h2 data-analysis-i18n="analysis.title">Сім питань для аналізу спільноти</h2>
+        <p data-analysis-i18n="analysis.lede">Заповніть відповіді, сформуйте PDF з лого ПроМедіа, роздрукуйте його або надішліть собі.</p>
+      </div>
+      <img src="img/promedia-wordmark.svg" alt="ГО «ПроМедіа»" class="analysis-logo" data-i18n-alt="footer.wordmarkAlt" />
+    </div>
+
+    <form class="analysis-form" id="community-analysis-form">
+      <div class="analysis-grid">
+        <label class="analysis-field">
+          <span data-analysis-i18n="analysis.fields.name.label">Назва медіа або спільноти</span>
+          <input id="analysis-community-name" name="communityName" type="text" autocomplete="organization" data-analysis-i18n-placeholder="analysis.fields.name.placeholder" placeholder="Наприклад: спільнота читачів місцевого медіа" />
+        </label>
+        <label class="analysis-field">
+          <span data-analysis-i18n="analysis.fields.email.label">Email для листа собі</span>
+          <input id="analysis-email" name="email" type="email" autocomplete="email" data-analysis-i18n-placeholder="analysis.fields.email.placeholder" placeholder="you@example.com" />
+        </label>
+      </div>
+
+      <div class="analysis-question-list">
+        <label class="analysis-question">
+          <span class="analysis-question-number">1</span>
+          <span class="analysis-question-text" data-analysis-i18n="analysis.questions.q1">Якою є ціннісна пропозиція? Чому існує ця спільнота? Яка спільна ідея об'єднує її учасників?</span>
+          <textarea name="q1" rows="5"></textarea>
+        </label>
+        <label class="analysis-question">
+          <span class="analysis-question-number">2</span>
+          <span class="analysis-question-text" data-analysis-i18n="analysis.questions.q2">Яким є рівень формалізації спільноти? Чи є чіткі правила, процедури, розподіл ролей? Чи є спеціальний менеджер, який займається спільнотою?</span>
+          <textarea name="q2" rows="5"></textarea>
+        </label>
+        <label class="analysis-question">
+          <span class="analysis-question-number">3</span>
+          <span class="analysis-question-text" data-analysis-i18n="analysis.questions.q3">Якими є внески учасників? Які ресурси інвестують члени спільноти у її розбудову? Це можуть бути гроші, час, контент або досвід.</span>
+          <textarea name="q3" rows="5"></textarea>
+        </label>
+        <label class="analysis-question">
+          <span class="analysis-question-number">4</span>
+          <span class="analysis-question-text" data-analysis-i18n="analysis.questions.q4">Яким є рівень взаємодії всередині спільноти? Наскільки учасники спільноти залучені?</span>
+          <textarea name="q4" rows="5"></textarea>
+        </label>
+        <label class="analysis-question">
+          <span class="analysis-question-number">5</span>
+          <span class="analysis-question-text" data-analysis-i18n="analysis.questions.q5">Якими є спільні практики: повторювані ритуали, події, процедури, символи та традиції, що формують унікальну культуру спільноти?</span>
+          <textarea name="q5" rows="5"></textarea>
+        </label>
+        <label class="analysis-question">
+          <span class="analysis-question-number">6</span>
+          <span class="analysis-question-text" data-analysis-i18n="analysis.questions.q6">Якими є ціннісно-емоційні фактори залучення? Почуття солідарності, визнання, приналежності до певної соціальної групи тощо.</span>
+          <textarea name="q6" rows="5"></textarea>
+        </label>
+        <label class="analysis-question">
+          <span class="analysis-question-number">7</span>
+          <span class="analysis-question-text" data-analysis-i18n="analysis.questions.q7">Якими є практичні та когнітивні переваги? Йдеться про раціональні переваги членства в спільноті від нових знань та знайомств до подарунків.</span>
+          <textarea name="q7" rows="5"></textarea>
+        </label>
+      </div>
+
+      <div class="analysis-actions">
+        <button class="add-btn analysis-primary-action" id="analysis-download-pdf" type="button" data-analysis-i18n="analysis.actions.download">Завантажити PDF</button>
+        <button class="home-btn analysis-action" id="analysis-share-pdf" type="button" data-analysis-i18n="analysis.actions.email">PDF + лист собі</button>
+        <button class="home-btn analysis-action" id="analysis-print" type="button" data-analysis-i18n="analysis.actions.print">Друк / PDF</button>
+        <button class="home-btn analysis-action muted-action" id="analysis-reset" type="button" data-analysis-i18n="analysis.actions.reset">Очистити</button>
+      </div>
+      <p class="analysis-status" id="analysis-status" data-analysis-i18n="analysis.status.autosave">Чернетка автоматично зберігається у цьому браузері.</p>
+    </form>
+  </div>
+</section>
+
 <section class="add-section">
   <div class="add-card">
     <div>
@@ -97,7 +170,8 @@
   <p data-i18n-html="footer.reportErrorHtml">Побачили помилку? Напишіть на <a href="mailto:info@promedia.report">info@promedia.report</a></p>
 </footer>
 
-<script src="js/i18n.js?v=20260728-1"></script>
+<script src="js/i18n.js?v=20260729-quotes"></script>
 <script src="js/app.js"></script>
+<script src="js/community-analysis.js?v=20260729-analysis-tool"></script>
 </body>
 </html>

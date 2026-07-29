@@ -168,7 +168,7 @@ const I18N = {
       title: "What is a media community?",
       q1: {
         q: "What is a media community?",
-        aHtml: "Media communities are also called \"reader clubs,\" \"friends of the media,\" \"membership models,\" and similar names. According to a 2020 definition by The Membership Puzzle Project, it's a social contract between a news organization and members of its community, where members contribute their time, money, energy, expertise, and connections to support a cause they believe in. In return, the news organization offers transparency and opportunities to make a meaningful contribution to the organization's stability and impact. Source: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>"
+        aHtml: "Media communities are also called “reader clubs,” “friends of the media,” “membership models,” and similar names. According to a 2020 definition by The Membership Puzzle Project, it's a social contract between a news organization and members of its community, where members contribute their time, money, energy, expertise, and connections to support a cause they believe in. In return, the news organization offers transparency and opportunities to make a meaningful contribution to the organization's stability and impact. Source: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>"
       },
       q2: {
         q: "How is a media community different from a subscription?",
@@ -176,7 +176,7 @@ const I18N = {
       },
       q3: {
         q: "How do I build my own community?",
-        aHtml: "The NGO \"ProMedia\" helps media outlets build and grow reader communities. We also run webinars and offline training commissioned by the international Institute for War and Peace Reporting. In 2026 we contributed to a community-building handbook — you can find the PDF version here: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
+        aHtml: "The NGO “ProMedia” helps media outlets build and grow reader communities. We also run webinars and offline training commissioned by the international Institute for War and Peace Reporting. In 2026 we contributed to a community-building handbook — you can find the PDF version here: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
       }
     },
     controls: {
@@ -277,7 +277,7 @@ const I18N = {
     admin: {
       eyebrow: "ProMedia team only",
       title: "Catalog admin panel",
-      ledeHtml: "New submissions land here with \"pending\" status and don't show on the site. To publish — click \"Edit on GitHub\", change <code>\"status\": \"pending\"</code> to <code>\"status\": \"approved\"</code>, and commit. To take a published community down, change <code>status</code> to anything else (e.g. <code>\"disabled\"</code>).",
+      ledeHtml: "New submissions land here with “pending” status and don't show on the site. To publish — click “Edit on GitHub”, change <code>\"status\": \"pending\"</code> to <code>\"status\": \"approved\"</code>, and commit. To take a published community down, change <code>status</code> to anything else (e.g. <code>\"disabled\"</code>).",
       pendingTitle: "Pending review",
       approvedTitle: "Published on the site",
       otherTitle: "Other (not published, not pending)",
