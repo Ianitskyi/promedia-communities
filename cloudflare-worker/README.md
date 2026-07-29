@@ -1,9 +1,15 @@
 # Cloudflare Worker: submit-community
 
-Приймає заявки з `communities.promedia.report/add` і сам дописує запис у
-`data/communities.json` (зі `"status": "pending"`) через GitHub API.
-Відвідувач сайту не бачить GitHub і не потребує акаунту — секретний
-GitHub-токен живе тільки в цьому Worker'і.
+Обслуговує два сценарії для `communities.promedia.report`:
+
+1. **Заявки з `/add`** — сам дописує запис (зі `"status": "pending"`) у
+   `data/communities.json` через GitHub API, опційно завантажує лого в
+   `img/logos/`. Відвідувач сайту не бачить GitHub і не потребує акаунту.
+2. **Модерація з `/admin`** — кнопки "Затвердити"/"Відхилити"/"Деактивувати"
+   пишуть напряму в GitHub після перевірки пароля (`env.ADMIN_PASSWORD`),
+   без ручного редагування файлу.
+
+Секретний GitHub-токен і пароль адміна живуть тільки в цьому Worker'і.
 
 Домен `promedia.report` не є зоною в Cloudflare (DNS для GitHub Pages
 налаштований напряму в реєстратора), тож Worker підключений не через Route
@@ -28,11 +34,14 @@ GitHub-токен живе тільки в цьому Worker'і.
    (повністю замініть заглушку).
 4. **Deploy**.
 
-### 3. Додайте секрет
+### 3. Додайте секрети
 
 1. У Worker'і → **Settings → Variables and Secrets** → **Add** →
    тип **Secret**, ім'я `GITHUB_TOKEN`, значення — токен з кроку 1.
-2. Збережіть (Deploy).
+2. Ще раз **Add** → тип **Secret**, ім'я `ADMIN_PASSWORD`, значення —
+   будь-який пароль на ваш вибір (це те, що ви вводитимете на `/admin`,
+   щоб натискати "Затвердити"/"Відхилити"/"Деактивувати").
+3. Збережіть (Deploy).
 
 ### 4. Адреса Worker'а
 

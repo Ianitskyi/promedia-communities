@@ -23,8 +23,16 @@
   <div class="eyebrow" data-i18n="admin.eyebrow">Тільки для команди ПроМедіа</div>
   <h1 data-i18n="admin.title">Адмін-панель каталогу</h1>
   <p class="lede" data-i18n="admin.ledeHtml">
-    Нові заявки потрапляють сюди зі статусом «на розгляді» й не показуються на сайті. Щоб опублікувати — натисніть «Редагувати на GitHub», змініть <code>"status": "pending"</code> на <code>"status": "approved"</code> і закомітьте. Щоб зняти опубліковану спільноту — так само зміните <code>status</code> на щось інше (наприклад <code>"disabled"</code>).
+    Нові заявки потрапляють сюди зі статусом «на розгляді» й не показуються на сайті. Кнопки нижче одразу зберігають зміни в GitHub — редагувати файл вручну більше не потрібно.
   </p>
+  <div class="admin-auth" id="admin-auth">
+    <label>
+      <span data-i18n="admin.passwordLabel">Пароль адміністратора</span>
+      <input type="password" id="admin-password-input" autocomplete="current-password" />
+    </label>
+    <button class="add-btn" id="admin-password-save" type="button" data-i18n="admin.passwordSave">Зберегти</button>
+    <span class="admin-auth-status" id="admin-auth-status"></span>
+  </div>
 </section>
 
 <section class="admin-section">
