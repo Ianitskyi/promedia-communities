@@ -19,7 +19,7 @@ const I18N = {
     hero: {
       eyebrow: "Каталог і карта медіаспільнот",
       title: "Медійні спільноти України",
-      lede: "Ми зібрали медіа, що спираються на підтримку читачів та залишають свої матеріали у відкритому доступі. Ці видання не ховають статті під замок і не продають до них доступ (це підписка), а залучають гроші прихильників для досягнення спільної мети (це спільнота).",
+      ledeHtml: "Зібрали видання, що спираються на підтримку читачів та залишають матеріали у відкритому доступі. Вони не ховають статті під замок (paywall), а залучають гроші однодумців задля досягнення спільної мети (membership). Більше читайте у розділі «<a href=\"#about-communities\">Що таке медійна спільнота</a>».",
       stat: "{total} медіаспільнот у каталозі"
     },
     explainer: {
@@ -204,7 +204,7 @@ const I18N = {
     hero: {
       eyebrow: "Catalog and map of media communities",
       title: "Media Communities of Ukraine",
-      lede: "We've gathered media outlets that rely on reader support and keep their content freely accessible. These outlets don't lock articles away or sell access to them (that's a subscription) — they raise money from supporters to pursue a shared goal (that's a community).",
+      ledeHtml: "We've gathered outlets that rely on reader support and keep their content freely accessible. They don't lock articles behind a paywall — instead, they raise money from like-minded supporters to pursue a shared goal (membership). Read more in the “<a href=\"#about-communities\">What is a media community</a>” section.",
       stat: "{total} media communities in the catalog"
     },
     explainer: {
