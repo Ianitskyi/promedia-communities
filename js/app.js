@@ -2,9 +2,9 @@
   "use strict";
 
   var BADGE_KEYS = ["recommended", "whitelist", "jti"];
-  var TAG_KEYS = ["investigative", "warJournalism", "culture"];
+  var TAG_KEYS = ["investigative", "warJournalism", "culture", "science"];
   var BADGE_EMOJI = { recommended: "🗺️", whitelist: "✅", jti: "🛡️" };
-  var TAG_EMOJI = { investigative: "🔍", warJournalism: "🎖️", culture: "🎨" };
+  var TAG_EMOJI = { investigative: "🔍", warJournalism: "🎖️", culture: "🎨", science: "🔬" };
   // OBLAST_SLUGS — спільний глобальний масив, визначений у js/i18n.js
 
   var state = {
@@ -12,8 +12,14 @@
     filtered: [],
     search: "",
     regionSlug: "",
-    activeId: null
+    activeId: null,
+    activeFilters: {}
   };
+
+  function localized(item, field) {
+    var enField = field + "En";
+    return getLang() === "en" && item[enField] ? item[enField] : item[field];
+  }
 
   var oblastPaths = {};
   var oblastLabels = {};
@@ -114,14 +120,25 @@
   function matchesSearch(item) {
     var q = state.search.trim().toLowerCase();
     if (q) {
-      var hay = (item.name + " " + item.city + " " + item.region).toLowerCase();
+      var hay = (item.name + " " + (item.nameEn || "") + " " + item.city + " " + item.region).toLowerCase();
       if (hay.indexOf(q) === -1) return false;
     }
     return true;
   }
 
+  function matchesFilters(item) {
+    return Object.keys(state.activeFilters).every(function (key) {
+      if (!state.activeFilters[key]) return true;
+      var parts = key.split(":");
+      var kind = parts[0], val = parts[1];
+      if (kind === "badge") return !!(item.badges && item.badges[val]);
+      if (kind === "tag") return !!(item.tags && item.tags.indexOf(val) !== -1);
+      return true;
+    });
+  }
+
   function render() {
-    var preRegion = state.all.filter(matchesSearch);
+    var preRegion = state.all.filter(matchesSearch).filter(matchesFilters);
     state.filtered = state.regionSlug
       ? preRegion.filter(function (item) { return item.regionSlug === state.regionSlug; })
       : preRegion;
@@ -191,13 +208,16 @@
         ? '<img class="media-logo" src="' + escapeAttr(item.logo) + '" alt="" loading="lazy" onerror="this.remove()" />'
         : "";
       var locationText = item.city === item.region ? item.city : item.city + ", " + item.region;
+      var name = localized(item, "name");
+      var description = localized(item, "description");
+      var communityIdea = localized(item, "communityIdea");
 
       card.innerHTML =
-        '<div class="media-card-top">' + logoHtml + '<div><h3><a href="media/?id=' + escapeAttr(item.id) + '">' + escapeHtml(item.name) + "</a></h3>" +
+        '<div class="media-card-top">' + logoHtml + '<div><h3><a href="media/?id=' + escapeAttr(item.id) + '">' + escapeHtml(name) + "</a></h3>" +
         '<div class="location">' + escapeHtml(locationText) + "</div></div></div>" +
         (badgesHtml ? '<div class="badge-row">' + badgesHtml + "</div>" : "") +
-        (item.description ? '<p class="desc">' + escapeHtml(item.description) + "</p>" : "") +
-        (item.communityIdea ? '<p class="idea">' + escapeHtml(item.communityIdea) + "</p>" : "") +
+        (description ? '<p class="desc">' + escapeHtml(description) + "</p>" : "") +
+        (communityIdea ? '<p class="idea">' + escapeHtml(communityIdea) + "</p>" : "") +
         '<div class="card-links">' +
         '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.subscribe")) + "</a>" +
         '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.website")) + "</a>" +
@@ -236,6 +256,24 @@
       state.regionSlug = e.target.value;
       render();
     });
+
+    var legend = document.getElementById("badge-legend");
+    if (legend) {
+      legend.addEventListener("click", function (e) {
+        var btn = e.target.closest && e.target.closest(".legend-filter-btn");
+        if (!btn) return;
+        e.preventDefault();
+        var key = btn.dataset.filter;
+        if (state.activeFilters[key]) {
+          delete state.activeFilters[key];
+          btn.classList.remove("active");
+        } else {
+          state.activeFilters[key] = true;
+          btn.classList.add("active");
+        }
+        render();
+      });
+    }
 
     window.onLangChange = function () {
       populateRegionSelect();

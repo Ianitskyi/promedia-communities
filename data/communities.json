@@ -18,7 +18,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=nikvesti.com&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=nikvesti.com&sz=128",
+    "descriptionEn": "Independent online media outlet of Mykolaiv region — the first online outlet in the region officially registered with the National Council; its audience spans Mykolaiv, Kherson, and Odesa oblasts."
   },
   {
     "id": "громадське-радіо",
@@ -39,7 +40,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=hromadske.radio&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=hromadske.radio&sz=128",
+    "descriptionEn": "Independent talk radio station founded in 2013 by journalists who refused to tolerate censorship; broadcasts in 7 regions of Ukraine on FM and online."
   },
   {
     "id": "бахмут-in-ua",
@@ -60,7 +62,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=bahmut.in.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=bahmut.in.ua&sz=128",
+    "descriptionEn": "Media outlet about and for the residents of Bakhmut, founded in 2015 — covers the city's life, support for displaced people, and the situation at the front."
   },
   {
     "id": "східний-варіант",
@@ -81,7 +84,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=v-variant.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=v-variant.com.ua&sz=128",
+    "descriptionEn": "Independent online outlet covering Donetsk and Luhansk regions, published since 2020 by the NGO “Nash Dim — Sloviansk,” with a newsroom made up of journalists from these regions."
   },
   {
     "id": "доступ-медіа",
@@ -102,7 +106,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=dostyp.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=dostyp.com.ua&sz=128",
+    "descriptionEn": "Independent outlet from Kropyvnytskyi — a continuation of the “Tochka Dostupu” project (since 2014); covers government decisions and their impact on the community, produces investigations on socially important topics."
   },
   {
     "id": "люк",
@@ -123,7 +128,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=lyuk.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=lyuk.media&sz=128",
+    "descriptionEn": "Independent online media about Kharkiv, founded in 2015 — covers urban culture and processes (from architecture to corruption), uniting a community of engaged Kharkiv residents."
   },
   {
     "id": "мост",
@@ -144,7 +150,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=most.ks.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=most.ks.ua&sz=128",
+    "descriptionEn": "Socio-political online outlet of Kherson region, founded in 2012; among its founders was activist and politician Kateryna Handziuk."
   },
   {
     "id": "18000",
@@ -167,7 +174,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=18000.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=18000.com.ua&sz=128",
+    "descriptionEn": "Independent progressive media outlet of Cherkasy — news, analysis, investigations, and podcasts; financially supported by the NGO “Cherkasy IT Cluster.”"
   },
   {
     "id": "махала",
@@ -188,7 +196,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=mahala.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=mahala.com.ua&sz=128",
+    "descriptionEn": "Regional media outlet covering the life of three districts in southern Odesa region; a digital continuation of the “Druzhba” newspaper, published for over 60 years, and not funded by authorities or business."
   },
   {
     "id": "полтавська-хвиля",
@@ -209,7 +218,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=poltavawave.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=poltavawave.com.ua&sz=128",
+    "descriptionEn": "Independent media outlet for active people and entrepreneurs in Poltava and the region — longer, useful pieces with diverse viewpoints instead of “clickbait” news."
   },
   {
     "id": "gwara-media",
@@ -230,7 +240,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=gwaramedia.com&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=gwaramedia.com&sz=128",
+    "descriptionEn": "Independent Kharkiv media outlet (since 2015) that, after 2022, covers war crimes in Kharkiv region and community recovery; winner of the Local Media Innovation Award, member of the IFCN fact-checkers network."
   },
   {
     "id": "медіаплатформа-вгору",
@@ -251,7 +262,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=vgoru.org&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=vgoru.org&sz=128",
+    "descriptionEn": "One of the most popular media platforms in Kherson region, which kept informing residents even during the occupation of Kherson."
   },
   {
     "id": "гречка",
@@ -272,7 +284,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=gre4ka.info&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=gre4ka.info&sz=128",
+    "descriptionEn": "Online media about Kropyvnytskyi and the region (since 2008) — anti-corruption topics, courts, public procurement, and land issues."
   },
   {
     "id": "гард-city",
@@ -293,7 +306,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=thegard.city&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=thegard.city&sz=128",
+    "descriptionEn": "Leading online media outlet of the Pervomaisk community in Mykolaiv region — news and stories about local residents and interesting places."
   },
   {
     "id": "накіпело",
@@ -314,7 +328,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=nakypilo.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=nakypilo.ua&sz=128",
+    "descriptionEn": "Kharkiv media group combining a news site, a radio station, and educational projects — “the voice of Ukrainian Kharkiv” on war, displaced people, and culture."
   },
   {
     "id": "район-in-ua-та-всі-інші-райони",
@@ -335,7 +350,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=rayon.in.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=rayon.in.ua&sz=128",
+    "descriptionEn": "A nationwide network of hyperlocal media on a franchise model (CID Media Group) — operating in nine regions of Ukraine, including Volyn."
   },
   {
     "id": "frontliner",
@@ -358,7 +374,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.frontliner.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.frontliner.com.ua&sz=128",
+    "descriptionEn": "Independent reporting outlet about Russia's war against Ukraine, founded by photographer and reporter Andrii Dubchak — reports from the front line."
   },
   {
     "id": "вільне-радіо",
@@ -379,7 +396,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=freeradio.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=freeradio.com.ua&sz=128",
+    "descriptionEn": "Media outlet of Donetsk region — a “watchdog” of the region's development that monitors the authorities' actions and covers the chronicle of the war; on IMI's Recommended Media Map for three years running."
   },
   {
     "id": "трибун",
@@ -400,7 +418,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=tribun.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=tribun.com.ua&sz=128",
+    "descriptionEn": "Independent socio-political outlet founded in 2011 in Luhansk; after the city's occupation the newsroom relocated and now covers Luhansk and Donetsk regions."
   },
   {
     "id": "о6262",
@@ -421,7 +440,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.6262.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.6262.com.ua&sz=128",
+    "descriptionEn": "Information site about Sloviansk covering the city, food, business, and culture; fully switched to Ukrainian in 2019, with the newsroom relocated to Chernivtsi after 2022."
   },
   {
     "id": "слобідський-край",
@@ -442,7 +462,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.slk.kh.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.slk.kh.ua&sz=128",
+    "descriptionEn": "Ukrainian-language media brand of Kharkiv region — the oblast's oldest newspaper (since 1917) and a multimedia site providing information support to communities during the war."
   },
   {
     "id": "жовті-води-city",
@@ -463,7 +484,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=zhovtivody.city&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=zhovtivody.city&sz=128",
+    "descriptionEn": "Online outlet about Zhovti Vody in Dnipropetrovsk region, supported by the “Abo” Media Development Agency — news and stories about the people and the city."
   },
   {
     "id": "перший-криворізький",
@@ -484,7 +506,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=1kr.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=1kr.ua&sz=128",
+    "descriptionEn": "The largest independent media outlet in Kryvyi Rih, registered with the National Council on Television and Radio Broadcasting."
   },
   {
     "id": "цукр",
@@ -505,7 +528,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=cukr.city&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=cukr.city&sz=128",
+    "descriptionEn": "Local online media outlet of Sumy, officially registered with the National Council — news and stories about the city with the aim of making Sumy a city people don't want to leave."
   },
   {
     "id": "сєвєродонецьк-онлайн",
@@ -526,7 +550,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=sd.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=sd.ua&sz=128",
+    "descriptionEn": "A portal for residents of Sievierodonetsk from the NGO of the same name — news and useful information for displaced people and those staying connected to their hometown."
   },
   {
     "id": "рубрика",
@@ -547,7 +572,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=rubryka.com&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=rubryka.com&sz=128",
+    "descriptionEn": "Ukraine's first socio-political media outlet in the solutions journalism format (since 2018); published in Ukrainian, English, and Russian."
   },
   {
     "id": "varosh",
@@ -568,7 +594,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=varosh.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=varosh.com.ua&sz=128",
+    "descriptionEn": "Independent media outlet about Zakarpattia (since 2013) — evolved from a lifestyle magazine into a socially important outlet about the region's people, culture, and heritage."
   },
   {
     "id": "neformat",
@@ -591,7 +618,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.neformat.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.neformat.com.ua&sz=128",
+    "descriptionEn": "Online media about the Ukrainian music scene, mostly underground (since 2004) — news, reviews, analysis, and a guide to genres."
   },
   {
     "id": "точка-сходу",
@@ -612,7 +640,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=cxid.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=cxid.media&sz=128",
+    "descriptionEn": "Independent online media about Donetsk region, Luhansk region, and Pryazovia, created by journalists from Mariupol, Kyiv, and Kharkiv — front line, occupation, de-occupied territories, and displaced people."
   },
   {
     "id": "kordon-media",
@@ -633,7 +662,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=kordon.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=kordon.media&sz=128",
+    "descriptionEn": "Online outlet about the people and territories on the border of Sumy region — the war's consequences, recovery, special projects, and podcasts."
   },
   {
     "id": "обрії-ізюмщини",
@@ -654,7 +684,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=obrii.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=obrii.com.ua&sz=128",
+    "descriptionEn": "District newspaper of the Izium area with a history going back to a 1919 bulletin; the online portal is owned by the newsroom's labor collective and resumed work after the de-occupation of Izium."
   },
   {
     "id": "медіапорт",
@@ -675,7 +706,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=mediaport.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=mediaport.ua&sz=128",
+    "descriptionEn": "Independent Kharkiv online outlet with no banner ads (archive since 2002), funded by grants from international donors — people, city events, politics, and culture."
   },
   {
     "id": "радіо-накипіло",
@@ -696,7 +728,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=radio.nakypilo.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=radio.nakypilo.ua&sz=128",
+    "descriptionEn": "Online and FM radio station for Kharkiv residents (92.2 FM in Kharkiv, Balakliia, Blyzniuky, and Vovchansk) from the “Nakypilo” media group — local news, reports, and investigations."
   },
   {
     "id": "dnipro-media",
@@ -717,7 +750,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.dnipro.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.dnipro.media&sz=128",
+    "descriptionEn": "Independent online media about Dnipro, founded by journalist Nika Yehorova — breaks down stereotypes about the city, showcases its multiculturalism and volunteer initiatives."
   },
   {
     "id": "місто-і-річка",
@@ -738,7 +772,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=mistorichka.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=mistorichka.media&sz=128",
+    "descriptionEn": "Independent online magazine about Dnipro (since August 2024) from the team behind the former KUST project — news, analysis, and columns on political, social, and urban processes."
   },
   {
     "id": "kramatorsk-post",
@@ -759,7 +794,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.kramatorskpost.com&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.kramatorskpost.com&sz=128",
+    "descriptionEn": "Media about Kramatorsk and its residents, working from Kolomyia after relocation — news, video, and reports about the city and Donetsk region."
   },
   {
     "id": "pechera-info",
@@ -780,7 +816,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=pechera.info&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=pechera.info&sz=128",
+    "descriptionEn": "Online outlet about Chernihiv (since October 2024) from the Chernihiv media group — no news feed, instead in-depth pieces, reviews, columns, and video."
   },
   {
     "id": "центр-журналістських-розслідувань-сила-п",
@@ -803,7 +840,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=sylapravdy.com&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=sylapravdy.com&sz=128",
+    "descriptionEn": "NGO from Lutsk (since 2017) — journalistic investigations and news mostly about Volyn region."
   },
   {
     "id": "ngl-media",
@@ -826,7 +864,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=ngl.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=ngl.media&sz=128",
+    "descriptionEn": "Independent anti-corruption center (since 2013, initially as “Nashi Hroshi. Lviv,” nationwide since 2023) — investigations, data journalism, and fact-checking."
   },
   {
     "id": "bihus",
@@ -849,7 +888,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=bihus.info&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=bihus.info&sz=128",
+    "descriptionEn": "Anti-corruption investigative project that grew out of the TV program “Nashi Hroshi with Denys Bihus”; editorially independent, publishes weekly investigations on YouTube."
   },
   {
     "id": "слідство",
@@ -872,7 +912,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.slidstvo.info&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.slidstvo.info&sz=128",
+    "descriptionEn": "A team of independent investigative journalists led by Anna Babinets — corruption crimes, high-profile murders, and Russia's war crimes; partner of the OCCRP network in Ukraine."
   },
   {
     "id": "наука-ua",
@@ -890,10 +931,13 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "science"
+    ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=nauka.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=nauka.ua&sz=128",
+    "descriptionEn": "Independent reader-funded media outlet (since 2020) that explains the most important science news in plain language every day, based on peer-reviewed scientific journals."
   },
   {
     "id": "ukrainer",
@@ -916,7 +960,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.ukrainer.net&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.ukrainer.net&sz=128",
+    "descriptionEn": "Public and cultural multimedia project about Ukraine, founded by Bogdan Logvynenko (since 2016) — documentary videos, texts, and books about the country's regions, people, and culture."
   },
   {
     "id": "читомо",
@@ -939,7 +984,8 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=chytomo.com&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=chytomo.com&sz=128",
+    "descriptionEn": "Professional media outlet about books and publishing in Ukraine, founded by Oksana Khmelovska and Iryna Baturevych — analysis and materials from industry practitioners, sustained by readers' donations."
   },
   {
     "id": "грунт",
@@ -960,7 +1006,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=grnt.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=grnt.media&sz=128",
+    "descriptionEn": "Media outlet about Ukraine with a clear patriotic stance, which started as the Telegram channel “Ukraine Operational” on February 24, 2022, and has worked as a “slow journalism” outlet since May 2022."
   },
   {
     "id": "куншт",
@@ -978,20 +1025,23 @@
       "whitelist": false,
       "jti": false
     },
-    "tags": [],
+    "tags": [
+      "science"
+    ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=www.kunsht.com.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=www.kunsht.com.ua&sz=128",
+    "descriptionEn": "Popular-science media platform (since 2015, initially a print magazine) — articles, podcasts, videos, and lectures about science and technology."
   },
   {
     "id": "vuzol-media",
-    "name": "Vuzol.Media",
+    "name": "Медіа «VUZOL»",
     "region": "Київ",
     "regionSlug": "kyiv-city",
     "city": "Київ",
     "website": "https://www.instagram.com/vuzol.media/",
-    "description": "Медіа про історію української музики",
-    "communityIdea": "Сплітаємо людей музикою та її історією",
+    "description": "Медіа про історію української музики, яке по-сучасному оглядає мистецьке минуле нашої нації, обʼєднує ним різні покоління та формує відчуття гордості за свою країну.",
+    "communityIdea": "Сплітаємо людей музикою та її історією.",
     "communityUrl": "https://base.monobank.ua/9Xzx4fziitEhfT?utm_content=link_in_bio&fbclid=PAdGRleASxxTRwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp7Xw1QuslnPWU8Adrwdnd_YDOIoPmtz-rmosTwTTFU6Mq54iXxPeJvJDHC83_aem_uvxVt-wtw63UNQtxJLHhbQ#subscriptions",
     "platform": "other",
     "badges": {
@@ -1005,7 +1055,10 @@
     "status": "approved",
     "example": false,
     "contact": "a.ianitskyi@gmail.com",
-    "logo": "/img/logos/vuzol-media.jpg"
+    "logo": "/img/logos/vuzol-media.jpg",
+    "descriptionEn": "Media about the history of Ukrainian music that takes a modern look at our nation's artistic past, connects generations through it, and builds a sense of pride in one's country.",
+    "communityIdeaEn": "We weave people together through music and its history.",
+    "nameEn": "VUZOL Media"
   },
   {
     "id": "четверта-влада",
@@ -1028,6 +1081,33 @@
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=4vlada.com&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=4vlada.com&sz=128",
+    "descriptionEn": "The only investigative independent online media outlet of Rivne region — grew out of the Rivne Agency of Journalistic Investigations “Chetverta Vlada”; covers anti-corruption topics and monitors public procurement.",
+    "communityIdeaEn": "Readers' financial support ensures the newsroom's independence and development."
+  },
+  {
+    "id": "kyiv-independent",
+    "name": "The Kyiv Independent",
+    "region": "Київ",
+    "regionSlug": "kyiv-city",
+    "city": "Київ",
+    "website": "https://kyivindependent.com/",
+    "description": "Англомовне видання, засноване в листопаді 2021 року журналістами, які звільнилися з Kyiv Post після конфлікту з власником; висвітлює новини України для міжнародної аудиторії, зокрема повномасштабну війну.",
+    "communityIdea": "Учасники спільноти отримують ексклюзивну розсилку, доступ до Discord-спільноти, безрекламний перегляд сайту, запрошення на онлайн- та офлайн-події й уроки української мови.",
+    "communityUrl": "https://kyivindependent.com/membership",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [
+      "warJournalism"
+    ],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=kyivindependent.com&sz=128",
+    "descriptionEn": "English-language outlet founded in November 2021 by journalists who left the Kyiv Post after a dispute with its owner; covers news from Ukraine for an international audience, including the full-scale war.",
+    "communityIdeaEn": "Members get an exclusive newsletter, access to a Discord community, ad-free reading, invitations to online and offline events, and Ukrainian language lessons."
   }
 ]

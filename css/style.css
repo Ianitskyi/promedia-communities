@@ -187,14 +187,44 @@ h1 {
 .legend-item {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
   font-size: 12px;
   color: var(--muted);
 }
 
-.legend-item a {
+.legend-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font: inherit;
+  font-size: 12px;
   color: inherit;
-  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+}
+
+.legend-filter-btn:hover {
+  background: var(--border);
+}
+
+.legend-filter-btn.active {
+  background: var(--accent-tint);
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.legend-external {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 11px;
+  padding: 2px;
+}
+
+.legend-external:hover {
+  color: var(--ink);
 }
 
 .legend-emoji {

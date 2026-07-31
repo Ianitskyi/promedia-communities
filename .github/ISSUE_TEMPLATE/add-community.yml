@@ -114,6 +114,7 @@ body:
         - label: Розслідувальне медіа
         - label: Воєнна журналістика
         - label: Медіа про культуру
+        - label: Наукове медіа
   - type: input
     id: contact
     attributes:

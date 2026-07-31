@@ -13,6 +13,21 @@ python -m http.server 8080
 
 і зайдіть на http://localhost:8080
 
+## Двомовність: UA — обов'язково, EN — бажано
+
+Сайт двомовний (UA/EN, перемикач `js/i18n.js`). Весь UI-текст (кнопки,
+заголовки, підказки) вже перекладено — при будь-якій новій зміні тексту
+інтерфейсу перекладайте одразу обидві мови в `js/i18n.js` (і в
+`js/community-analysis.js` для розділу «Практикум»).
+
+Дані каталогу (`data/communities.json`) — інша історія: `name`/`description`/
+`communityIdea` вводяться українською (заявниками через форму `/add`, або
+вручну), і переклад на англійську — окреме поле (`nameEn`/`descriptionEn`/
+`communityIdeaEn`), яке потрібно додавати самостійно. Якщо перекладу немає,
+сайт просто показує український текст і на EN-версії (тихий fallback, без
+помилок) — але для якісної двомовності бажано заповнювати ці поля для
+кожного нового чи зміненого запису.
+
 ## Що всередині
 
 | Файл | Призначення |
@@ -38,12 +53,15 @@ python -m http.server 8080
 {
   "id": "unique-slug",
   "name": "Назва медіа",
+  "nameEn": "English name",        // опційно — якщо не задано, на EN-версії сайту показується "name" без перекладу
   "region": "Львівська область",   // текст, що показується на картці
   "regionSlug": "lviv",            // id області на SVG-карті — англ./укр. назви обох мов у js/i18n.js (oblasts.*)
   "city": "Львів",
   "website": "https://example.com",
   "description": "Короткий опис медіа (1-2 речення).",
+  "descriptionEn": "English translation.", // опційно — якщо не задано, на EN-версії сайту показується "description" без перекладу
   "communityIdea": "Ключова ідея спільноти — чому варто підписатися.",
+  "communityIdeaEn": "English translation.", // опційно, той самий принцип, що й descriptionEn
   "communityUrl": "https://t.me/example",
   "platform": "telegram", // telegram | facebook | instagram | youtube | viber | website | other — не збирається формою /add, за замовчуванням "other"; редагується вручну в /admin
   "badges": {
@@ -51,7 +69,7 @@ python -m http.server 8080
     "whitelist": false,   // у білому списку ЗМІ
     "jti": false          // сертифікація Journalism Trust Initiative
   },
-  "tags": ["investigative", "warJournalism", "culture"], // опційно, будь-яка підмножина — див. I18N.*.tags у js/i18n.js
+  "tags": ["investigative", "warJournalism", "culture", "science"], // опційно, будь-яка підмножина — див. I18N.*.tags у js/i18n.js
   "status": "approved",   // "approved" = видно на сайті; "pending" = нова заявка, ще не перевірена; будь-що інше = знято з публікації
   "example": false,       // true лише для ілюстративних seed-записів
   "logo": "https://www.google.com/s2/favicons?domain=example.com&sz=128", // опційно — іконка на картці; або фавікон сайту автоматично, або img/logos/<id>.<ext>, якщо заявник завантажив свій файл у формі /add

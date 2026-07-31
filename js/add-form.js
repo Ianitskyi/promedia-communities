@@ -96,6 +96,7 @@
       if (document.getElementById("f-tag-investigative").checked) fields.tags.push("investigative");
       if (document.getElementById("f-tag-war").checked) fields.tags.push("warJournalism");
       if (document.getElementById("f-tag-culture").checked) fields.tags.push("culture");
+      if (document.getElementById("f-tag-science").checked) fields.tags.push("science");
 
       var required = ["name", "website", "communityUrl", "description", "city", "regionSlug"];
       var missing = required.some(function (key) { return !fields[key]; });

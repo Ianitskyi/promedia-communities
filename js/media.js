@@ -2,9 +2,9 @@
   "use strict";
 
   var BADGE_KEYS = ["recommended", "whitelist", "jti"];
-  var TAG_KEYS = ["investigative", "warJournalism", "culture"];
+  var TAG_KEYS = ["investigative", "warJournalism", "culture", "science"];
   var BADGE_EMOJI = { recommended: "🗺️", whitelist: "✅", jti: "🛡️" };
-  var TAG_EMOJI = { investigative: "🔍", warJournalism: "🎖️", culture: "🎨" };
+  var TAG_EMOJI = { investigative: "🔍", warJournalism: "🎖️", culture: "🎨", science: "🔬" };
   var BADGE_LINKS = {
     recommended: "https://map.detector.media/",
     whitelist: "https://imi.org.ua/doslidzhennya-standartiv",
@@ -19,6 +19,11 @@
     return params.get("id") || "";
   }
 
+  function localized(item, field) {
+    var enField = field + "En";
+    return getLang() === "en" && item[enField] ? item[enField] : item[field];
+  }
+
   function render() {
     if (!currentItem) {
       container.innerHTML =
@@ -28,9 +33,12 @@
     }
 
     var item = currentItem;
-    document.title = item.name + " — " + t("media.titleSuffix");
+    var name = localized(item, "name");
+    var description = localized(item, "description");
+    var communityIdea = localized(item, "communityIdea");
+    document.title = name + " — " + t("media.titleSuffix");
     var metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", item.description || item.name);
+    if (metaDesc) metaDesc.setAttribute("content", description || name);
 
     var badgesHtml = "";
     if (item.badges) {
@@ -59,11 +67,11 @@
 
     container.innerHTML =
       '<div class="media-detail-card">' +
-      '<div class="media-detail-top">' + logoHtml + '<div><h1>' + escapeHtml(item.name) + "</h1>" +
+      '<div class="media-detail-top">' + logoHtml + '<div><h1>' + escapeHtml(name) + "</h1>" +
       '<div class="location">' + escapeHtml(locationText) + "</div></div></div>" +
       (badgesHtml ? '<div class="badge-row">' + badgesHtml + "</div>" : "") +
-      (item.description ? '<p class="desc">' + escapeHtml(item.description) + "</p>" : "") +
-      (item.communityIdea ? '<p class="idea">' + escapeHtml(item.communityIdea) + "</p>" : "") +
+      (description ? '<p class="desc">' + escapeHtml(description) + "</p>" : "") +
+      (communityIdea ? '<p class="idea">' + escapeHtml(communityIdea) + "</p>" : "") +
       '<div class="card-links">' +
       '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.subscribe")) + "</a>" +
       '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.website")) + "</a>" +

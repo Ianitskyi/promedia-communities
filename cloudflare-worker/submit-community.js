@@ -50,7 +50,7 @@ const OBLAST_LABELS_UK = {
 };
 
 const REQUIRED_FIELDS = ["name", "website", "communityUrl", "description", "city", "regionSlug"];
-const ALLOWED_TAGS = ["investigative", "warJournalism", "culture"];
+const ALLOWED_TAGS = ["investigative", "warJournalism", "culture", "science"];
 const ALLOWED_LOGO_TYPES = { "image/png": "png", "image/jpeg": "jpg", "image/svg+xml": "svg", "image/webp": "webp" };
 const MAX_LOGO_BASE64_LENGTH = 2_800_000; // ~2MB бінарного файлу
 const ALLOWED_MODERATION_STATUSES = ["approved", "disabled", "deleted"];

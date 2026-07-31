@@ -12,6 +12,10 @@
 спирається на вторинні джерела — Facebook, немає прямої сторінки «Про нас»
 на сайті).
 
+Усі описи (та наявні `communityIdea`) перекладено англійською (`descriptionEn`
+/ `communityIdeaEn`) — переклад робив асистент, без окремої звірки носієм
+мови.
+
 ## Позначки (recommended / whitelist / JTI) — перевірено
 
 Перевірено пошуком (мапа рекомендованих медіа detector.media+IMI, білий список ІМІ,
@@ -29,13 +33,20 @@
 (filter.mkip.gov.ua) — це НЕ те саме, що мапа рекомендованих медіа, тому не
 зараховано як `recommended`.
 
+⚠️ **The Kyiv Independent**: не знайдено підтвердження присутності на жодному
+з трьох реєстрів (усі позначки `false`). Ймовірна причина — це англомовне
+видання для міжнародної аудиторії, а всі три реєстри (мапа рекомендованих
+медіа, білий список ІМІ, JTI-сертифікація в Україні) фокусуються переважно на
+українськомовних/регіональних медіа — можливо, видання просто не подавалося
+на розгляд.
+
 ## Ідея спільноти й теги — частково заповнено
 
-`communityIdea` (чому варто підписатися) ще не досліджено — окрема задача на
-майбутнє. `tags` — проставлено вручну для кількох очевидних випадків
-(розслідувальне: 18000, Слідство, BIHUS, NGL.media, «Сила правди»; воєнне:
-Frontliner; культурне: Neformat, Ukrainer, Читомо); решта видань ще не
-перевірена.
+`communityIdea` (чому варто підписатися) ще не досліджено для більшості
+записів — окрема задача на майбутнє. `tags` — проставлено вручну для кількох
+очевидних випадків (розслідувальне: 18000, Слідство, BIHUS, NGL.media, «Сила
+правди»; воєнне: Frontliner, The Kyiv Independent; культурне: Neformat,
+Ukrainer, Читомо; наукове: Наука UA, Куншт); решта видань ще не перевірена.
 
 | # | Медіа | Місто/область | Сайт | Опис | Ідея спільноти | Позначки | Теги |
 |---|---|---|---|---|---|---|---|
@@ -80,10 +91,11 @@ Frontliner; культурне: Neformat, Ukrainer, Читомо); решта в
 | 39 | [NGL.media](https://ngl.media/) | Львів | https://ngl.media/ | ✅ | ❌ | — | розсл. |
 | 40 | [BIHUS](https://bihus.info/) | Київ | https://bihus.info/ | ✅ | ❌ | — | розсл. |
 | 41 | [Слідство](https://www.slidstvo.info/) | Київ | https://www.slidstvo.info/ | ✅ | ❌ | — | розсл. |
-| 42 | [Наука UA](https://nauka.ua/) | Львів | https://nauka.ua/ | ✅ | ❌ | — | ❌ |
+| 42 | [Наука UA](https://nauka.ua/) | Львів | https://nauka.ua/ | ✅ | ❌ | — | наук. |
 | 43 | [Ukrainer](https://www.ukrainer.net/) | Київ | https://www.ukrainer.net/ | ✅ | ❌ | — | культ. |
 | 44 | [Читомо](https://chytomo.com/) | Київ | https://chytomo.com/ | ✅ | ❌ | — | культ. |
 | 45 | [Грунт](https://grnt.media/) | Київ | https://grnt.media/ | ✅ | ❌ | — | ❌ |
-| 46 | [Куншт](https://www.kunsht.com.ua/) | Київ | https://www.kunsht.com.ua/ | ✅ | ❌ | — | ❌ |
-| 47 | [Vuzol.Media](https://www.instagram.com/vuzol.media/) | Київ | instagram.com/vuzol.media | ✅ | ✅ | — | культура |
+| 46 | [Куншт](https://www.kunsht.com.ua/) | Київ | https://www.kunsht.com.ua/ | ✅ | ❌ | — | наук. |
+| 47 | [Медіа «VUZOL»](https://www.instagram.com/vuzol.media/) | Київ | instagram.com/vuzol.media | ✅ | ✅ | — | культура |
 | 48 | [Четверта влада](https://4vlada.com/) | Рівне | https://4vlada.com/ | ✅ | ✅ | —⚠️ | розсл. |
+| 49 | [The Kyiv Independent](https://kyivindependent.com/) | Київ | https://kyivindependent.com/ | ✅ | ✅ | ❌⚠️ | воєнна |

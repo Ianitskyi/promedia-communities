@@ -75,7 +75,8 @@ const I18N = {
     tags: {
       investigative: "Розслідувальне медіа",
       warJournalism: "Воєнна журналістика",
-      culture: "Медіа про культуру"
+      culture: "Медіа про культуру",
+      science: "Наукове медіа"
     },
     legend: {
       recommended: "медіа на Мапі рекомендованих",
@@ -145,6 +146,7 @@ const I18N = {
       tagInvestigative: "Розслідувальне медіа",
       tagWarJournalism: "Воєнна журналістика",
       tagCulture: "Медіа про культуру",
+      tagScience: "Наукове медіа",
       contact: { label: "Контакт заявника (email або телефон)", hint: "Щоб ми могли зв'язатися, якщо виникнуть питання щодо заявки." },
       submit: "Надіслати заявку",
       submitting: "Надсилаємо…",
@@ -258,7 +260,8 @@ const I18N = {
     tags: {
       investigative: "Investigative media",
       warJournalism: "War journalism",
-      culture: "Culture media"
+      culture: "Culture media",
+      science: "Science media"
     },
     legend: {
       recommended: "this media is on the Recommended Media Map",
@@ -328,6 +331,7 @@ const I18N = {
       tagInvestigative: "Investigative media",
       tagWarJournalism: "War journalism",
       tagCulture: "Culture media",
+      tagScience: "Science media",
       contact: { label: "Applicant contact (email or phone)", hint: "So we can reach you if we have questions about the submission." },
       submit: "Submit application",
       submitting: "Submitting…",
