@@ -27,7 +27,7 @@ const I18N = {
       title: "Що таке медійна спільнота?",
       q1: {
         q: "Що таке медійна спільнота?",
-        aHtml: "Медіаспільноти (media communities) ще називають «клубами читачів», «друзями медіа», «моделями членства» тощо. Згідно з визначенням The Membership Puzzle Project (2020), це соціальний договір між новинною організацією та членами її спільноти, за яким члени спільноти виділяють свій час, гроші, енергію, досвід та зв'язки для підтримки справи, в яку вони вірять. Натомість новинна організація пропонує прозорість та можливості зробити значний внесок у стабільність та вплив організації. Джерело: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Детальніше про стан моделей членства в українських медіа — у дослідженні ГО «ПроМедіа»: <a href=\"https://ianitskyi.github.io/promedia-research/research/state-membership-models-ukrainian-media-uk.html#conclusions\" target=\"_blank\" rel=\"noopener\">ianitskyi.github.io/promedia-research</a>"
+        aHtml: "Медіаспільноти (media communities) ще називають «клубами читачів», «друзями медіа», «моделями членства» тощо. Згідно з визначенням The Membership Puzzle Project (2020), це соціальний договір між новинною організацією та членами її спільноти, за яким члени спільноти виділяють свій час, гроші, енергію, досвід та зв'язки для підтримки справи, в яку вони вірять. Натомість новинна організація пропонує прозорість та можливості зробити значний внесок у стабільність та вплив організації. Джерело: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Детальніше про стан моделей членства в українських медіа — у <a href=\"research/\">дослідженні ГО «ПроМедіа»</a>"
       },
       q2: {
         q: "Чим медійна спільнота відрізняється від підписки?",
@@ -189,6 +189,12 @@ const I18N = {
       loading: "Завантаження…",
       loadError: "Не вдалося завантажити дані.",
       notFound: "Медіа не знайдено або ще не опубліковано."
+    },
+    research: {
+      eyebrow: "Дослідження ПроМедіа",
+      title: "Стан моделей членства в українських медіа",
+      fallbackText: "Не завантажується?",
+      fallbackLink: "Відкрити в новій вкладці"
     }
   },
   en: {
@@ -212,7 +218,7 @@ const I18N = {
       title: "What is a media community?",
       q1: {
         q: "What is a media community?",
-        aHtml: "Media communities are also called “reader clubs,” “friends of the media,” “membership models,” and similar names. According to a 2020 definition by The Membership Puzzle Project, it's a social contract between a news organization and members of its community, where members contribute their time, money, energy, expertise, and connections to support a cause they believe in. In return, the news organization offers transparency and opportunities to make a meaningful contribution to the organization's stability and impact. Source: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. For more on the state of membership models in Ukrainian media, see this research by the NGO “ProMedia”: <a href=\"https://ianitskyi.github.io/promedia-research/research/state-membership-models-ukrainian-media-uk.html#conclusions\" target=\"_blank\" rel=\"noopener\">ianitskyi.github.io/promedia-research</a>"
+        aHtml: "Media communities are also called “reader clubs,” “friends of the media,” “membership models,” and similar names. According to a 2020 definition by The Membership Puzzle Project, it's a social contract between a news organization and members of its community, where members contribute their time, money, energy, expertise, and connections to support a cause they believe in. In return, the news organization offers transparency and opportunities to make a meaningful contribution to the organization's stability and impact. Source: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. For more on the state of membership models in Ukrainian media, see this <a href=\"research/\">research by the NGO “ProMedia”</a>"
       },
       q2: {
         q: "How is a media community different from a subscription?",
@@ -374,6 +380,12 @@ const I18N = {
       loading: "Loading…",
       loadError: "Failed to load data.",
       notFound: "Media not found or not yet published."
+    },
+    research: {
+      eyebrow: "ProMedia research",
+      title: "The state of membership models in Ukrainian media",
+      fallbackText: "Not loading?",
+      fallbackLink: "Open in a new tab"
     }
   }
 };
