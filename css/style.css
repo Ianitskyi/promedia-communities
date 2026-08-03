@@ -727,6 +727,7 @@ a.badge:hover {
 .badge.whitelist { background: var(--green-tint); color: var(--green); }
 .badge.jti { background: var(--purple-tint); color: var(--purple); }
 .badge.tag { background: var(--border); color: var(--text); }
+.tag-icon { vertical-align: -1px; flex-shrink: 0; }
 .badge.example { background: var(--accent-tint); color: var(--accent-dark); }
 
 .card-links {

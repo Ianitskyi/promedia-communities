@@ -4,7 +4,8 @@
   var BADGE_KEYS = ["recommended", "whitelist", "jti"];
   var TAG_KEYS = ["investigative", "warJournalism", "culture", "science"];
   var BADGE_EMOJI = { recommended: "🗺️", whitelist: "✅", jti: "🛡️" };
-  var TAG_EMOJI = { investigative: "🔍", warJournalism: "🎖️", culture: "🎨", science: "🔬" };
+  var TRYZUB_SVG = '<svg class="tag-icon" viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M5,14 L9,14 L4,2 Z M10,14 L14,14 L12,1 Z M15,14 L19,14 L20,2 Z M4,14 L20,14 L20,16 L4,16 Z M11,16 L13,16 L12,20 Z"/></svg>';
+  var TAG_EMOJI = { investigative: "🔍", warJournalism: TRYZUB_SVG, culture: "🎨", science: "🔬" };
   var BADGE_LINKS = {
     recommended: "https://map.detector.media/",
     whitelist: "https://imi.org.ua/doslidzhennya-standartiv",
