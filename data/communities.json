@@ -1109,5 +1109,30 @@
     "logo": "https://www.google.com/s2/favicons?domain=kyivindependent.com&sz=128",
     "descriptionEn": "English-language outlet founded in November 2021 by journalists who left the Kyiv Post after a dispute with its owner; covers news from Ukraine for an international audience, including the full-scale war.",
     "communityIdeaEn": "Members get an exclusive newsletter, access to a Discord community, ad-free reading, invitations to online and offline events, and Ukrainian language lessons."
+  },
+  {
+    "id": "texty",
+    "name": "Тексти.org.ua",
+    "nameEn": "Texty.org.ua",
+    "region": "Київ",
+    "regionSlug": "kyiv-city",
+    "city": "Київ",
+    "website": "https://texty.org.ua/",
+    "description": "Незалежне медіа даних і розслідувань — аналізує статистику, будує інтерактивні мапи та розслідування на основі відкритих даних про війну, корупцію та суспільні процеси в Україні.",
+    "descriptionEn": "Independent data journalism and investigations outlet — analyzes statistics and builds interactive maps and investigations based on open data about the war, corruption, and social processes in Ukraine.",
+    "communityIdea": "",
+    "communityUrl": "https://texty.org.ua/p/support/",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [
+      "investigative"
+    ],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=texty.org.ua&sz=128"
   }
 ]
