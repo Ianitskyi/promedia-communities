@@ -27,7 +27,7 @@ const I18N = {
       title: "Що таке медійна спільнота?",
       q1: {
         q: "Що таке медійна спільнота?",
-        aHtml: "Медіаспільноти (media communities) ще називають «клубами читачів», «друзями медіа», «моделями членства» тощо. Згідно з визначенням The Membership Puzzle Project (2020), це соціальний договір між новинною організацією та членами її спільноти, за яким члени спільноти виділяють свій час, гроші, енергію, досвід та зв'язки для підтримки справи, в яку вони вірять. Натомість новинна організація пропонує прозорість та можливості зробити значний внесок у стабільність та вплив організації. Джерело: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Детальніше про стан моделей членства в українських медіа — у <a href=\"research/\">дослідженні ГО «ПроМедіа»</a>"
+        aHtml: "Медіаспільноти (media communities) ще називають «клубами читачів», «друзями медіа», «моделями членства» тощо. Згідно з визначенням The Membership Puzzle Project (2020), це соціальний договір між новинною організацією та членами її спільноти, за яким члени спільноти виділяють свій час, гроші, енергію, досвід та зв'язки для підтримки справи, в яку вони вірять. Натомість новинна організація пропонує прозорість та можливості зробити значний внесок у стабільність та вплив організації. Джерело: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Сьогодні в Україні кількадесят спільнот медіа, а у 2021 році їх було лише 11. Детальніше читайте в <a href=\"research/\">дослідженні Membership Puzzle Project</a>"
       },
       q2: {
         q: "Чим медійна спільнота відрізняється від підписки?",
@@ -218,7 +218,7 @@ const I18N = {
       title: "What is a media community?",
       q1: {
         q: "What is a media community?",
-        aHtml: "Media communities are also called “reader clubs,” “friends of the media,” “membership models,” and similar names. According to a 2020 definition by The Membership Puzzle Project, it's a social contract between a news organization and members of its community, where members contribute their time, money, energy, expertise, and connections to support a cause they believe in. In return, the news organization offers transparency and opportunities to make a meaningful contribution to the organization's stability and impact. Source: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. For more on the state of membership models in Ukrainian media, see this <a href=\"research/\">research by the NGO “ProMedia”</a>"
+        aHtml: "Media communities are also called “reader clubs,” “friends of the media,” “membership models,” and similar names. According to a 2020 definition by The Membership Puzzle Project, it's a social contract between a news organization and members of its community, where members contribute their time, money, energy, expertise, and connections to support a cause they believe in. In return, the news organization offers transparency and opportunities to make a meaningful contribution to the organization's stability and impact. Source: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Today, Ukraine has several dozen media communities — up from just 11 in 2021. Read more in this <a href=\"research/\">Membership Puzzle Project research</a>"
       },
       q2: {
         q: "How is a media community different from a subscription?",
