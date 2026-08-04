@@ -22,6 +22,10 @@
     return getLang() === "en" && item[enField] ? item[enField] : item[field];
   }
 
+  function mediaLink(id) {
+    return "/media/?id=" + encodeURIComponent(id) + (getLang() === "en" ? "&lang=en" : "");
+  }
+
   var oblastPaths = {};
   var oblastLabels = {};
 
@@ -54,7 +58,7 @@
   }
 
   function loadMap() {
-    fetch("img/ukraine-oblasts.svg")
+    fetch("/img/ukraine-oblasts.svg")
       .then(function (r) { return r.text(); })
       .then(function (svgText) {
         var container = document.getElementById("oblast-map");
@@ -99,7 +103,7 @@
   }
 
   function loadData() {
-    fetch("data/communities.json")
+    fetch("/data/communities.json")
       .then(function (r) { return r.json(); })
       .then(function (data) {
         state.all = data.filter(function (item) { return item.status === "approved"; });
@@ -216,7 +220,7 @@
       var communityIdea = localized(item, "communityIdea");
 
       card.innerHTML =
-        '<div class="media-card-top">' + logoHtml + '<div><h3><a href="media/?id=' + escapeAttr(item.id) + '">' + escapeHtml(name) + "</a></h3>" +
+        '<div class="media-card-top">' + logoHtml + '<div><h3><a href="' + mediaLink(item.id) + '">' + escapeHtml(name) + "</a></h3>" +
         '<div class="location">' + escapeHtml(locationText) + "</div></div></div>" +
         (badgesHtml ? '<div class="badge-row">' + badgesHtml + "</div>" : "") +
         (description ? '<p class="desc">' + escapeHtml(description) + "</p>" : "") +

@@ -259,7 +259,7 @@
 
   function getLogoSvg() {
     if (!logoSvgPromise) {
-      logoSvgPromise = fetch("img/promedia-wordmark.svg")
+      logoSvgPromise = fetch("/img/promedia-wordmark.svg")
         .then(function (response) {
           if (!response.ok) throw new Error("Logo unavailable");
           return response.text();
