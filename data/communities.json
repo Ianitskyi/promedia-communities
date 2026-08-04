@@ -988,8 +988,8 @@
     "descriptionEn": "Professional media outlet about books and publishing in Ukraine, founded by Oksana Khmelovska and Iryna Baturevych — analysis and materials from industry practitioners, sustained by readers' donations."
   },
   {
-    "id": "грунт",
-    "name": "Грунт",
+    "id": "ґрунт",
+    "name": "Ґрунт",
     "region": "Київ",
     "regionSlug": "kyiv-city",
     "city": "Київ",
@@ -1156,29 +1156,5 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=theukrainians.org&sz=128"
-  },
-  {
-    "id": "медіа-ґрунт",
-    "name": "медіа ҐРУНТ",
-    "region": "м. Київ",
-    "regionSlug": "kyiv-city",
-    "city": "Київ",
-    "website": "https://grnt.media/",
-    "description": "Медіа ҐРУНТ допомагає українцям реалізувати право на якісну, швидку та достовірну інформацію.",
-    "communityIdea": "",
-    "communityUrl": "https://base.monobank.ua/grntmedia",
-    "platform": "other",
-    "badges": {
-      "recommended": false,
-      "whitelist": false,
-      "jti": false
-    },
-    "tags": [
-      "warJournalism",
-      "culture"
-    ],
-    "status": "pending",
-    "example": false,
-    "contact": "tiplogotip188@gmail.com"
   }
 ]
