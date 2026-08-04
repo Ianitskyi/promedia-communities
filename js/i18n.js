@@ -542,6 +542,19 @@ function initLangToggle() {
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (btn.dataset.lang === getLang()) return;
+      const path = location.pathname;
+      const isRootUk = path === "/" || path === "/index.html";
+      const isRootEn = path === "/en/" || path === "/en/index.html";
+      if (isRootUk && btn.dataset.lang === "en") {
+        setLang("en");
+        location.href = "/en/";
+        return;
+      }
+      if (isRootEn && btn.dataset.lang === "uk") {
+        setLang("uk");
+        location.href = "/";
+        return;
+      }
       setLang(btn.dataset.lang);
       document.documentElement.lang = getLang();
       sync();
