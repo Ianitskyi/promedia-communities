@@ -869,7 +869,7 @@
   },
   {
     "id": "bihus",
-    "name": "BIHUS",
+    "name": "Bihus.Info",
     "region": "Київ",
     "regionSlug": "kyiv-city",
     "city": "Київ",
@@ -1134,5 +1134,27 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=texty.org.ua&sz=128"
+  },
+  {
+    "id": "the-ukrainians",
+    "name": "The Ukrainians",
+    "region": "Львів",
+    "regionSlug": "lviv",
+    "city": "Львів",
+    "website": "https://theukrainians.org/",
+    "description": "Медіа про важливе — глибокі інтерв’ю, репортажі та есеї про людей і суспільні зміни в Україні; існує з 2014 року завдяки підтримці спільноти читачів.",
+    "descriptionEn": "Media outlet about what matters — in-depth interviews, reportage, and essays about people and social change in Ukraine; running since 2014 thanks to its reader community.",
+    "communityIdea": "",
+    "communityUrl": "https://theukrainians.org/community",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=theukrainians.org&sz=128"
   }
 ]
