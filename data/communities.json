@@ -1237,12 +1237,16 @@
   },
   {
     "id": "the-ukrainians",
-    "name": "The Ukrainians",
-    "region": "Львів",
-    "regionEn": "Lviv",
+    "name": "The Ukrainians Media",
+    "region": "Львів, Київ",
+    "regionEn": "Lviv, Kyiv",
     "regionSlug": "lviv",
-    "city": "Львів",
-    "cityEn": "Lviv",
+    "regionSlugs": [
+      "lviv",
+      "kyiv-city"
+    ],
+    "city": "Львів, Київ",
+    "cityEn": "Lviv, Kyiv",
     "website": "https://theukrainians.org/",
     "description": "Медіа про важливе — глибокі інтерв’ю, репортажі та есеї про людей і суспільні зміни в Україні; існує з 2014 року завдяки підтримці спільноти читачів.",
     "descriptionEn": "Media outlet about what matters — in-depth interviews, reportage, and essays about people and social change in Ukraine; running since 2014 thanks to its reader community.",

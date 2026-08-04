@@ -26,6 +26,10 @@
     return "/media/?id=" + encodeURIComponent(id) + (getLang() === "en" ? "&lang=en" : "");
   }
 
+  function itemRegionSlugs(item) {
+    return item.regionSlugs && item.regionSlugs.length ? item.regionSlugs : [item.regionSlug];
+  }
+
   var oblastPaths = {};
   var oblastLabels = {};
 
@@ -145,7 +149,7 @@
   function render() {
     var preRegion = state.all.filter(matchesSearch).filter(matchesFilters);
     state.filtered = state.regionSlug
-      ? preRegion.filter(function (item) { return item.regionSlug === state.regionSlug; })
+      ? preRegion.filter(function (item) { return itemRegionSlugs(item).indexOf(state.regionSlug) !== -1; })
       : preRegion;
 
     renderMapCounts(preRegion);
@@ -166,7 +170,9 @@
     if (!Object.keys(oblastPaths).length) return;
     var counts = {};
     preRegion.forEach(function (item) {
-      counts[item.regionSlug] = (counts[item.regionSlug] || 0) + 1;
+      itemRegionSlugs(item).forEach(function (slug) {
+        counts[slug] = (counts[slug] || 0) + 1;
+      });
     });
     Object.keys(oblastPaths).forEach(function (slug) {
       var path = oblastPaths[slug];
@@ -242,11 +248,15 @@
   function setActive(id) {
     state.activeId = id;
     var item = state.all.find(function (i) { return i.id === id; });
-    if (item && oblastPaths[item.regionSlug]) {
-      var path = oblastPaths[item.regionSlug];
-      path.classList.add("pulse");
-      path.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
-      setTimeout(function () { path.classList.remove("pulse"); }, 1200);
+    if (item) {
+      itemRegionSlugs(item).forEach(function (slug) {
+        var path = oblastPaths[slug];
+        if (!path) return;
+        path.classList.add("pulse");
+        setTimeout(function () { path.classList.remove("pulse"); }, 1200);
+      });
+      var firstPath = oblastPaths[itemRegionSlugs(item)[0]];
+      if (firstPath) firstPath.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
     }
     Array.from(document.querySelectorAll(".media-card")).forEach(function (el) {
       el.classList.toggle("active", el.dataset.id === id);
