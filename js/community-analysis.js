@@ -14,15 +14,11 @@
       analysis: {
         eyebrow: "Практикум",
         title: "Сім питань для аналізу спільноти медіа",
-        lede: "Заповніть відповіді, сформуйте PDF, роздрукуйте його або надішліть собі на пошту.",
+        lede: "Заповніть відповіді та завантажте PDF.",
         fields: {
           name: {
             label: "Назва медіа або спільноти",
             placeholder: "Наприклад: спільнота читачів місцевого медіа"
-          },
-          email: {
-            label: "Email для листа собі",
-            placeholder: "you@example.com"
           }
         },
         questions: {
@@ -36,8 +32,6 @@
         },
         actions: {
           download: "Завантажити PDF",
-          email: "PDF + лист собі",
-          print: "Друк / PDF",
           reset: "Очистити"
         },
         status: {
@@ -45,8 +39,6 @@
           empty: "Заповніть принаймні назву спільноти або одну відповідь.",
           building: "Формую PDF...",
           downloaded: "PDF сформовано. Якщо файл не відкрився автоматично, перевірте завантаження браузера.",
-          shared: "PDF передано у вікно надсилання.",
-          mailFallback: "PDF завантажено. Відкриваю лист: додайте завантажений PDF як вкладення.",
           printFallback: "Не вдалося сформувати PDF автоматично, відкриваю версію для друку.",
           popupBlocked: "Браузер заблокував вікно друку. Дозвольте спливні вікна для цього сайту.",
           reset: "Форму очищено."
@@ -59,10 +51,6 @@
           emptyAnswer: "Не заповнено",
           footer: "Підготовлено за допомогою інструмента ГО «ПроМедіа»",
           filePrefix: "analiz-spilnoty"
-        },
-        mail: {
-          subject: "Аналіз спільноти",
-          body: "Вітаю! Додаю PDF-файл з аналізом спільноти. Якщо файл не прикріпився автоматично, додайте завантажений PDF вручну."
         }
       }
     },
@@ -73,15 +61,11 @@
       analysis: {
         eyebrow: "Worksheet",
         title: "Seven Questions for Media Community Analysis",
-        lede: "Fill in your answers, generate a PDF, print it, or email it to yourself.",
+        lede: "Fill in your answers and download the PDF.",
         fields: {
           name: {
             label: "Media outlet or community name",
             placeholder: "For example: a local media reader community"
-          },
-          email: {
-            label: "Email for sending it to yourself",
-            placeholder: "you@example.com"
           }
         },
         questions: {
@@ -95,8 +79,6 @@
         },
         actions: {
           download: "Download PDF",
-          email: "PDF + email draft",
-          print: "Print / PDF",
           reset: "Clear"
         },
         status: {
@@ -104,8 +86,6 @@
           empty: "Add at least the community name or one answer.",
           building: "Building the PDF...",
           downloaded: "The PDF is ready. If it did not open automatically, check your browser downloads.",
-          shared: "The PDF has been passed to the sharing window.",
-          mailFallback: "The PDF has been downloaded. Opening an email draft: attach the downloaded PDF manually.",
           printFallback: "Automatic PDF generation failed, so I am opening a print-ready version.",
           popupBlocked: "The browser blocked the print window. Allow pop-ups for this site.",
           reset: "The form has been cleared."
@@ -118,10 +98,6 @@
           emptyAnswer: "Not filled in",
           footer: "Prepared with the NGO ProMedia tool",
           filePrefix: "community-analysis"
-        },
-        mail: {
-          subject: "Community analysis",
-          body: "Hello! I am attaching the PDF file with my community analysis. If the file was not attached automatically, please attach the downloaded PDF manually."
         }
       }
     }
@@ -136,11 +112,8 @@
     if (!els.form) return;
 
     els.name = document.getElementById("analysis-community-name");
-    els.email = document.getElementById("analysis-email");
     els.status = document.getElementById("analysis-status");
     els.download = document.getElementById("analysis-download-pdf");
-    els.share = document.getElementById("analysis-share-pdf");
-    els.print = document.getElementById("analysis-print");
     els.reset = document.getElementById("analysis-reset");
     els.textareas = Array.prototype.slice.call(els.form.querySelectorAll("textarea"));
 
@@ -194,15 +167,6 @@
     });
 
     els.download.addEventListener("click", downloadPdf);
-    els.share.addEventListener("click", sharePdf);
-    els.print.addEventListener("click", function () {
-      var data = collectData();
-      if (!hasContent(data)) {
-        setStatus(readText("analysis.status.empty"), "error");
-        return;
-      }
-      openPrintView(data);
-    });
 
     els.reset.addEventListener("click", function () {
       els.form.reset();
@@ -214,8 +178,7 @@
 
   function collectData() {
     var data = {
-      communityName: els.name.value.trim(),
-      email: els.email.value.trim()
+      communityName: els.name.value.trim()
     };
     QUESTION_KEYS.forEach(function (key) {
       var input = els.form.elements[key];
@@ -242,7 +205,6 @@
       if (!raw) return;
       var data = JSON.parse(raw);
       if (data.communityName) els.name.value = data.communityName;
-      if (data.email) els.email.value = data.email;
       QUESTION_KEYS.forEach(function (key) {
         if (data[key] && els.form.elements[key]) els.form.elements[key].value = data[key];
       });
@@ -323,48 +285,6 @@
       })
       .catch(function (err) {
         console.error(err);
-        setStatus(readText("analysis.status.printFallback"), "error");
-        openPrintView(data);
-      });
-  }
-
-  function sharePdf() {
-    var data = collectData();
-    if (!hasContent(data)) {
-      setStatus(readText("analysis.status.empty"), "error");
-      return;
-    }
-
-    setStatus(readText("analysis.status.building"));
-    ensurePdfMake()
-      .then(getLogoSvg)
-      .then(function (logoSvg) {
-        return new Promise(function (resolve) {
-          window.pdfMake.createPdf(buildPdfDefinition(data, logoSvg)).getBlob(resolve);
-        });
-      })
-      .then(function (blob) {
-        var name = fileName(data);
-        if (window.File && navigator.canShare && navigator.share) {
-          var file = new File([blob], name, { type: "application/pdf" });
-          if (navigator.canShare({ files: [file] })) {
-            return navigator.share({
-              files: [file],
-              title: readText("analysis.mail.subject"),
-              text: readText("analysis.mail.body")
-            }).then(function () {
-              setStatus(readText("analysis.status.shared"), "success");
-            });
-          }
-        }
-
-        downloadBlob(blob, name);
-        openMailDraft(data);
-        setStatus(readText("analysis.status.mailFallback"), "success");
-      })
-      .catch(function (err) {
-        console.error(err);
-        openMailDraft(data);
         setStatus(readText("analysis.status.printFallback"), "error");
         openPrintView(data);
       });
@@ -477,24 +397,6 @@
       answersHtml +
       '<p class="footer">' + escapeHtml(readText("analysis.pdf.footer")) + "</p>" +
       "</body></html>";
-  }
-
-  function openMailDraft(data) {
-    var email = data.email ? encodeURIComponent(data.email) : "";
-    var subject = encodeURIComponent(readText("analysis.mail.subject") + (data.communityName ? ": " + data.communityName : ""));
-    var body = encodeURIComponent(readText("analysis.mail.body"));
-    window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" + body;
-  }
-
-  function downloadBlob(blob, name) {
-    var url = URL.createObjectURL(blob);
-    var link = document.createElement("a");
-    link.href = url;
-    link.download = name;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
   }
 
   function fileName(data) {
