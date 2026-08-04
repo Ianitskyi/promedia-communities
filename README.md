@@ -56,8 +56,10 @@ python -m http.server 8080
   "name": "Назва медіа",
   "nameEn": "English name",        // опційно — якщо не задано, на EN-версії сайту показується "name" без перекладу
   "region": "Львівська область",   // текст, що показується на картці
+  "regionEn": "Lviv Oblast",       // опційно — якщо не задано, на EN-версії сайту показується "region" без перекладу
   "regionSlug": "lviv",            // id області на SVG-карті — англ./укр. назви обох мов у js/i18n.js (oblasts.*)
   "city": "Львів",
+  "cityEn": "Lviv",                // опційно, той самий принцип, що й regionEn
   "website": "https://example.com",
   "description": "Короткий опис медіа (1-2 речення).",
   "descriptionEn": "English translation.", // опційно — якщо не задано, на EN-версії сайту показується "description" без перекладу

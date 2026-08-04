@@ -121,7 +121,7 @@
   function matchesSearch(item) {
     var q = state.search.trim().toLowerCase();
     if (q) {
-      var hay = (item.name + " " + (item.nameEn || "") + " " + item.city + " " + item.region).toLowerCase();
+      var hay = (item.name + " " + (item.nameEn || "") + " " + item.city + " " + item.region + " " + (item.cityEn || "") + " " + (item.regionEn || "")).toLowerCase();
       if (hay.indexOf(q) === -1) return false;
     }
     return true;
@@ -208,7 +208,9 @@
       var logoHtml = item.logo
         ? '<img class="media-logo" src="' + escapeAttr(item.logo) + '" alt="" loading="lazy" onerror="this.remove()" />'
         : "";
-      var locationText = item.city === item.region ? item.city : item.city + ", " + item.region;
+      var locCity = localized(item, "city");
+      var locRegion = localized(item, "region");
+      var locationText = locCity === locRegion ? locCity : locCity + ", " + locRegion;
       var name = localized(item, "name");
       var description = localized(item, "description");
       var communityIdea = localized(item, "communityIdea");

@@ -64,7 +64,9 @@
     var logoHtml = item.logo
       ? '<img class="media-detail-logo" src="' + escapeAttr(item.logo) + '" alt="" loading="lazy" onerror="this.remove()" />'
       : "";
-    var locationText = item.city === item.region ? item.city : item.city + ", " + item.region;
+    var locCity = localized(item, "city");
+    var locRegion = localized(item, "region");
+    var locationText = locCity === locRegion ? locCity : locCity + ", " + locRegion;
 
     container.innerHTML =
       '<div class="media-detail-card">' +
