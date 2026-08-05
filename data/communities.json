@@ -1262,5 +1262,29 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=theukrainians.org&sz=128"
+  },
+  {
+    "id": "divoche-media",
+    "name": "DIVOCHE.MEDIA",
+    "region": "Київ",
+    "regionEn": "Kyiv",
+    "regionSlug": "kyiv-city",
+    "city": "Київ",
+    "cityEn": "Kyiv",
+    "website": "https://divoche.media/",
+    "description": "Незалежний жіночий онлайн-журнал — виріс із проєкту The Devochki (2013), перезапущений під нинішньою назвою в березні 2022 року; простір для жіночих історій без інвесторів і впливу на редакційну політику.",
+    "descriptionEn": "Independent women's online magazine — grew out of The Devochki project (2013), relaunched under its current name in March 2022; a space for women's stories, with no investors or influence over editorial policy.",
+    "communityIdea": "",
+    "communityUrl": "https://divoche.media/support/",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=divoche.media&sz=128"
   }
 ]
