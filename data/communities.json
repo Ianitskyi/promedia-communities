@@ -176,7 +176,7 @@
     "city": "Черкаси",
     "cityEn": "Cherkasy",
     "website": "https://18000.com.ua/",
-    "description": "Незалежне прогресивне медіа Черкас — новини, аналітика, розслідування та подкасти; фінансово підтримується громадською організацією «Черкаський ІТ Кластер».",
+    "description": "Незалежне медіа з Черкас, відоме своїми антикорупційними розслідуваннями, аналітикою, подкастами та відеоінтерв’ю.",
     "communityIdea": "",
     "communityUrl": "https://18000.com.ua/donate/",
     "platform": "website",
@@ -191,7 +191,7 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=18000.com.ua&sz=128",
-    "descriptionEn": "Independent progressive media outlet of Cherkasy — news, analysis, investigations, and podcasts; financially supported by the NGO “Cherkasy IT Cluster.”"
+    "descriptionEn": "Independent media outlet from Cherkasy, known for its anti-corruption investigations, analysis, podcasts, and video interviews."
   },
   {
     "id": "махала",
