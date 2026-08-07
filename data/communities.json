@@ -1291,21 +1291,25 @@
     "id": "репортер",
     "name": "Репортер",
     "region": "Івано-Франківська область",
+    "regionEn": "Ivano-Frankivsk Oblast",
     "regionSlug": "ivano-frankivsk",
     "city": "Івано-Франківськ",
-    "website": "report.if.ua",
-    "description": "25 років «Репортер» розповідає історії Івано-Франківська та Прикарпаття. Публікації “Репортера” допомагають приймати рішення, надихають, спонукають до дії або саморозвитку, додають корисних знань. Основне завдання – здобути корисну для цільової аудиторії інформацію й викласти її – цікаво, оперативно та якомога повніше. \nНаш головний капітал — це ваша довіра. Ваша підтримка — це не просто донат, це можливість для нас частіше виїжджати у віддалені громади, фіксувати унікальні людські історії та піднімати важливі для громад теми. \nСтаючи частиною Спільноти, ви інвестуєте у чесну розмову про те, якими є і якими будуть Франківськ та громади Прикарпаття.",
+    "cityEn": "Ivano-Frankivsk",
+    "website": "https://report.if.ua/",
+    "description": "25 років «Репортер» розповідає історії Івано-Франківська та Прикарпаття. Публікації “Репортера” допомагають приймати рішення, надихають, спонукають до дії або саморозвитку, додають корисних знань. Основне завдання – здобути корисну для цільової аудиторії інформацію й викласти її – цікаво, оперативно та якомога повніше. Наш головний капітал — це ваша довіра. Ваша підтримка — це не просто донат, це можливість для нас частіше виїжджати у віддалені громади, фіксувати унікальні людські історії та піднімати важливі для громад теми. Стаючи частиною Спільноти, ви інвестуєте у чесну розмову про те, якими є і якими будуть Франківськ та громади Прикарпаття.",
     "communityIdea": "",
     "communityUrl": "https://report.if.ua/spilnota-reportera/",
-    "platform": "other",
+    "platform": "website",
     "badges": {
       "recommended": true,
       "whitelist": false,
       "jti": false
     },
     "tags": [],
-    "status": "pending",
+    "status": "approved",
     "example": false,
-    "contact": "surovska.olya@gmail.com"
+    "contact": "surovska.olya@gmail.com",
+    "descriptionEn": "For over 25 years, “Reporter” has been telling the stories of Ivano-Frankivsk and the wider Prykarpattia region — publications that help readers make decisions, inspire action, and add useful knowledge. Support means investing in an honest conversation about what Frankivsk and the region's communities are, and will become.",
+    "logo": "https://www.google.com/s2/favicons?domain=report.if.ua&sz=128"
   }
 ]
