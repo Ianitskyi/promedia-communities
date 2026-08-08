@@ -20,7 +20,11 @@ const I18N = {
       eyebrow: "Каталог і карта медіаспільнот",
       title: "Медійні спільноти України",
       ledeHtml: "Зібрали видання, що спираються на підтримку читачів та залишають матеріали у відкритому доступі. Вони не ховають статті під замок (paywall), а залучають гроші однодумців задля досягнення спільної мети (membership). Більше читайте у розділі «<a href=\"#about-communities\">Що таке медійна спільнота</a>».",
-      stat: "{total} медіаспільнот у каталозі"
+      stat: {
+        one: "{count} медіаспільнота у каталозі",
+        few: "{count} медіаспільноти у каталозі",
+        many: "{count} медіаспільнот у каталозі"
+      }
     },
     explainer: {
       eyebrow: "Довідка",
@@ -211,7 +215,10 @@ const I18N = {
       eyebrow: "Catalog and map of media communities",
       title: "Media Communities of Ukraine",
       ledeHtml: "We've gathered outlets that rely on reader support and keep their content freely accessible. They don't lock articles behind a paywall — instead, they raise money from like-minded supporters to pursue a shared goal (membership). Read more in the “<a href=\"#about-communities\">What is a media community</a>” section.",
-      stat: "{total} media communities in the catalog"
+      stat: {
+        one: "{count} media community in the catalog",
+        many: "{count} media communities in the catalog"
+      }
     },
     explainer: {
       eyebrow: "Guide",
@@ -489,6 +496,28 @@ function t(key, vars) {
     }
   }
   return str;
+}
+
+// UA: 1 медіаспільнота / 2-4 медіаспільноти / 5-20, 0 медіаспільнот (форми — key.one/few/many)
+// EN: forms.one / forms.many (форма "one" лише для n === 1)
+function tPlural(key, n, vars) {
+  const forms = tRaw(key);
+  if (forms == null) return key;
+  let form;
+  if (getLang() === "uk") {
+    const mod10 = n % 10, mod100 = n % 100;
+    form = mod10 === 1 && mod100 !== 11 ? forms.one
+      : mod10 >= 2 && mod10 <= 4 && !(mod100 >= 12 && mod100 <= 14) ? forms.few
+      : forms.many;
+  } else {
+    form = n === 1 ? forms.one : forms.many;
+  }
+  if (form == null) return key;
+  const allVars = Object.assign({ count: n }, vars);
+  for (const [k, v] of Object.entries(allVars)) {
+    form = form.split(`{${k}}`).join(v);
+  }
+  return form;
 }
 
 // Дозволяє прийти з promedia.report (чи ratings.promedia.report) з ?lang=en

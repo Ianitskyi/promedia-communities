@@ -161,7 +161,7 @@
     var heroStat = document.getElementById("hero-stat");
     if (heroStat) {
       heroStat.textContent = state.all.length
-        ? t("hero.stat", { total: state.all.length })
+        ? tPlural("hero.stat", state.all.length)
         : "";
     }
   }
