@@ -564,7 +564,7 @@
     "city": "Суми",
     "cityEn": "Sumy",
     "website": "https://cukr.city/",
-    "description": "Місцеве онлайн-медіа Сум, офіційно зареєстроване Нацрадою — новини та історії про місто з метою зробити Суми містом, з якого не хочеться виїжджати.",
+    "description": "Онлайн-медіа, що розповідає про людей та речі, які роблять Суми місцем сили. Ми ділимося тими історіями, які надихають людей жити і творити в нашому місті.",
     "communityIdea": "",
     "communityUrl": "https://club.cukr.city/join",
     "platform": "website",
@@ -577,7 +577,7 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=cukr.city&sz=128",
-    "descriptionEn": "Local online media outlet of Sumy, officially registered with the National Council — news and stories about the city with the aim of making Sumy a city people don't want to leave."
+    "descriptionEn": "An online media outlet telling the stories of people and things that make Sumy a place of power. We share the stories that inspire people to live and create in our city."
   },
   {
     "id": "сєвєродонецьк-онлайн",
