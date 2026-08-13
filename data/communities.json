@@ -1311,5 +1311,30 @@
     "contact": "surovska.olya@gmail.com",
     "descriptionEn": "For over 25 years, “Reporter” has been telling the stories of Ivano-Frankivsk and the wider Prykarpattia region — publications that help readers make decisions, inspire action, and add useful knowledge. Support means investing in an honest conversation about what Frankivsk and the region's communities are, and will become.",
     "logo": "https://www.google.com/s2/favicons?domain=report.if.ua&sz=128"
+  },
+  {
+    "id": "shotam",
+    "name": "ШоТам",
+    "nameEn": "ShoTam",
+    "region": "Київ",
+    "regionEn": "Kyiv",
+    "regionSlug": "kyiv-city",
+    "city": "Київ",
+    "cityEn": "Kyiv",
+    "website": "https://shotam.info",
+    "description": "Українське медіа позитивних новин — розповідає історії успіху, змін і людяності на тлі війни; засноване 2017 року громадською організацією «Криголам».",
+    "descriptionEn": "Ukrainian outlet of positive news — telling stories of success, change, and humanity amid the war; founded in 2017 by the NGO \"Kryholam\".",
+    "communityIdea": "",
+    "communityUrl": "https://shotam.info/subscribe",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=shotam.info&sz=128"
   }
 ]
