@@ -303,7 +303,7 @@
     "communityUrl": "https://gre4ka.info/subscribe/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false
     },
