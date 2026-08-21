@@ -1336,5 +1336,30 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=shotam.info&sz=128"
+  },
+  {
+    "id": "linza-media",
+    "name": "Лінза.Медіа",
+    "nameEn": "Linza.Media",
+    "region": "Хмельницький",
+    "regionEn": "Khmelnytskyi",
+    "regionSlug": "khmelnytskyi",
+    "city": "Хмельницький",
+    "cityEn": "Khmelnytskyi",
+    "website": "https://linza.in.ua/",
+    "description": "Медіа про і для людей Хмельниччини — місцеві новини, репортажі та історії міста й регіону.",
+    "descriptionEn": "Media by and for the people of Khmelnytskyi region — local news, reportage, and stories about the city and region.",
+    "communityIdea": "",
+    "communityUrl": "https://base.monobank.ua/12mo2bKhLakVwc#subscriptions",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=linza.in.ua&sz=128"
   }
 ]
