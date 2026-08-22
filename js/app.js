@@ -40,10 +40,19 @@
   var oblastLabels = {};
 
   var NAME_OVERRIDES_EN = {
+    "МикВісті": "MykVisti",
     "Суспільне Новини": "Suspilne News",
     "Громадське": "Hromadske",
+    "Громадське радіо": "Hromadske Radio",
     "Українська правда": "Ukrainska Pravda",
+    "Східний Варіант": "Skhidnyi Variant",
     "Думская": "Dumskaya",
+    "ЛЮК": "Liuk",
+    "Полтавська хвиля": "Poltavska Khvylia",
+    "Вільне радіо": "Vilne Radio",
+    "Слобідський край": "Slobidskyi Krai",
+    "Перший Криворізький": "Pershyi Kryvorizkyi",
+    "Сєвєродонецьк онлайн": "Sievierodonetsk Online",
     "Точка доступу": "Tochka Dostupu"
   };
 
@@ -350,7 +359,7 @@
       "ю": "iu", "я": "ia"
     };
     return String(value || "").replace(/[А-ЩЬЮЯҐЄІЇа-щьюяґєії]/g, function (char) {
-      return map[char] || char;
+      return Object.prototype.hasOwnProperty.call(map, char) ? map[char] : char;
     });
   }
 
