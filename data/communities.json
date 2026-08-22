@@ -1361,5 +1361,29 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=linza.in.ua&sz=128"
+  },
+  {
+    "id": "soda-media",
+    "name": "SODA",
+    "region": "Запоріжжя",
+    "regionEn": "Zaporizhzhia",
+    "regionSlug": "zaporizhia",
+    "city": "Запоріжжя",
+    "cityEn": "Zaporizhzhia",
+    "website": "https://www.soda.zp.ua/",
+    "description": "Перше медіа рішень Запоріжжя — засноване 2023 року трьома запорізькими журналістками; шукає відповіді на суспільно важливі питання для мешканців міста та області.",
+    "descriptionEn": "Zaporizhzhia's first solutions-journalism outlet — founded in 2023 by three local journalists; seeks answers to socially important questions for residents of the city and region.",
+    "communityIdea": "",
+    "communityUrl": "https://base.monobank.ua/CupXqzMBKZiGq5#subscriptions",
+    "platform": "website",
+    "badges": {
+      "recommended": true,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=soda.zp.ua&sz=128"
   }
 ]
