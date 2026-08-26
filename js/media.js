@@ -68,6 +68,18 @@
     var locRegion = localized(item, "region");
     var locationText = locCity === locRegion ? locCity : locCity + ", " + locRegion;
 
+    var membersHtml = "";
+    if (item.communityMembersCount) {
+      var isNa = item.communityMembersCount === "NA";
+      var membersLine = escapeHtml(tRaw("members.label")) + ": " +
+        (isNa ? escapeHtml(t("members.na")) : escapeHtml(item.communityMembersCount));
+      if (!isNa && item.communityMembersAsOf) {
+        membersLine += " (" + escapeHtml(t("members.asOf", { date: item.communityMembersAsOf })) +
+          ", " + escapeHtml(tRaw("members.selfReported")) + ")";
+      }
+      membersHtml = '<p class="members-stat">' + membersLine + "</p>";
+    }
+
     container.innerHTML =
       '<div class="media-detail-card">' +
       '<div class="media-detail-top">' + logoHtml + '<div><h1>' + escapeHtml(name) + "</h1>" +
@@ -75,6 +87,7 @@
       (badgesHtml ? '<div class="badge-row">' + badgesHtml + "</div>" : "") +
       (description ? '<p class="desc">' + escapeHtml(description) + "</p>" : "") +
       (communityIdea ? '<p class="idea">' + escapeHtml(communityIdea) + "</p>" : "") +
+      membersHtml +
       '<div class="card-links">' +
       '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.subscribe")) + "</a>" +
       '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.website")) + "</a>" +

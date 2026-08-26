@@ -11,6 +11,7 @@
     "description": "Незалежне онлайн-медіа Миколаївщини — перше офіційно зареєстроване Нацрадою онлайн-медіа регіону; аудиторія охоплює Миколаївську, Херсонську та Одеську області.",
     "communityIdea": "",
     "communityUrl": "https://nikvesti.com/donate",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -35,6 +36,8 @@
     "description": "Незалежна розмовна радіостанція, заснована 2013 року журналістами, які відмовилися миритися з цензурою; веде мовлення у 7 регіонах України на FM та в інтернеті.",
     "communityIdea": "",
     "communityUrl": "https://hromadske.radio/donate",
+    "communityMembersCount": "85",
+    "communityMembersAsOf": "2026-08-26",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -59,6 +62,7 @@
     "description": "Медіа про Бахмут і для його мешканців, засноване 2015 року — висвітлює життя міста, допомогу переселенцям і ситуацію на фронті.",
     "communityIdea": "",
     "communityUrl": "https://bahmut.in.ua/donat/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -83,6 +87,7 @@
     "description": "Незалежне онлайн-видання про Донеччину й Луганщину, яке з 2020 року видає громадська організація «Наш дім — Слов'янськ», а редакцію складають журналісти з цих регіонів.",
     "communityIdea": "",
     "communityUrl": "https://v-variant.com.ua/ua/membership/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -107,6 +112,7 @@
     "description": "Незалежне видання Кропивницького — продовження проєкту «Точка доступу» (з 2014 року); висвітлює рішення влади та їх вплив на громаду, готує розслідування на суспільно важливі теми.",
     "communityIdea": "",
     "communityUrl": "https://dostyp.com.ua/spilnota/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -131,6 +137,7 @@
     "description": "Незалежне онлайн-медіа про Харків, засноване 2015 року — висвітлює міську культуру та процеси (від архітектури до корупції), об'єднуючи спільноту активних харків'ян.",
     "communityIdea": "",
     "communityUrl": "https://lyuk.media/donate/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -155,6 +162,7 @@
     "description": "Суспільно-політичне інтернет-видання Херсонщини, засноване 2012 року; серед засновників — активістка й політикиня Катерина Гандзюк.",
     "communityIdea": "",
     "communityUrl": "https://most.ks.ua/donate/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -179,6 +187,7 @@
     "description": "Незалежне медіа з Черкас, відоме своїми антикорупційними розслідуваннями, аналітикою, подкастами та відеоінтерв’ю.",
     "communityIdea": "",
     "communityUrl": "https://18000.com.ua/donate/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -205,6 +214,7 @@
     "description": "Регіональне медіа, що висвітлює життя трьох районів півдня Одещини; цифрове продовження газети «Дружба», яка виходить понад 60 років, і не фінансується владою чи бізнесом.",
     "communityIdea": "",
     "communityUrl": "https://mahala.com.ua/pidtrymayte-mahala/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -229,6 +239,7 @@
     "description": "Незалежне медіа Полтави й області для активних людей та підприємців — довші корисні тексти з різними точками зору замість «хайпових» новин.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/8T1qcHACat9r2K#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -253,6 +264,7 @@
     "description": "Незалежне харківське медіа (з 2015 року), що після 2022-го висвітлює воєнні злочини на Харківщині й відновлення громад; лауреат Local Media Innovation Award, член мережі фактчекерів IFCN.",
     "communityIdea": "",
     "communityUrl": "https://gwaramedia.com/members/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -277,6 +289,7 @@
     "description": "Одна з найпопулярніших медіаплатформ Херсонщини, яка продовжувала інформувати мешканців навіть під час окупації Херсона.",
     "communityIdea": "",
     "communityUrl": "https://vgoru.org/support-us",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -301,6 +314,7 @@
     "description": "Онлайн-медіа про Кропивницький та область (з 2008 року) — антикорупційні теми, суди, держзакупівлі й земельні питання.",
     "communityIdea": "",
     "communityUrl": "https://gre4ka.info/subscribe/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -325,6 +339,7 @@
     "description": "Провідне онлайн-медіа Первомайської громади на Миколаївщині — новини та історії про місцевих жителів і цікаві місця.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/kLCm7updfChme#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -349,6 +364,7 @@
     "description": "Харківська медіагрупа, що об'єднує новинний сайт, радіостанцію й освітні проєкти — «голос українського Харкова» про війну, переселенців і культуру.",
     "communityIdea": "",
     "communityUrl": "https://spilnota.nakypilo.ua/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -373,6 +389,7 @@
     "description": "Загальнонаціональна мережа гіперлокальних медіа на франшизній основі (CID Media Group) — діє у дев'яти областях України, включно з Волинською.",
     "communityIdea": "",
     "communityUrl": "https://druzi.rayon.in.ua/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -397,6 +414,7 @@
     "description": "Незалежне репортерське медіа про війну Росії проти України, засноване фотографом і репортером Андрієм Дубчаком — репортажі з лінії фронту.",
     "communityIdea": "",
     "communityUrl": "https://frontliner.ua/pidtrymaty-media-frontliner/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -423,6 +441,7 @@
     "description": "Медіа Донеччини — «вотчдог розвитку регіону», що контролює дії влади й висвітлює хроніку війни; три роки поспіль на Мапі рекомендованих медіа ІМІ.",
     "communityIdea": "",
     "communityUrl": "https://freeradio.com.ua/community/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -447,6 +466,7 @@
     "description": "Незалежне суспільно-політичне видання, засноване 2011 року в Луганську; після окупації міста редакція релокувалась і нині висвітлює Луганську та Донецьку області.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/ANwiZ3whMccPTT#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -471,6 +491,7 @@
     "description": "Інформаційний сайт Слов'янська про місто, їжу, бізнес і культуру; повністю перейшов на українську мову 2019-го, редакція релокована до Чернівців після 2022-го.",
     "communityIdea": "",
     "communityUrl": "https://sense.ngo/donate",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -495,6 +516,7 @@
     "description": "Українськомовний медіабренд Харківщини — найстаріша газета області (з 1917 року) та мультимедійний сайт для інформаційної підтримки громад під час війни.",
     "communityIdea": "",
     "communityUrl": "https://www.slk.kh.ua/community.html",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -519,6 +541,7 @@
     "description": "Онлайн-видання про Жовті Води на Дніпропетровщині за підтримки Агенції медіарозвитку «Або» — новини та історії про людей і місто.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/DrWy3MN11mRZfe",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -543,6 +566,7 @@
     "description": "Найбільше незалежне медіа Кривого Рогу, зареєстроване Національною радою з питань телебачення і радіомовлення.",
     "communityIdea": "",
     "communityUrl": "https://1kr.ua/ua/donate.html",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -567,6 +591,7 @@
     "description": "Онлайн-медіа, що розповідає про людей та речі, які роблять Суми місцем сили. Ми ділимося тими історіями, які надихають людей жити і творити в нашому місті.",
     "communityIdea": "",
     "communityUrl": "https://club.cukr.city/join",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -591,6 +616,7 @@
     "description": "Портал для мешканців Сєвєродонецька від однойменної громадської організації — новини й корисна інформація для переселенців і тих, хто підтримує зв'язок із рідним містом.",
     "communityIdea": "",
     "communityUrl": "https://secure.wayforpay.com/sub/sd.ua.donate",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -615,6 +641,7 @@
     "description": "Перше в Україні суспільно-політичне медіа у форматі журналістики рішень (з 2018 року); виходить українською, англійською та російською мовами.",
     "communityIdea": "",
     "communityUrl": "https://rubryka.com/donate/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -639,6 +666,7 @@
     "description": "Незалежне медіа про Закарпаття (з 2013 року) — від лайфстайл-журналу до соціально важливого видання про людей, культуру й спадщину регіону.",
     "communityIdea": "",
     "communityUrl": "https://varosh.com.ua/community/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -663,6 +691,7 @@
     "description": "Онлайн-медіа про українську музичну сцену, переважно андеграундну (з 2004 року) — новини, рецензії, аналітика й путівник жанрами.",
     "communityIdea": "",
     "communityUrl": "https://www.neformat.com.ua/support",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -689,6 +718,7 @@
     "description": "Незалежне онлайн-медіа про Донеччину, Луганщину та Приазов'я, створене журналістами з Маріуполя, Києва та Харкова — фронт, окупація, деокуповані території й переселенці.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/6vxph8uiJRitw6#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -713,6 +743,7 @@
     "description": "Онлайн-видання про людей і території на кордоні Сумщини — наслідки війни, відновлення, спецпроєкти й подкасти.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/CQhL6ULTzSXtjj#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -737,6 +768,7 @@
     "description": "Районна газета Ізюмщини з історією від бюлетеня 1919 року; онлайн-портал належить трудовому колективу редакції, відновив роботу після деокупації Ізюма.",
     "communityIdea": "",
     "communityUrl": "https://obrii.com.ua/pidtrymaty",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -761,6 +793,7 @@
     "description": "Незалежне харківське онлайн-видання без банерної реклами (архів з 2002 року), що фінансується грантами міжнародних донорів — люди, міські події, політика й культура.",
     "communityIdea": "",
     "communityUrl": "https://mediaport.ua/community/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -785,6 +818,7 @@
     "description": "Онлайн- та FM-радіостанція для харків'ян (92.2 FM у Харкові, Балаклії, Близнюках і Вовчанську) від медіагрупи «Накипіло» — місцеві новини, репортажі й розслідування.",
     "communityIdea": "",
     "communityUrl": "https://spilnota.nakypilo.ua/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -809,6 +843,7 @@
     "description": "Незалежне суспільно-політичне медіа про Дніпро, що засноване в 2024 році. Пишуть розслідування, а також показують Дніпро як мультикультурне, проєвропейське, проукраїнське місто.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/6EnqQDpo8DsgfW#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -833,6 +868,7 @@
     "description": "Незалежний онлайн-журнал про Дніпро (з серпня 2024 року) від команди колишнього проєкту KUST — новини, аналітика й колонки про політичні, соціальні та урбаністичні процеси.",
     "communityIdea": "",
     "communityUrl": "https://mistorichka.media/klub-ta-vplyv-mista-i-richky/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -857,6 +893,7 @@
     "description": "Медіа про Краматорськ та його мешканців, що після релокації працює з Коломиї — новини, відео й репортажі про місто та Донеччину.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/13GjnPd349yhMA#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -881,6 +918,7 @@
     "description": "Онлайн-видання про Чернігів (з жовтня 2024 року) від Чернігівської медіагрупи — без стрічки новин, натомість глибокі тексти, огляди, колонки й відео.",
     "communityIdea": "",
     "communityUrl": "https://pechera.info/club.html",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -905,6 +943,8 @@
     "description": "Громадська організація з Луцька (з 2017 року) — журналістські розслідування та новини переважно про Волинську область.",
     "communityIdea": "",
     "communityUrl": "https://sylapravdy.com/donate/",
+    "communityMembersCount": "18",
+    "communityMembersAsOf": "2026-06-01",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -931,6 +971,8 @@
     "description": "Незалежний антикорупційний центр (з 2013 року, спершу як «Наші гроші. Львів», з 2023-го — загальнонаціональний) — розслідування, дата-журналістика й фактчекінг.",
     "communityIdea": "",
     "communityUrl": "https://ngl.media/community/",
+    "communityMembersCount": "130+",
+    "communityMembersAsOf": "2025-02-25",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -957,6 +999,8 @@
     "description": "Антикорупційний розслідувальний проєкт, що виріс із телепрограми «Наші гроші з Денисом Бігусом»; редакційно незалежний, випускає щотижневі розслідування на YouTube.",
     "communityIdea": "",
     "communityUrl": "https://bihus.info/subscribe/",
+    "communityMembersCount": "2 174",
+    "communityMembersAsOf": "2026-08-26",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -983,6 +1027,7 @@
     "description": "Команда незалежних журналістів-розслідувачів на чолі з Анною Бабінець — корупційні злочини, гучні вбивства й воєнні злочини Росії; партнер мережі OCCRP в Україні.",
     "communityIdea": "",
     "communityUrl": "https://www.slidstvo.info/pidtrymaty/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1009,6 +1054,7 @@
     "description": "Незалежне медіа на кошти читачів (з 2020 року), що щодня простою мовою пояснює найважливіші новини науки на основі рецензованих наукових журналів.",
     "communityIdea": "",
     "communityUrl": "https://nauka.ua/support",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1035,6 +1081,7 @@
     "description": "Громадсько-культурний мультимедійний проєкт про Україну, заснований Богданом Логвиненком (з 2016 року) — документальні відео, тексти й книги про регіони, людей і культуру.",
     "communityIdea": "",
     "communityUrl": "https://www.ukrainer.net/10-rokiv/#donate-form",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1061,6 +1108,7 @@
     "description": "Професійне медіа про книжки й книговидання в Україні, засноване Оксаною Хмельовською та Іриною Батуревич — аналітика й матеріали від практиків, існує завдяки донатам читачів.",
     "communityIdea": "",
     "communityUrl": "https://chytomo.com/club-chytomo/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1087,6 +1135,7 @@
     "description": "Медіа про Україну з чіткою патріотичною позицією, що виникло як телеграм-канал «Україна оперативно» 24 лютого 2022 року, а з травня 2022-го працює як медіа «повільної журналістики».",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/grntmedia#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1111,6 +1160,7 @@
     "description": "Науково-популярна медіаплатформа (з 2015 року, спершу друкований журнал) — статті, подкасти, відео й лекції про науку і технології.",
     "communityIdea": "",
     "communityUrl": "https://www.kunsht.com.ua/registration",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1137,6 +1187,7 @@
     "description": "Медіа про історію української музики, яке по-сучасному оглядає мистецьке минуле нашої нації, обʼєднує ним різні покоління та формує відчуття гордості за свою країну.",
     "communityIdea": "Сплітаємо людей музикою та її історією.",
     "communityUrl": "https://base.monobank.ua/9Xzx4fziitEhfT?utm_content=link_in_bio&fbclid=PAdGRleASxxTRwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp7Xw1QuslnPWU8Adrwdnd_YDOIoPmtz-rmosTwTTFU6Mq54iXxPeJvJDHC83_aem_uvxVt-wtw63UNQtxJLHhbQ#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "other",
     "badges": {
       "recommended": false,
@@ -1166,6 +1217,7 @@
     "description": "Єдине розслідувальницьке незалежне онлайн-медіа Рівненщини — виникло на основі Рівненської агенції журналістських розслідувань «Четверта влада»; висвітлює антикорупційні теми та моніторить державні закупівлі.",
     "communityIdea": "Фінансова підтримка читачів забезпечує незалежність і розвиток редакції.",
     "communityUrl": "https://donate.4vlada.com/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1193,6 +1245,8 @@
     "description": "Англомовне видання, засноване в листопаді 2021 року журналістами, які звільнилися з Kyiv Post після конфлікту з власником; висвітлює новини України для міжнародної аудиторії, зокрема повномасштабну війну.",
     "communityIdea": "Учасники спільноти отримують ексклюзивну розсилку, доступ до Discord-спільноти, безрекламний перегляд сайту, запрошення на онлайн- та офлайн-події й уроки української мови.",
     "communityUrl": "https://kyivindependent.com/membership",
+    "communityMembersCount": "35 000+",
+    "communityMembersAsOf": "2026",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1222,6 +1276,7 @@
     "descriptionEn": "Independent data journalism and investigations outlet — analyzes statistics and builds interactive maps and investigations based on open data about the war, corruption, and social processes in Ukraine.",
     "communityIdea": "",
     "communityUrl": "https://texty.org.ua/p/support/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1252,6 +1307,7 @@
     "descriptionEn": "Media outlet about what matters — in-depth interviews, reportage, and essays about people and social change in Ukraine; running since 2014 thanks to its reader community.",
     "communityIdea": "",
     "communityUrl": "https://theukrainians.org/community",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1276,6 +1332,7 @@
     "descriptionEn": "Independent women's online magazine — grew out of The Devochki project (2013), relaunched under its current name in March 2022; a space for women's stories, with no investors or influence over editorial policy.",
     "communityIdea": "",
     "communityUrl": "https://divoche.media/support/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1299,6 +1356,7 @@
     "description": "25 років «Репортер» розповідає історії Івано-Франківська та Прикарпаття. Публікації “Репортера” допомагають приймати рішення, надихають, спонукають до дії або саморозвитку, додають корисних знань. Основне завдання – здобути корисну для цільової аудиторії інформацію й викласти її – цікаво, оперативно та якомога повніше. Наш головний капітал — це ваша довіра. Ваша підтримка — це не просто донат, це можливість для нас частіше виїжджати у віддалені громади, фіксувати унікальні людські історії та піднімати важливі для громад теми. Стаючи частиною Спільноти, ви інвестуєте у чесну розмову про те, якими є і якими будуть Франківськ та громади Прикарпаття.",
     "communityIdea": "",
     "communityUrl": "https://report.if.ua/spilnota-reportera/",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -1326,6 +1384,7 @@
     "descriptionEn": "Ukrainian outlet of positive news — telling stories of success, change, and humanity amid the war; founded in 2017 by the NGO \"Kryholam\".",
     "communityIdea": "",
     "communityUrl": "https://shotam.info/subscribe",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,
@@ -1351,6 +1410,7 @@
     "descriptionEn": "Media by and for the people of Khmelnytskyi region — local news, reportage, and stories about the city and region.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/12mo2bKhLakVwc#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": false,
@@ -1375,6 +1435,7 @@
     "descriptionEn": "Zaporizhzhia's first solutions-journalism outlet — founded in 2023 by three local journalists; seeks answers to socially important questions for residents of the city and region.",
     "communityIdea": "",
     "communityUrl": "https://base.monobank.ua/CupXqzMBKZiGq5#subscriptions",
+    "communityMembersCount": "NA",
     "platform": "website",
     "badges": {
       "recommended": true,

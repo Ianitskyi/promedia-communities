@@ -71,6 +71,12 @@ const I18N = {
       website: "Сайт медіа",
       example: "приклад — уточнюється"
     },
+    members: {
+      label: "Кількість учасників спільноти",
+      na: "дані не публічні",
+      asOf: "станом на {date}",
+      selfReported: "за даними самого видання"
+    },
     badges: {
       recommended: "Медіа на Мапі рекомендованих",
       whitelist: "Медіа у Білому списку",
@@ -264,6 +270,12 @@ const I18N = {
       subscribe: "Subscribe →",
       website: "Media website",
       example: "example — to be verified"
+    },
+    members: {
+      label: "Community members",
+      na: "not publicly available",
+      asOf: "as of {date}",
+      selfReported: "self-reported by the outlet"
     },
     badges: {
       recommended: "This media is on the Recommended Media Map",
