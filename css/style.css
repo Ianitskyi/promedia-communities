@@ -1156,6 +1156,43 @@ a.badge:hover {
   color: var(--ink);
 }
 
+.media-news {
+  background: var(--card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px 30px 26px;
+  margin-top: 18px;
+}
+
+.media-news h2 {
+  font-family: var(--serif);
+  font-size: 18px;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.media-news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.media-news-item a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+
+.media-news-item a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
 /* ---------- /research page ---------- */
 
 .research-section {

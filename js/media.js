@@ -12,8 +12,12 @@
     jti: "https://journalismtrustinitiative.org/"
   };
 
+  var NEWS_API_URL = "https://news.promedia.report/api/articles";
+
   var container = document.getElementById("media-detail");
   var currentItem = null;
+  var newsItems = null;
+  var newsRequested = false;
 
   function getIdFromUrl() {
     var params = new URLSearchParams(window.location.search);
@@ -78,7 +82,37 @@
       '<div class="card-links">' +
       '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.subscribe")) + "</a>" +
       '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.website")) + "</a>" +
-      "</div></div>";
+      "</div></div>" +
+      renderNewsSection();
+
+    if (!newsRequested) {
+      newsRequested = true;
+      loadNews(item.id);
+    }
+  }
+
+  function renderNewsSection() {
+    if (newsItems === null) return "";
+    if (!newsItems.length) return "";
+    var itemsHtml = newsItems.map(function (n) {
+      var title = getLang() === "en" && n.titleEn ? n.titleEn : n.title;
+      return '<li class="media-news-item"><a href="' + escapeAttr(n.url) + '" target="_blank" rel="noopener">' +
+        escapeHtml(title) + "</a></li>";
+    }).join("");
+    return '<div class="media-news"><h2>' + escapeHtml(t("media.newsTitle")) + "</h2>" +
+      '<ul class="media-news-list">' + itemsHtml + "</ul></div>";
+  }
+
+  function loadNews(id) {
+    fetch(NEWS_API_URL + "?mediaId=" + encodeURIComponent(id) + "&limit=6")
+      .then(function (r) { return r.ok ? r.json() : { items: [] }; })
+      .then(function (data) {
+        newsItems = (data && data.items) || [];
+        if (currentItem && currentItem.id === id) render();
+      })
+      .catch(function () {
+        newsItems = [];
+      });
   }
 
   function load() {

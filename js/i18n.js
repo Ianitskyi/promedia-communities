@@ -192,7 +192,10 @@ const I18N = {
       backToCatalog: "← До каталогу",
       loading: "Завантаження…",
       loadError: "Не вдалося завантажити дані.",
-      notFound: "Медіа не знайдено або ще не опубліковано."
+      notFound: "Медіа не знайдено або ще не опубліковано.",
+      newsTitle: "Новини про це медіа",
+      newsEmpty: "Поки що немає новин про це медіа.",
+      newsMore: "Усі новини →"
     },
     research: {
       eyebrow: "Дослідження ПроМедіа",
@@ -386,7 +389,10 @@ const I18N = {
       backToCatalog: "← Back to catalog",
       loading: "Loading…",
       loadError: "Failed to load data.",
-      notFound: "Media not found or not yet published."
+      notFound: "Media not found or not yet published.",
+      newsTitle: "News about this outlet",
+      newsEmpty: "No news about this outlet yet.",
+      newsMore: "All news →"
     },
     research: {
       eyebrow: "ProMedia research",
