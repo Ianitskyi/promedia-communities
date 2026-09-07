@@ -597,15 +597,7 @@ path.oblast.has-media.active:hover {
 }
 
 .oblast-badge {
-  opacity: 0;
   pointer-events: none;
-  transition: opacity .12s ease;
-}
-
-path.oblast:hover + .oblast-badge,
-path.oblast:focus-visible + .oblast-badge,
-path.oblast.active + .oblast-badge {
-  opacity: 1;
 }
 
 .oblast-badge-bg {
