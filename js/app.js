@@ -8,6 +8,34 @@
   var TAG_EMOJI = { investigative: "🔍", warJournalism: TRYZUB_SVG, culture: "🎨", science: "🔬" };
   // OBLAST_SLUGS — спільний глобальний масив, визначений у js/i18n.js
 
+  // Послідовна одноколірна шкала (світлий -> темний синій) для теплової карти.
+  // Ті самі відтінки, що й у легенді в css/style.css (.map-legend-bar).
+  var HEATMAP_RAMP = [
+    [0xcd, 0xe2, 0xfb], [0xb7, 0xd3, 0xf6], [0x9e, 0xc5, 0xf4], [0x86, 0xb6, 0xef],
+    [0x6d, 0xa7, 0xec], [0x55, 0x98, 0xe7], [0x39, 0x87, 0xe5], [0x2a, 0x78, 0xd6],
+    [0x25, 0x6a, 0xbf], [0x1c, 0x5c, 0xab], [0x18, 0x4f, 0x95], [0x10, 0x42, 0x81],
+    [0x0d, 0x36, 0x6b]
+  ];
+
+  function heatColor(t) {
+    var clamped = Math.max(0, Math.min(1, t));
+    var pos = clamped * (HEATMAP_RAMP.length - 1);
+    var i = Math.min(HEATMAP_RAMP.length - 2, Math.floor(pos));
+    var frac = pos - i;
+    var a = HEATMAP_RAMP[i], b = HEATMAP_RAMP[i + 1];
+    var rgb = [
+      Math.round(a[0] + (b[0] - a[0]) * frac),
+      Math.round(a[1] + (b[1] - a[1]) * frac),
+      Math.round(a[2] + (b[2] - a[2]) * frac)
+    ];
+    return rgb;
+  }
+
+  function heatTextColor(rgb) {
+    var luminance = (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255;
+    return luminance > 0.55 ? "#15142f" : "#ffffff";
+  }
+
   var state = {
     all: [],
     filtered: [],
@@ -120,6 +148,7 @@
           svg.appendChild(text);
           oblastLabels[slug] = text;
         });
+        buildMapLegend();
         render();
       })
       .catch(function (err) {
@@ -127,6 +156,34 @@
           '<p class="empty-state">' + escapeHtml(t("map.loadError")) + "</p>";
         console.error(err);
       });
+  }
+
+  function buildMapLegend() {
+    if (document.querySelector(".map-legend")) return;
+    var hint = document.getElementById("map-hint");
+    if (!hint || !hint.parentNode) return;
+
+    var legend = document.createElement("div");
+    legend.className = "map-legend";
+
+    var less = document.createElement("span");
+    less.className = "map-legend-label";
+    less.dataset.i18n = "map.legendLess";
+    less.textContent = t("map.legendLess");
+
+    var bar = document.createElement("span");
+    bar.className = "map-legend-bar";
+    bar.setAttribute("aria-hidden", "true");
+
+    var more = document.createElement("span");
+    more.className = "map-legend-label";
+    more.dataset.i18n = "map.legendMore";
+    more.textContent = t("map.legendMore");
+
+    legend.appendChild(less);
+    legend.appendChild(bar);
+    legend.appendChild(more);
+    hint.parentNode.insertBefore(legend, hint);
   }
 
   function updateMapTitles() {
@@ -214,6 +271,10 @@
         counts[slug] = (counts[slug] || 0) + 1;
       });
     });
+    var maxCount = 0;
+    Object.keys(counts).forEach(function (slug) {
+      if (counts[slug] > maxCount) maxCount = counts[slug];
+    });
     Object.keys(oblastPaths).forEach(function (slug) {
       var path = oblastPaths[slug];
       var count = counts[slug] || 0;
@@ -221,6 +282,18 @@
       path.classList.toggle("active", slug === state.regionSlug);
       var label = oblastLabels[slug];
       if (label) label.textContent = count > 0 ? count : "";
+      if (count > 0) {
+        // sqrt стискає розкид, щоб один регіон-виняток (напр. Київ) не
+        // "з'їдав" усю шкалу, залишаючи решту областей ледь відмінними.
+        var t = maxCount > 0 ? Math.sqrt(count / maxCount) : 0;
+        var rgb = heatColor(t);
+        var fill = "rgb(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + ")";
+        path.style.setProperty("--heat-fill", fill);
+        if (label) label.style.setProperty("--count-fill", heatTextColor(rgb));
+      } else {
+        path.style.removeProperty("--heat-fill");
+        if (label) label.style.removeProperty("--count-fill");
+      }
     });
   }
 
