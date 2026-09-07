@@ -31,11 +31,6 @@
     return rgb;
   }
 
-  function heatTextColor(rgb) {
-    var luminance = (0.299 * rgb[0] + 0.587 * rgb[1] + 0.114 * rgb[2]) / 255;
-    return luminance > 0.55 ? "#15142f" : "#ffffff";
-  }
-
   var state = {
     all: [],
     filtered: [],
@@ -140,13 +135,26 @@
           });
           oblastPaths[slug] = path;
 
+          var svgNS = "http://www.w3.org/2000/svg";
           var bbox = path.getBBox();
-          var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-          text.setAttribute("x", bbox.x + bbox.width / 2);
-          text.setAttribute("y", bbox.y + bbox.height / 2);
+          var cx = bbox.x + bbox.width / 2;
+          var cy = bbox.y + bbox.height / 2;
+
+          var badge = document.createElementNS(svgNS, "g");
+          badge.classList.add("oblast-badge");
+          var bg = document.createElementNS(svgNS, "rect");
+          bg.classList.add("oblast-badge-bg");
+          var text = document.createElementNS(svgNS, "text");
           text.classList.add("oblast-count");
-          svg.appendChild(text);
-          oblastLabels[slug] = text;
+          text.setAttribute("x", cx);
+          text.setAttribute("y", cy);
+          badge.appendChild(bg);
+          badge.appendChild(text);
+          // Вставляємо бейдж одразу після path (а не в кінець svg), щоб
+          // CSS-селектор `path.oblast:hover + .oblast-badge` бив у ціль.
+          path.parentNode.insertBefore(badge, path.nextSibling);
+
+          oblastLabels[slug] = { text: text, bg: bg, cx: cx, cy: cy };
         });
         buildMapLegend();
         render();
@@ -281,20 +289,38 @@
       path.classList.toggle("has-media", count > 0);
       path.classList.toggle("active", slug === state.regionSlug);
       var label = oblastLabels[slug];
-      if (label) label.textContent = count > 0 ? count : "";
       if (count > 0) {
         // sqrt стискає розкид, щоб один регіон-виняток (напр. Київ) не
         // "з'їдав" усю шкалу, залишаючи решту областей ледь відмінними.
         var t = maxCount > 0 ? Math.sqrt(count / maxCount) : 0;
         var rgb = heatColor(t);
-        var fill = "rgb(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + ")";
-        path.style.setProperty("--heat-fill", fill);
-        if (label) label.style.setProperty("--count-fill", heatTextColor(rgb));
+        path.style.setProperty("--heat-fill", "rgb(" + rgb[0] + "," + rgb[1] + "," + rgb[2] + ")");
       } else {
         path.style.removeProperty("--heat-fill");
-        if (label) label.style.removeProperty("--count-fill");
+      }
+      if (label) {
+        if (count > 0) {
+          label.text.textContent = count;
+          sizeBadge(label);
+        } else {
+          label.text.textContent = "";
+          label.bg.setAttribute("width", 0);
+          label.bg.setAttribute("height", 0);
+        }
       }
     });
+  }
+
+  function sizeBadge(label) {
+    var padX = 7, padY = 4;
+    var box = label.text.getBBox();
+    var width = box.width + padX * 2;
+    var height = box.height + padY * 2;
+    label.bg.setAttribute("x", label.cx - width / 2);
+    label.bg.setAttribute("y", label.cy - height / 2);
+    label.bg.setAttribute("width", width);
+    label.bg.setAttribute("height", height);
+    label.bg.setAttribute("rx", height / 2);
   }
 
   function renderList() {

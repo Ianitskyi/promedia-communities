@@ -596,23 +596,33 @@ path.oblast.has-media.active:hover {
   fill: var(--ink);
 }
 
+.oblast-badge {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .12s ease;
+}
+
+path.oblast:hover + .oblast-badge,
+path.oblast:focus-visible + .oblast-badge,
+path.oblast.active + .oblast-badge {
+  opacity: 1;
+}
+
+.oblast-badge-bg {
+  fill: #fff;
+  stroke: var(--border);
+  stroke-width: 1px;
+  filter: drop-shadow(0 2px 4px rgba(13, 12, 92, .22));
+}
+
 text.oblast-count {
   font-family: var(--sans);
   font-weight: 800;
-  font-size: 13px;
-  fill: var(--count-fill, var(--ink));
-  paint-order: stroke;
-  stroke: #fff;
-  stroke-width: 3px;
-  stroke-linejoin: round;
+  font-size: 15px;
+  fill: var(--text);
   text-anchor: middle;
   dominant-baseline: central;
   pointer-events: none;
-}
-
-path.oblast.active + text.oblast-count {
-  fill: #fff;
-  stroke: var(--ink);
 }
 
 .map-hint {

@@ -56,7 +56,7 @@ const I18N = {
     },
     map: {
       ariaLabel: "Контурна карта областей України",
-      hint: "Натисніть на область, щоб відфільтрувати список. Число всередині — кількість медіа.",
+      hint: "Наведіть на область, щоб побачити кількість медіа, або натисніть, щоб відфільтрувати список.",
       loadError: "Не вдалося завантажити карту.",
       legendLess: "менше медіа",
       legendMore: "більше медіа"
@@ -255,7 +255,7 @@ const I18N = {
     },
     map: {
       ariaLabel: "Outline map of Ukraine's oblasts",
-      hint: "Click an oblast to filter the list. The number inside is the media count.",
+      hint: "Hover an oblast to see its media count, or click it to filter the list.",
       loadError: "Failed to load the map.",
       legendLess: "fewer outlets",
       legendMore: "more outlets"
