@@ -1385,5 +1385,29 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=soda.zp.ua&sz=128"
+  },
+  {
+    "id": "море-людей",
+    "name": "Море Людей",
+    "region": "Одеса",
+    "regionEn": "Odesa",
+    "regionSlug": "odessa",
+    "city": "Одеса",
+    "cityEn": "Odesa",
+    "website": "https://moreliudei.media",
+    "description": "Незалежне локальне онлайн-медіа Одеси та Півдня України, засноване у 2023 році — новини, репортажі, інтерв'ю, фото- й відеоісторії про людей, місто, українську ідентичність Одеси, культуру, волонтерство та війну; одна з цілей редакції — руйнування російського/проросійського міфу про Одесу.",
+    "descriptionEn": "Independent local online media outlet covering Odesa and southern Ukraine, founded in 2023 — news, reportage, interviews, and photo/video stories about people, the city, Odesa's Ukrainian identity, culture, volunteering, and the war; one of its stated goals is dismantling the Russian/pro-Russian myth about Odesa.",
+    "communityIdea": "",
+    "communityUrl": "https://moreliudei.media/pidtrymka/",
+    "platform": "website",
+    "badges": {
+      "recommended": true,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=moreliudei.media&sz=128"
   }
 ]
