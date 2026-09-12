@@ -202,7 +202,7 @@
   }
 
   function loadData() {
-    fetch("/data/communities.json")
+    fetch("/data/communities.json?t=" + Date.now())
       .then(function (r) { return r.json(); })
       .then(function (data) {
         state.all = data.filter(function (item) { return item.status === "approved"; });

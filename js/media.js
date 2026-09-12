@@ -117,7 +117,7 @@
 
   function load() {
     var id = getIdFromUrl();
-    fetch("../data/communities.json")
+    fetch("../data/communities.json?t=" + Date.now())
       .then(function (r) { return r.json(); })
       .then(function (data) {
         currentItem = data.find(function (i) { return i.id === id && i.status === "approved"; }) || null;
