@@ -17,6 +17,8 @@
   --blue-tint: #e8f0fd;
   --purple: #7a3fc9;
   --purple-tint: #f1e8fd;
+  --teal: #0d8f8a;
+  --teal-tint: #e2f5f4;
   --radius-lg: 26px;
   --radius-md: 18px;
   --radius-sm: 12px;
@@ -753,6 +755,7 @@ a.badge:hover {
 .badge.recommended { background: var(--blue-tint); color: var(--blue); }
 .badge.whitelist { background: var(--green-tint); color: var(--green); }
 .badge.jti { background: var(--purple-tint); color: var(--purple); }
+.badge.registered { background: var(--teal-tint); color: var(--teal); }
 .badge.tag { background: var(--border); color: var(--text); }
 .tag-icon { vertical-align: -1px; flex-shrink: 0; }
 .badge.example { background: var(--accent-tint); color: var(--accent-dark); }

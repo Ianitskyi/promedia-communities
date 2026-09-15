@@ -46,8 +46,8 @@ const I18N = {
         aHtml: "Бо ці медіа пропонують підписку, а не спільноту. У випадку цих видань йдеться про платний доступ до основного контенту. А формування спільноти навколо медіа не передбачає, що доступ до ключових матеріалів видання платний. Можливий додатковий бонусний контент для членів спільноти, але сама ідея спільноти полягає в тому, що фанати медіа підтримують його діяльність для збільшення впливу."
       },
       q5: {
-        q: "Що означають позначки «рекомендоване», «білий список», «сертифіковане»?",
-        aHtml: "На картках медіа можна побачити позначки, які підтверджують довіру до видання:<br>🗺️ <strong>Рекомендоване медіа</strong> — видання входить до Мапи рекомендованих медіа, яку ведуть Детектор медіа та Інститут масової інформації (ІМІ): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>Білий список ЗМІ</strong> — видання входить до білого списку ІМІ, який визначає медіа з високими стандартами якості: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-сертифіковане</strong> — видання пройшло сертифікацію за стандартом Journalism Trust Initiative, що підтверджує прозорість і етичність редакційних процесів: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
+        q: "Що означають позначки «рекомендоване», «білий список», «сертифіковане», «зареєстроване»?",
+        aHtml: "На картках медіа можна побачити позначки, які підтверджують довіру до видання:<br>🗺️ <strong>Рекомендоване медіа</strong> — видання входить до Мапи рекомендованих медіа, яку ведуть Детектор медіа та Інститут масової інформації (ІМІ): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>Білий список ЗМІ</strong> — видання входить до білого списку ІМІ, який визначає медіа з високими стандартами якості: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-сертифіковане</strong> — видання пройшло сертифікацію за стандартом Journalism Trust Initiative, що підтверджує прозорість і етичність редакційних процесів: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a><br>🏛️ <strong>Зареєстроване в Нацраді</strong> — видання внесене до Державного реєстру суб'єктів інформаційної діяльності у сфері телебачення і радіомовлення, який веде Національна рада України з питань телебачення і радіомовлення: <a href=\"https://webportal.nrada.gov.ua/derzhavnyj-reyestr-sub-yektiv-informatsijnoyi-diyalnosti-u-sferi-telebachennya-i-radiomovlennya/\" target=\"_blank\" rel=\"noopener\">webportal.nrada.gov.ua</a>. Цей реєстр — не оцінка якості, а формальне підтвердження реєстрації суб'єкта."
       }
     },
     controls: {
@@ -76,7 +76,8 @@ const I18N = {
     badges: {
       recommended: "Медіа на Мапі рекомендованих",
       whitelist: "Медіа у Білому списку",
-      jti: "Сертифікат Journalism Trust Initiative"
+      jti: "Сертифікат Journalism Trust Initiative",
+      registered: "Зареєстроване в Нацраді"
     },
     tags: {
       investigative: "Розслідувальне медіа",
@@ -87,7 +88,8 @@ const I18N = {
     legend: {
       recommended: "медіа на Мапі рекомендованих",
       whitelist: "медіа у Білому списку",
-      jti: "сертифікат Journalism Trust Initiative"
+      jti: "сертифікат Journalism Trust Initiative",
+      registered: "зареєстроване в Держреєстрі Нацради"
     },
     addSection: {
       title: "Не знайшли своє медіа?",
@@ -245,8 +247,8 @@ const I18N = {
         aHtml: "Because these outlets offer a subscription, not a community. For them, it's about paid access to core content. Building a community around a media outlet doesn't mean charging for access to its key materials — there can be extra bonus content for community members, but the core idea of a community is that fans support the outlet's work to help grow its impact."
       },
       q5: {
-        q: "What do the “recommended,” “white list,” and “certified” badges mean?",
-        aHtml: "Cards can show badges that confirm an outlet's credibility:<br>🗺️ <strong>Recommended media</strong> — listed on the Recommended Media Map run by Detector Media and the Institute of Mass Information (IMI): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>White list</strong> — included in IMI's white list of media with high quality standards: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-certified</strong> — certified under the Journalism Trust Initiative standard, confirming transparency and ethical editorial processes: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a>"
+        q: "What do the “recommended,” “white list,” “certified,” and “registered” badges mean?",
+        aHtml: "Cards can show badges that confirm an outlet's credibility:<br>🗺️ <strong>Recommended media</strong> — listed on the Recommended Media Map run by Detector Media and the Institute of Mass Information (IMI): <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>White list</strong> — included in IMI's white list of media with high quality standards: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI-certified</strong> — certified under the Journalism Trust Initiative standard, confirming transparency and ethical editorial processes: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a><br>🏛️ <strong>Registered with the National Council</strong> — listed in the State Registry of Entities Engaged in Information Activity in Television and Radio Broadcasting, maintained by Ukraine's National Council on Television and Radio Broadcasting (NRada): <a href=\"https://webportal.nrada.gov.ua/derzhavnyj-reyestr-sub-yektiv-informatsijnoyi-diyalnosti-u-sferi-telebachennya-i-radiomovlennya/\" target=\"_blank\" rel=\"noopener\">webportal.nrada.gov.ua</a>. This registry is a formal registration record, not a quality assessment."
       }
     },
     controls: {
@@ -275,7 +277,8 @@ const I18N = {
     badges: {
       recommended: "This media is on the Recommended Media Map",
       whitelist: "This media is on the White List",
-      jti: "Journalism Trust Initiative certified"
+      jti: "Journalism Trust Initiative certified",
+      registered: "Registered with the National Council (NRada)"
     },
     tags: {
       investigative: "Investigative media",
@@ -286,7 +289,8 @@ const I18N = {
     legend: {
       recommended: "this media is on the Recommended Media Map",
       whitelist: "this media is on the White List",
-      jti: "Journalism Trust Initiative certificate"
+      jti: "Journalism Trust Initiative certificate",
+      registered: "registered in the National Council's State Registry"
     },
     addSection: {
       title: "Didn't find your media?",

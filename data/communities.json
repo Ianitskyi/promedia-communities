@@ -15,7 +15,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": true
+      "jti": true,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -39,7 +40,8 @@
     "badges": {
       "recommended": true,
       "whitelist": true,
-      "jti": true
+      "jti": true,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -63,7 +65,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -87,7 +90,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -111,7 +115,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -135,7 +140,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -159,7 +165,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -183,7 +190,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "investigative"
@@ -209,7 +217,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -233,7 +242,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -257,7 +267,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": true
+      "jti": true,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -281,7 +292,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -305,7 +317,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -329,7 +342,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -353,7 +367,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -377,7 +392,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -401,7 +417,8 @@
     "badges": {
       "recommended": false,
       "whitelist": true,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "warJournalism"
@@ -427,7 +444,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -451,7 +469,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -475,7 +494,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": true
+      "jti": true,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -499,7 +519,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": true
+      "jti": true,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -523,7 +544,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -547,7 +569,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": true
+      "jti": true,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -571,7 +594,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -595,7 +619,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -619,7 +644,8 @@
     "badges": {
       "recommended": false,
       "whitelist": true,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -643,7 +669,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -667,7 +694,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "culture"
@@ -693,7 +721,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -717,7 +746,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -741,7 +771,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -765,7 +796,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -789,7 +821,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -813,7 +846,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -837,7 +871,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -861,7 +896,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -885,7 +921,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -909,7 +946,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "investigative"
@@ -935,7 +973,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "investigative"
@@ -961,7 +1000,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "investigative"
@@ -987,7 +1027,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "investigative"
@@ -1013,7 +1054,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "science"
@@ -1039,7 +1081,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "culture"
@@ -1065,7 +1108,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "culture"
@@ -1091,7 +1135,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1115,7 +1160,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "science"
@@ -1141,7 +1187,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "culture"
@@ -1170,7 +1217,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "investigative"
@@ -1197,7 +1245,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "warJournalism"
@@ -1226,7 +1275,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [
       "investigative"
@@ -1256,7 +1306,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1280,7 +1331,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1303,7 +1355,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1330,7 +1383,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": true
+      "jti": true,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1355,7 +1409,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1379,7 +1434,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1404,7 +1460,8 @@
     "badges": {
       "recommended": true,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
@@ -1428,7 +1485,8 @@
     "badges": {
       "recommended": false,
       "whitelist": false,
-      "jti": false
+      "jti": false,
+      "registered": false
     },
     "tags": [],
     "status": "approved",
