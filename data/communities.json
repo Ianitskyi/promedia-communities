@@ -1410,5 +1410,29 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=moreliudei.media&sz=128"
+  },
+  {
+    "id": "sebto-media",
+    "name": "SEBTO",
+    "region": "Львів",
+    "regionEn": "Lviv",
+    "regionSlug": "lviv",
+    "city": "Львів",
+    "cityEn": "Lviv",
+    "website": "https://sector.media/",
+    "description": "Sebto Media — незалежне українське медіа зі Львова, яке спеціалізується передусім на пояснювальній журналістиці та подкастах. Його основні тематичні напрями — суспільство, права людини, політика, культура, історія та повсякденне життя. Редакція позиціонує себе не як новинне медіа, а як видання, що відсіює інформаційний шум і пояснює контекст, причини та наслідки важливих явищ.",
+    "descriptionEn": "Sebto Media is an independent Ukrainian media outlet from Lviv that specializes primarily in explanatory journalism and podcasts. Its main topics include society, human rights, politics, culture, history, and everyday life. The editorial team positions itself not as a news outlet, but as a publication that filters out information noise and explains the context, causes, and consequences of important phenomena.",
+    "communityIdea": "",
+    "communityUrl": "https://base.monobank.ua/2WaFk3ejhegFTg",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=sector.media&sz=128"
   }
 ]
