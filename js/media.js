@@ -83,13 +83,36 @@
       '<div class="card-links">' +
       '<a class="primary" href="' + escapeAttr(item.communityUrl) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.subscribe")) + "</a>" +
       '<a href="' + escapeAttr(item.website) + '" target="_blank" rel="noopener">' + escapeHtml(t("card.website")) + "</a>" +
-      "</div></div>" +
+      "</div>" +
+      renderRegistryInfo(item) +
+      "</div>" +
       renderNewsSection();
 
     if (!newsRequested) {
       newsRequested = true;
       loadNews(item.id);
     }
+  }
+
+  function renderRegistryInfo(item) {
+    if (!item.badges || !item.badges.registered || !item.registryInfo) return "";
+    var info = item.registryInfo;
+    var rows = [];
+    if (info.legalName) rows.push([t("media.registry.legalName"), info.legalName]);
+    if (info.edrpou) rows.push([t("media.registry.edrpou"), info.edrpou]);
+    if (info.mediaId) rows.push([t("media.registry.mediaId"), info.mediaId]);
+    if (info.email) rows.push([t("media.registry.email"), info.email]);
+    if (!rows.length) return "";
+    var rowsHtml = rows.map(function (pair) {
+      return '<div class="registry-row"><span class="registry-label">' + escapeHtml(pair[0]) + "</span>" +
+        '<span class="registry-value">' + escapeHtml(pair[1]) + "</span></div>";
+    }).join("");
+    return '<div class="registry-info">' +
+      '<h2>' + escapeHtml(t("media.registry.title")) + "</h2>" +
+      rowsHtml +
+      '<a class="registry-source" href="' + escapeAttr(BADGE_LINKS.registered) + '" target="_blank" rel="noopener">' +
+      escapeHtml(t("media.registry.sourceLink")) + "</a>" +
+      "</div>";
   }
 
   function renderNewsSection() {

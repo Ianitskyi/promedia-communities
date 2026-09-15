@@ -41,13 +41,20 @@
       "recommended": true,
       "whitelist": true,
       "jti": true,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=hromadske.radio&sz=128",
-    "descriptionEn": "Independent talk radio station founded in 2013 by journalists who refused to tolerate censorship; broadcasts in 7 regions of Ukraine on FM and online."
+    "descriptionEn": "Independent talk radio station founded in 2013 by journalists who refused to tolerate censorship; broadcasts in 7 regions of Ukraine on FM and online.",
+    "registryInfo": {
+      "legalName": "ПІДПРИЄМСТВО ГРОМАДСЬКОЇ ОРГАНІЗАЦІЇ \"ГРОМАДСЬКЕ РАДІО\" \"ТЕЛЕРАДІОКОМПАНІЯ \"ГРОМАДСЬКЕ РАДІО\"",
+      "edrpou": "32046340",
+      "mediaId": "R40-06743",
+      "activity": "Онлайн-медіа",
+      "email": "office@hromadske.radio, trc@hromadskeradio.org"
+    }
   },
   {
     "id": "бахмут-in-ua",
@@ -66,13 +73,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=bahmut.in.ua&sz=128",
-    "descriptionEn": "Media outlet about and for the residents of Bakhmut, founded in 2015 — covers the city's life, support for displaced people, and the situation at the front."
+    "descriptionEn": "Media outlet about and for the residents of Bakhmut, founded in 2015 — covers the city's life, support for displaced people, and the situation at the front.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"БАХМУТСЬКА ФОРТЕЦЯ\"",
+      "edrpou": "39441990",
+      "mediaId": "R40-05578",
+      "activity": "Онлайн-медіа",
+      "email": "hromadskebahmut@gmail.com, vilnohirsk.in.ua@gmail.com"
+    }
   },
   {
     "id": "східний-варіант",
@@ -91,13 +105,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=v-variant.com.ua&sz=128",
-    "descriptionEn": "Independent online outlet covering Donetsk and Luhansk regions, published since 2020 by the NGO “Nash Dim — Sloviansk,” with a newsroom made up of journalists from these regions."
+    "descriptionEn": "Independent online outlet covering Donetsk and Luhansk regions, published since 2020 by the NGO “Nash Dim — Sloviansk,” with a newsroom made up of journalists from these regions.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"СХІДНИЙ ВАРІАНТ\"",
+      "edrpou": "41542402",
+      "mediaId": "R40-02255",
+      "activity": "Онлайн-медіа",
+      "email": "slavtown@gmail.com"
+    }
   },
   {
     "id": "доступ-медіа",
@@ -166,13 +187,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=most.ks.ua&sz=128",
-    "descriptionEn": "Socio-political online outlet of Kherson region, founded in 2012; among its founders was activist and politician Kateryna Handziuk."
+    "descriptionEn": "Socio-political online outlet of Kherson region, founded in 2012; among its founders was activist and politician Kateryna Handziuk.",
+    "registryInfo": {
+      "legalName": "НІКІТЕНКО СЕРГІЙ ВАЛЕРІЙОВИЧ",
+      "edrpou": "",
+      "mediaId": "R40-01085",
+      "activity": "Онлайн-медіа",
+      "email": ""
+    }
   },
   {
     "id": "18000",
@@ -191,7 +219,7 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "investigative"
@@ -199,7 +227,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=18000.com.ua&sz=128",
-    "descriptionEn": "Independent media outlet from Cherkasy, known for its anti-corruption investigations, analysis, podcasts, and video interviews."
+    "descriptionEn": "Independent media outlet from Cherkasy, known for its anti-corruption investigations, analysis, podcasts, and video interviews.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ЧЕРКАСЬКА ІНФОРМАЦІЙНА АГЕНЦІЯ 18000\"",
+      "edrpou": "42750224",
+      "mediaId": "R40-04807",
+      "activity": "Онлайн-медіа",
+      "email": "cherkasy18000@gmail.com"
+    }
   },
   {
     "id": "махала",
@@ -218,13 +253,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=mahala.com.ua&sz=128",
-    "descriptionEn": "Regional media outlet covering the life of three districts in southern Odesa region; a digital continuation of the “Druzhba” newspaper, published for over 60 years, and not funded by authorities or business."
+    "descriptionEn": "Regional media outlet covering the life of three districts in southern Odesa region; a digital continuation of the “Druzhba” newspaper, published for over 60 years, and not funded by authorities or business.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ВАЖЛИВО\"",
+      "edrpou": "44700882",
+      "mediaId": "R40-05368",
+      "activity": "Онлайн-медіа",
+      "email": "news.mahala@gmail.com"
+    }
   },
   {
     "id": "полтавська-хвиля",
@@ -243,13 +285,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=poltavawave.com.ua&sz=128",
-    "descriptionEn": "Independent media outlet for active people and entrepreneurs in Poltava and the region — longer, useful pieces with diverse viewpoints instead of “clickbait” news."
+    "descriptionEn": "Independent media outlet for active people and entrepreneurs in Poltava and the region — longer, useful pieces with diverse viewpoints instead of “clickbait” news.",
+    "registryInfo": {
+      "legalName": "ФІЗИЧНА ОСОБА-ПІДПРИЄМЕЦЬ УЛИБІН ВІТАЛІЙ АНАТОЛІЙОВИЧ",
+      "edrpou": "3300714834",
+      "mediaId": "R40-01058",
+      "activity": "Онлайн-медіа",
+      "email": "editor@sil.media"
+    }
   },
   {
     "id": "gwara-media",
@@ -268,13 +317,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": true,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=gwaramedia.com&sz=128",
-    "descriptionEn": "Independent Kharkiv media outlet (since 2015) that, after 2022, covers war crimes in Kharkiv region and community recovery; winner of the Local Media Innovation Award, member of the IFCN fact-checkers network."
+    "descriptionEn": "Independent Kharkiv media outlet (since 2015) that, after 2022, covers war crimes in Kharkiv region and community recovery; winner of the Local Media Innovation Award, member of the IFCN fact-checkers network.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ҐВАРА МЕДІА\"",
+      "edrpou": "40633556",
+      "mediaId": "R40-05341",
+      "activity": "Онлайн-медіа",
+      "email": "hello@gwaramedia.com"
+    }
   },
   {
     "id": "медіаплатформа-вгору",
@@ -293,13 +349,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=vgoru.org&sz=128",
-    "descriptionEn": "One of the most popular media platforms in Kherson region, which kept informing residents even during the occupation of Kherson."
+    "descriptionEn": "One of the most popular media platforms in Kherson region, which kept informing residents even during the occupation of Kherson.",
+    "registryInfo": {
+      "legalName": "БЛАГОДІЙНА ОРГАНІЗАЦІЯ \"ФОНД МИЛОСЕРДЯ ТА ЗДОРОВ'Я\"",
+      "edrpou": "01497439",
+      "mediaId": "R40-01561",
+      "activity": "Онлайн-медіа",
+      "email": "kovalenko.anna.fmz@gmail.com"
+    }
   },
   {
     "id": "гречка",
@@ -318,13 +381,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=gre4ka.info&sz=128",
-    "descriptionEn": "Online media about Kropyvnytskyi and the region (since 2008) — anti-corruption topics, courts, public procurement, and land issues."
+    "descriptionEn": "Online media about Kropyvnytskyi and the region (since 2008) — anti-corruption topics, courts, public procurement, and land issues.",
+    "registryInfo": {
+      "legalName": "ДЗЮБАК АНАСТАСІЯ СЕРГІЇВНА",
+      "edrpou": "",
+      "mediaId": "R40-02655",
+      "activity": "Онлайн-медіа",
+      "email": ""
+    }
   },
   {
     "id": "гард-city",
@@ -343,13 +413,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=thegard.city&sz=128",
-    "descriptionEn": "Leading online media outlet of the Pervomaisk community in Mykolaiv region — news and stories about local residents and interesting places."
+    "descriptionEn": "Leading online media outlet of the Pervomaisk community in Mykolaiv region — news and stories about local residents and interesting places.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ТЕЛЕРАДІОКОМПАНІЯ \"ВСЕСВІТ ПЛЮС\"",
+      "edrpou": "39833609",
+      "mediaId": "R40-02539",
+      "activity": "Онлайн-медіа",
+      "email": "v.honcharevskyi@tavrmedia.ua, fm.tvij.vsesvit@gmail.com"
+    }
   },
   {
     "id": "накіпело",
@@ -418,7 +495,7 @@
       "recommended": false,
       "whitelist": true,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "warJournalism"
@@ -426,7 +503,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.frontliner.com.ua&sz=128",
-    "descriptionEn": "Independent reporting outlet about Russia's war against Ukraine, founded by photographer and reporter Andrii Dubchak — reports from the front line."
+    "descriptionEn": "Independent reporting outlet about Russia's war against Ukraine, founded by photographer and reporter Andrii Dubchak — reports from the front line.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ФРОНТЛАЙНЕР\"",
+      "edrpou": "43841926",
+      "mediaId": "R40-05212",
+      "activity": "Онлайн-медіа",
+      "email": "DonbasFrontliner@gmail.com"
+    }
   },
   {
     "id": "вільне-радіо",
@@ -445,13 +529,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=freeradio.com.ua&sz=128",
-    "descriptionEn": "Media outlet of Donetsk region — a “watchdog” of the region's development that monitors the authorities' actions and covers the chronicle of the war; on IMI's Recommended Media Map for three years running."
+    "descriptionEn": "Media outlet of Donetsk region — a “watchdog” of the region's development that monitors the authorities' actions and covers the chronicle of the war; on IMI's Recommended Media Map for three years running.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ВІЛЬНЕ РАДІО\"",
+      "edrpou": "43354154",
+      "mediaId": "R40-06475",
+      "activity": "Онлайн-медіа",
+      "email": "info@freeradio.com.ua"
+    }
   },
   {
     "id": "трибун",
@@ -470,13 +561,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=tribun.com.ua&sz=128",
-    "descriptionEn": "Independent socio-political outlet founded in 2011 in Luhansk; after the city's occupation the newsroom relocated and now covers Luhansk and Donetsk regions."
+    "descriptionEn": "Independent socio-political outlet founded in 2011 in Luhansk; after the city's occupation the newsroom relocated and now covers Luhansk and Donetsk regions.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ТРИБУН\"",
+      "edrpou": "38820610",
+      "mediaId": "R40-05204",
+      "activity": "Онлайн-медіа",
+      "email": "info@tribun.com.ua"
+    }
   },
   {
     "id": "о6262",
@@ -495,13 +593,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": true,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.6262.com.ua&sz=128",
-    "descriptionEn": "Information site about Sloviansk covering the city, food, business, and culture; fully switched to Ukrainian in 2019, with the newsroom relocated to Chernivtsi after 2022."
+    "descriptionEn": "Information site about Sloviansk covering the city, food, business, and culture; fully switched to Ukrainian in 2019, with the newsroom relocated to Chernivtsi after 2022.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"МАЄ СЕНС\"",
+      "edrpou": "42077861",
+      "mediaId": "R40-05099",
+      "activity": "Онлайн-медіа",
+      "email": "make@sense.ngo"
+    }
   },
   {
     "id": "слобідський-край",
@@ -520,13 +625,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": true,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.slk.kh.ua&sz=128",
-    "descriptionEn": "Ukrainian-language media brand of Kharkiv region — the oblast's oldest newspaper (since 1917) and a multimedia site providing information support to communities during the war."
+    "descriptionEn": "Ukrainian-language media brand of Kharkiv region — the oblast's oldest newspaper (since 1917) and a multimedia site providing information support to communities during the war.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"СЛОБІДСЬКИЙ КРАЙ\"",
+      "edrpou": "21188137",
+      "mediaId": "R40-01162",
+      "activity": "Онлайн-медіа",
+      "email": "info22.slk@gmail.com"
+    }
   },
   {
     "id": "жовті-води-city",
@@ -545,13 +657,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=zhovtivody.city&sz=128",
-    "descriptionEn": "Online outlet about Zhovti Vody in Dnipropetrovsk region, supported by the “Abo” Media Development Agency — news and stories about the people and the city."
+    "descriptionEn": "Online outlet about Zhovti Vody in Dnipropetrovsk region, supported by the “Abo” Media Development Agency — news and stories about the people and the city.",
+    "registryInfo": {
+      "legalName": "ЄШТОКІН ПАВЛО ОЛЕКСАНДРОВИЧ",
+      "edrpou": "",
+      "mediaId": "R40-05644",
+      "activity": "Онлайн-медіа",
+      "email": ""
+    }
   },
   {
     "id": "перший-криворізький",
@@ -570,13 +689,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": true,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=1kr.ua&sz=128",
-    "descriptionEn": "The largest independent media outlet in Kryvyi Rih, registered with the National Council on Television and Radio Broadcasting."
+    "descriptionEn": "The largest independent media outlet in Kryvyi Rih, registered with the National Council on Television and Radio Broadcasting.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ПЕРШИЙ КРИВОРІЗЬКИЙ\"",
+      "edrpou": "42814413",
+      "mediaId": "R40-01168",
+      "activity": "Онлайн-медіа",
+      "email": "editor@1kr.ua"
+    }
   },
   {
     "id": "цукр",
@@ -595,13 +721,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=cukr.city&sz=128",
-    "descriptionEn": "An online media outlet telling the stories of people and things that make Sumy a place of power. We share the stories that inspire people to live and create in our city."
+    "descriptionEn": "An online media outlet telling the stories of people and things that make Sumy a place of power. We share the stories that inspire people to live and create in our city.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ЦУКР\"",
+      "edrpou": "39071110",
+      "mediaId": "R40-00971",
+      "activity": "Онлайн-медіа",
+      "email": "post@cukr.city"
+    }
   },
   {
     "id": "сєвєродонецьк-онлайн",
@@ -620,13 +753,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=sd.ua&sz=128",
-    "descriptionEn": "A portal for residents of Sievierodonetsk from the NGO of the same name — news and useful information for displaced people and those staying connected to their hometown."
+    "descriptionEn": "A portal for residents of Sievierodonetsk from the NGO of the same name — news and useful information for displaced people and those staying connected to their hometown.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"СЄВЄРОДОНЕЦЬК ОНЛАЙН\"",
+      "edrpou": "44667107",
+      "mediaId": "R40-06436",
+      "activity": "Онлайн-медіа",
+      "email": "info@sd.ua"
+    }
   },
   {
     "id": "рубрика",
@@ -645,13 +785,20 @@
       "recommended": false,
       "whitelist": true,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=rubryka.com&sz=128",
-    "descriptionEn": "Ukraine's first socio-political media outlet in the solutions journalism format (since 2018); published in Ukrainian, English, and Russian."
+    "descriptionEn": "Ukraine's first socio-political media outlet in the solutions journalism format (since 2018); published in Ukrainian, English, and Russian.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ІНФОРМАЦІЙНЕ АГЕНСТВО \"РУБРИКА\"",
+      "edrpou": "41869105",
+      "mediaId": "R40-02256",
+      "activity": "Онлайн-медіа",
+      "email": "a.f.rudenko@gmail.com"
+    }
   },
   {
     "id": "varosh",
@@ -670,13 +817,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=varosh.com.ua&sz=128",
-    "descriptionEn": "Independent media outlet about Zakarpattia (since 2013) — evolved from a lifestyle magazine into a socially important outlet about the region's people, culture, and heritage."
+    "descriptionEn": "Independent media outlet about Zakarpattia (since 2013) — evolved from a lifestyle magazine into a socially important outlet about the region's people, culture, and heritage.",
+    "registryInfo": {
+      "legalName": "ТУЖАНСЬКА РОСАНА ІВАНІВНА",
+      "edrpou": "",
+      "mediaId": "R40-03074",
+      "activity": "Онлайн-медіа",
+      "email": ""
+    }
   },
   {
     "id": "neformat",
@@ -722,13 +876,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=cxid.media&sz=128",
-    "descriptionEn": "Independent online media about Donetsk region, Luhansk region, and Pryazovia, created by journalists from Mariupol, Kyiv, and Kharkiv — front line, occupation, de-occupied territories, and displaced people."
+    "descriptionEn": "Independent online media about Donetsk region, Luhansk region, and Pryazovia, created by journalists from Mariupol, Kyiv, and Kharkiv — front line, occupation, de-occupied territories, and displaced people.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ТОЧКА СХОДУ\"",
+      "edrpou": "44808820",
+      "mediaId": "R40-05727",
+      "activity": "Онлайн-медіа",
+      "email": "tochka.shodu@gmail.com"
+    }
   },
   {
     "id": "kordon-media",
@@ -772,13 +933,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=obrii.com.ua&sz=128",
-    "descriptionEn": "District newspaper of the Izium area with a history going back to a 1919 bulletin; the online portal is owned by the newsroom's labor collective and resumed work after the de-occupation of Izium."
+    "descriptionEn": "District newspaper of the Izium area with a history going back to a 1919 bulletin; the online portal is owned by the newsroom's labor collective and resumed work after the de-occupation of Izium.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ОБРІЇ 1919\"",
+      "edrpou": "02476600",
+      "mediaId": "R30-01188",
+      "activity": "Друковане медіа",
+      "email": "obrii1919@gmail.com"
+    }
   },
   {
     "id": "медіапорт",
@@ -797,13 +965,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=mediaport.ua&sz=128",
-    "descriptionEn": "Independent Kharkiv online outlet with no banner ads (archive since 2002), funded by grants from international donors — people, city events, politics, and culture."
+    "descriptionEn": "Independent Kharkiv online outlet with no banner ads (archive since 2002), funded by grants from international donors — people, city events, politics, and culture.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"МЕДІАПОРТ 20\"",
+      "edrpou": "40342895",
+      "mediaId": "R40-06542",
+      "activity": "Онлайн-медіа",
+      "email": "mediaport.news@gmail.com"
+    }
   },
   {
     "id": "радіо-накипіло",
@@ -822,13 +997,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=radio.nakypilo.ua&sz=128",
-    "descriptionEn": "Online and FM radio station for Kharkiv residents (92.2 FM in Kharkiv, Balakliia, Blyzniuky, and Vovchansk) from the “Nakypilo” media group — local news, reports, and investigations."
+    "descriptionEn": "Online and FM radio station for Kharkiv residents (92.2 FM in Kharkiv, Balakliia, Blyzniuky, and Vovchansk) from the “Nakypilo” media group — local news, reports, and investigations.",
+    "registryInfo": {
+      "legalName": "ПРИВАТНЕ ПІДПРИЄМСТВО \"ТЕЛЕРАДІОКОМПАНІЯ \"ЕФІР-Р\"",
+      "edrpou": "22511741",
+      "mediaId": "R11-02138",
+      "activity": "Лінійне радіомовлення (аудіальне лінійне мовлення)",
+      "email": "radio.nakypilo@gmail.com, radio@nakypilo.ua"
+    }
   },
   {
     "id": "dnipro-media",
@@ -847,13 +1029,20 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.dnipro.media&sz=128",
-    "descriptionEn": "Independent socio-political media outlet about Dnipro, founded in 2024. They write investigations and portray Dnipro as a multicultural, pro-European, pro-Ukrainian city."
+    "descriptionEn": "Independent socio-political media outlet about Dnipro, founded in 2024. They write investigations and portray Dnipro as a multicultural, pro-European, pro-Ukrainian city.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"СВІДОМІ МІСТЯНИ\"",
+      "edrpou": "45848623",
+      "mediaId": "R40-05933",
+      "activity": "Онлайн-медіа",
+      "email": "mediadnipro@gmail.com"
+    }
   },
   {
     "id": "місто-і-річка",
@@ -872,13 +1061,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=mistorichka.media&sz=128",
-    "descriptionEn": "Independent online magazine about Dnipro (since August 2024) from the team behind the former KUST project — news, analysis, and columns on political, social, and urban processes."
+    "descriptionEn": "Independent online magazine about Dnipro (since August 2024) from the team behind the former KUST project — news, analysis, and columns on political, social, and urban processes.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"МІСТО І РІЧКА\"",
+      "edrpou": "45460781",
+      "mediaId": "R40-05698",
+      "activity": "Онлайн-медіа",
+      "email": "mistoirichka@gmail.com"
+    }
   },
   {
     "id": "kramatorsk-post",
@@ -897,13 +1093,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.kramatorskpost.com&sz=128",
-    "descriptionEn": "Media about Kramatorsk and its residents, working from Kolomyia after relocation — news, video, and reports about the city and Donetsk region."
+    "descriptionEn": "Media about Kramatorsk and its residents, working from Kolomyia after relocation — news, video, and reports about the city and Donetsk region.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"КРАМАТОРСЬК ПОСТ\"",
+      "edrpou": "43199207",
+      "mediaId": "R40-00969",
+      "activity": "Онлайн-медіа",
+      "email": "kramatorskpost@gmail.com"
+    }
   },
   {
     "id": "pechera-info",
@@ -922,13 +1125,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=pechera.info&sz=128",
-    "descriptionEn": "Online outlet about Chernihiv (since October 2024) from the Chernihiv media group — no news feed, instead in-depth pieces, reviews, columns, and video."
+    "descriptionEn": "Online outlet about Chernihiv (since October 2024) from the Chernihiv media group — no news feed, instead in-depth pieces, reviews, columns, and video.",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ЧМГ\"",
+      "edrpou": "35779428",
+      "mediaId": "R40-06409",
+      "activity": "Онлайн-медіа",
+      "email": "kseniabuh.cmg@gmail.com"
+    }
   },
   {
     "id": "центр-журналістських-розслідувань-сила-п",
@@ -947,7 +1157,7 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "investigative"
@@ -955,7 +1165,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=sylapravdy.com&sz=128",
-    "descriptionEn": "NGO from Lutsk (since 2017) — journalistic investigations and news mostly about Volyn region."
+    "descriptionEn": "NGO from Lutsk (since 2017) — journalistic investigations and news mostly about Volyn region.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ЦЕНТР ЖУРНАЛІСТСЬКИХ РОЗСЛІДУВАНЬ \"СИЛА ПРАВДИ\"",
+      "edrpou": "41673159",
+      "mediaId": "R40-05262",
+      "activity": "Онлайн-медіа",
+      "email": "cirpowertruth@gmail.com"
+    }
   },
   {
     "id": "ngl-media",
@@ -974,7 +1191,7 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "investigative"
@@ -982,7 +1199,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=ngl.media&sz=128",
-    "descriptionEn": "Independent anti-corruption center (since 2013, initially as “Nashi Hroshi. Lviv,” nationwide since 2023) — investigations, data journalism, and fact-checking."
+    "descriptionEn": "Independent anti-corruption center (since 2013, initially as “Nashi Hroshi. Lviv,” nationwide since 2023) — investigations, data journalism, and fact-checking.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ЛЬВІВСЬКА ГРУПА\"",
+      "edrpou": "38424816",
+      "mediaId": "R40-03083",
+      "activity": "Онлайн-медіа",
+      "email": "editor@ngl.media"
+    }
   },
   {
     "id": "bihus",
@@ -1001,7 +1225,7 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "investigative"
@@ -1009,7 +1233,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=bihus.info&sz=128",
-    "descriptionEn": "Anti-corruption investigative project that grew out of the TV program “Nashi Hroshi with Denys Bihus”; editorially independent, publishes weekly investigations on YouTube."
+    "descriptionEn": "Anti-corruption investigative project that grew out of the TV program “Nashi Hroshi with Denys Bihus”; editorially independent, publishes weekly investigations on YouTube.",
+    "registryInfo": {
+      "legalName": "БІГУС ДЕНИС СТАНІСЛАВОВИЧ",
+      "edrpou": "",
+      "mediaId": "R40-05808",
+      "activity": "Онлайн-медіа",
+      "email": ""
+    }
   },
   {
     "id": "слідство",
@@ -1028,7 +1259,7 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "investigative"
@@ -1036,7 +1267,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.slidstvo.info&sz=128",
-    "descriptionEn": "A team of independent investigative journalists led by Anna Babinets — corruption crimes, high-profile murders, and Russia's war crimes; partner of the OCCRP network in Ukraine."
+    "descriptionEn": "A team of independent investigative journalists led by Anna Babinets — corruption crimes, high-profile murders, and Russia's war crimes; partner of the OCCRP network in Ukraine.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"СЛІДСТВО.ІНФО\"",
+      "edrpou": "39593820",
+      "mediaId": "R40-03691",
+      "activity": "Онлайн-медіа",
+      "email": "slidstvo.info@gmail.com"
+    }
   },
   {
     "id": "наука-ua",
@@ -1082,7 +1320,7 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "culture"
@@ -1090,7 +1328,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.ukrainer.net&sz=128",
-    "descriptionEn": "Public and cultural multimedia project about Ukraine, founded by Bogdan Logvynenko (since 2016) — documentary videos, texts, and books about the country's regions, people, and culture."
+    "descriptionEn": "Public and cultural multimedia project about Ukraine, founded by Bogdan Logvynenko (since 2016) — documentary videos, texts, and books about the country's regions, people, and culture.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"УКРАЇНЕР\"",
+      "edrpou": "41613111",
+      "mediaId": "R40-05396",
+      "activity": "Онлайн-медіа",
+      "email": "mail@ukrainer.net"
+    }
   },
   {
     "id": "читомо",
@@ -1109,7 +1354,7 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "culture"
@@ -1117,7 +1362,14 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=chytomo.com&sz=128",
-    "descriptionEn": "Professional media outlet about books and publishing in Ukraine, founded by Oksana Khmelovska and Iryna Baturevych — analysis and materials from industry practitioners, sustained by readers' donations."
+    "descriptionEn": "Professional media outlet about books and publishing in Ukraine, founded by Oksana Khmelovska and Iryna Baturevych — analysis and materials from industry practitioners, sustained by readers' donations.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"КУЛЬТУРНО-ВИДАВНИЧИЙ ПРОЕКТ \"ЧИТОМО\"",
+      "edrpou": "41665276",
+      "mediaId": "R40-07331",
+      "activity": "Онлайн-медіа",
+      "email": "chytomo@gmail.com"
+    }
   },
   {
     "id": "ґрунт",
@@ -1136,13 +1388,20 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=grnt.media&sz=128",
-    "descriptionEn": "Media outlet about Ukraine with a clear patriotic stance, which started as the Telegram channel “Ukraine Operational” on February 24, 2022, and has worked as a “slow journalism” outlet since May 2022."
+    "descriptionEn": "Media outlet about Ukraine with a clear patriotic stance, which started as the Telegram channel “Ukraine Operational” on February 24, 2022, and has worked as a “slow journalism” outlet since May 2022.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"АГЕНЦІЯ \"ҐРУНТ.МЕДІА\"",
+      "edrpou": "44717325",
+      "mediaId": "R40-05325",
+      "activity": "Онлайн-медіа",
+      "email": "hello@grnt.media"
+    }
   },
   {
     "id": "куншт",
@@ -1218,7 +1477,7 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "investigative"
@@ -1227,7 +1486,14 @@
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=4vlada.com&sz=128",
     "descriptionEn": "The only investigative independent online media outlet of Rivne region — grew out of the Rivne Agency of Journalistic Investigations “Chetverta Vlada”; covers anti-corruption topics and monitors public procurement.",
-    "communityIdeaEn": "Readers' financial support ensures the newsroom's independence and development."
+    "communityIdeaEn": "Readers' financial support ensures the newsroom's independence and development.",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"АГЕНЦІЯ ЖУРНАЛІСТСЬКИХ РОЗСЛІДУВАНЬ \"ЧЕТВЕРТА ВЛАДА\"",
+      "edrpou": "34580596",
+      "mediaId": "R40-02767",
+      "activity": "Онлайн-медіа",
+      "email": "4vlada.com@gmail.com"
+    }
   },
   {
     "id": "kyiv-independent",
@@ -1276,14 +1542,21 @@
       "recommended": false,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [
       "investigative"
     ],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=texty.org.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=texty.org.ua&sz=128",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"АГЕНЦІЯ ЖУРНАЛІСТИКИ ДАНИХ\"",
+      "edrpou": "38095884",
+      "mediaId": "R40-06507",
+      "activity": "Онлайн-медіа",
+      "email": "texty.org.ua@gmail.com"
+    }
   },
   {
     "id": "the-ukrainians",
@@ -1356,14 +1629,21 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
     "contact": "surovska.olya@gmail.com",
     "descriptionEn": "For over 25 years, “Reporter” has been telling the stories of Ivano-Frankivsk and the wider Prykarpattia region — publications that help readers make decisions, inspire action, and add useful knowledge. Support means investing in an honest conversation about what Frankivsk and the region's communities are, and will become.",
-    "logo": "https://www.google.com/s2/favicons?domain=report.if.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=report.if.ua&sz=128",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"РЕДАКЦІЯ ГАЗЕТИ \"РЕПОРТЕР\"",
+      "edrpou": "31524848",
+      "mediaId": "R40-00979",
+      "activity": "Онлайн-медіа",
+      "email": "gazeta@report.if.ua"
+    }
   },
   {
     "id": "shotam",
@@ -1384,12 +1664,19 @@
       "recommended": true,
       "whitelist": false,
       "jti": true,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=shotam.info&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=shotam.info&sz=128",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"КРИГОЛАМ\"",
+      "edrpou": "41286989",
+      "mediaId": "R40-06898",
+      "activity": "Онлайн-медіа",
+      "email": "kryholam@gmail.com"
+    }
   },
   {
     "id": "linza-media",
@@ -1435,12 +1722,19 @@
       "recommended": true,
       "whitelist": false,
       "jti": false,
-      "registered": false
+      "registered": true
     },
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=soda.zp.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=soda.zp.ua&sz=128",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"СОДА\"",
+      "edrpou": "44868591",
+      "mediaId": "R40-06599",
+      "activity": "Онлайн-медіа",
+      "email": "soda.zp.ua@gmail.com"
+    }
   },
   {
     "id": "море-людей",

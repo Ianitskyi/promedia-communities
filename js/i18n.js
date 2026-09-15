@@ -199,7 +199,15 @@ const I18N = {
       notFound: "Медіа не знайдено або ще не опубліковано.",
       newsTitle: "Новини про це медіа",
       newsEmpty: "Поки що немає новин про це медіа.",
-      newsMore: "Усі новини →"
+      newsMore: "Усі новини →",
+      registry: {
+        title: "Реєстраційні дані",
+        legalName: "Юридична назва",
+        edrpou: "Код ЄДРПОУ/РНОКПП",
+        mediaId: "Ідентифікатор медіа",
+        email: "Контактний email",
+        sourceLink: "Перевірити в реєстрі НРада ↗"
+      }
     },
     research: {
       eyebrow: "Дослідження ПроМедіа",
@@ -400,7 +408,15 @@ const I18N = {
       notFound: "Media not found or not yet published.",
       newsTitle: "News about this outlet",
       newsEmpty: "No news about this outlet yet.",
-      newsMore: "All news →"
+      newsMore: "All news →",
+      registry: {
+        title: "Registration data",
+        legalName: "Legal name",
+        edrpou: "EDRPOU/RNOKPP code",
+        mediaId: "Media registry ID",
+        email: "Contact email",
+        sourceLink: "Verify in the NRada registry ↗"
+      }
     },
     research: {
       eyebrow: "ProMedia research",
