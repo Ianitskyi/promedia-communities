@@ -42,6 +42,9 @@
     var name = localized(item, "name");
     var description = localized(item, "description");
     var communityIdea = localized(item, "communityIdea");
+    var atlasUrl = item.registryInfo && item.registryInfo.mediaId
+      ? "https://atlas.promedia.report/" + (getLang() === "en" ? "en/" : "") + "?search=" + encodeURIComponent(item.registryInfo.mediaId)
+      : BADGE_LINKS.registered;
     document.title = name + " — " + t("media.titleSuffix");
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute("content", description || name);
@@ -50,7 +53,8 @@
     if (item.badges) {
       BADGE_KEYS.forEach(function (key) {
         if (item.badges[key]) {
-          badgesHtml += '<a class="badge ' + key + '" href="' + BADGE_LINKS[key] + '" target="_blank" rel="noopener">' +
+          var badgeLink = key === "registered" ? atlasUrl : BADGE_LINKS[key];
+          badgesHtml += '<a class="badge ' + key + '" href="' + badgeLink + '" target="_blank" rel="noopener">' +
             BADGE_EMOJI[key] + " " + escapeHtml(tRaw("badges." + key)) + "</a>";
         }
       });
@@ -110,8 +114,8 @@
     return '<div class="registry-info">' +
       '<h2>' + escapeHtml(t("media.registry.title")) + "</h2>" +
       rowsHtml +
-      '<a class="registry-source" href="' + escapeAttr(BADGE_LINKS.registered) + '" target="_blank" rel="noopener">' +
-      escapeHtml(t("media.registry.sourceLink")) + "</a>" +
+      '<a class="registry-source" href="' + escapeAttr(item.registryInfo.mediaId ? "https://atlas.promedia.report/" + (getLang() === "en" ? "en/" : "") + "?search=" + encodeURIComponent(item.registryInfo.mediaId) : BADGE_LINKS.registered) + '" target="_blank" rel="noopener">' +
+      escapeHtml(getLang() === "en" ? "Verify in Media Atlas ↗" : "Перевірити в Атласі Медіа ↗") + "</a>" +
       "</div>";
   }
 
