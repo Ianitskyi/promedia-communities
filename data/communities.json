@@ -1809,5 +1809,37 @@
     "status": "pending",
     "example": false,
     "contact": "0503904388 kotlyar.yul@gmail.com"
+  },
+  {
+    "id": "inform-zp-ua",
+    "name": "Inform.zp.ua",
+    "region": "Запоріжжя",
+    "regionEn": "Zaporizhzhia",
+    "regionSlug": "zaporizhia",
+    "city": "Запоріжжя",
+    "cityEn": "Zaporizhzhia",
+    "website": "https://inform.zp.ua/",
+    "description": "Регіональне онлайн-медіа про Запоріжжя та Запорізьку область. Видання щодня висвітлює місцеві новини, політику, економіку, культуру, суспільне життя, спорт і події, пов'язані з російсько-українською війною, а також готує власні інтерв'ю, репортажі, аналітичні матеріали та розслідування.",
+    "descriptionEn": "A regional online media outlet covering Zaporizhzhia city and region. It publishes daily local news, politics, economics, culture, public life, sports, and coverage of the Russo-Ukrainian war, along with original interviews, reportage, analysis, and investigations.",
+    "communityIdea": "",
+    "communityUrl": "https://base.monobank.ua/CKbqKKprWiyeeS#subscriptions",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": false,
+      "jti": false,
+      "registered": true
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=inform.zp.ua&sz=128",
+    "registryInfo": {
+      "legalName": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"РАДІОСТАНЦІЯ \"ВЕЛИКИЙ ЛУГ\"",
+      "edrpou": "22142344",
+      "mediaId": "L11-00419",
+      "activity": "Радіомовлення з використанням радіочастотного спектра — радіобренд «МАКСИМУМ» (101,8 FM, Запоріжжя); той самий власник, що й inform.zp.ua, окремого запису на сам сайт у реєстрі немає",
+      "email": "radiovlug@gmail.com"
+    }
   }
 ]

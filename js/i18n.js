@@ -205,6 +205,7 @@ const I18N = {
         legalName: "Юридична назва",
         edrpou: "Код ЄДРПОУ/РНОКПП",
         mediaId: "Ідентифікатор медіа",
+        activity: "Вид діяльності в реєстрі",
         email: "Контактний email",
         sourceLink: "Перевірити в реєстрі НРада ↗"
       }
@@ -414,6 +415,7 @@ const I18N = {
         legalName: "Legal name",
         edrpou: "EDRPOU/RNOKPP code",
         mediaId: "Media registry ID",
+        activity: "Registry activity type",
         email: "Contact email",
         sourceLink: "Verify in the NRada registry ↗"
       }

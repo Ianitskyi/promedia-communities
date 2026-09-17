@@ -105,6 +105,7 @@
     if (info.legalName) rows.push([t("media.registry.legalName"), info.legalName]);
     if (info.edrpou) rows.push([t("media.registry.edrpou"), info.edrpou]);
     if (info.mediaId) rows.push([t("media.registry.mediaId"), info.mediaId]);
+    if (info.activity) rows.push([t("media.registry.activity"), info.activity]);
     if (info.email) rows.push([t("media.registry.email"), info.email]);
     if (!rows.length) return "";
     var rowsHtml = rows.map(function (pair) {
