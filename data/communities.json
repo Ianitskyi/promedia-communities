@@ -1825,7 +1825,7 @@
     "communityUrl": "https://base.monobank.ua/CKbqKKprWiyeeS#subscriptions",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": false,
       "jti": false,
       "registered": true
