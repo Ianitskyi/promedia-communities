@@ -120,13 +120,25 @@
       "</div>";
   }
 
+  function formatNewsDate(value) {
+    if (!value) return "";
+    var date = new Date(value);
+    if (isNaN(date.getTime())) return "";
+    var isEnglish = getLang() === "en";
+    return new Intl.DateTimeFormat(isEnglish ? "en-GB" : "uk-UA", {
+      day: "2-digit", month: "2-digit", year: "numeric"
+    }).format(date);
+  }
+
   function renderNewsSection() {
     if (newsItems === null) return "";
     if (!newsItems.length) return "";
     var itemsHtml = newsItems.map(function (n) {
       var title = getLang() === "en" && n.titleEn ? n.titleEn : n.title;
-      return '<li class="media-news-item"><a href="' + escapeAttr(n.url) + '" target="_blank" rel="noopener">' +
-        escapeHtml(title) + "</a></li>";
+      var dateText = formatNewsDate(n.publishedAt);
+      var dateHtml = dateText ? '<span class="media-news-date">' + escapeHtml(dateText) + "</span>" : "";
+      return '<li class="media-news-item">' + dateHtml +
+        '<a href="' + escapeAttr(n.url) + '" target="_blank" rel="noopener">' + escapeHtml(title) + "</a></li>";
     }).join("");
     return '<div class="media-news"><h2>' + escapeHtml(t("media.newsTitle")) + "</h2>" +
       '<ul class="media-news-list">' + itemsHtml + "</ul></div>";
