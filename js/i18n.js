@@ -617,6 +617,14 @@ function initLangToggle() {
         return;
       }
       setLang(btn.dataset.lang);
+      // Якщо в URL явно вказано ?lang=, getLang() завжди читає саме його,
+      // ігноруючи localStorage — тому без оновлення URL клік по кнопці
+      // нічого не змінював на сторінках із таким параметром (напр. /media/).
+      if (new URLSearchParams(location.search).has("lang")) {
+        const url = new URL(location.href);
+        url.searchParams.set("lang", btn.dataset.lang);
+        history.replaceState(null, "", url);
+      }
       document.documentElement.lang = getLang();
       sync();
       applyStaticI18n();
