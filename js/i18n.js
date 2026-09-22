@@ -206,6 +206,7 @@ const I18N = {
         edrpou: "Код ЄДРПОУ/РНОКПП",
         mediaId: "Ідентифікатор медіа",
         activity: "Вид діяльності в реєстрі",
+        note: "Примітка",
         email: "Контактний email",
         sourceLink: "Перевірити в реєстрі НРада ↗"
       }
@@ -416,6 +417,7 @@ const I18N = {
         edrpou: "EDRPOU/RNOKPP code",
         mediaId: "Media registry ID",
         activity: "Registry activity type",
+        note: "Note",
         email: "Contact email",
         sourceLink: "Verify in the NRada registry ↗"
       }

@@ -59,6 +59,62 @@
     });
   }
 
+  // Реєстраційні дані (юрособа, вид діяльності) для англомовних відвідувачів:
+  // це не власні назви бренду, а стандартні юридичні форми/категорії реєстру,
+  // тож їх можна й варто перекладати, а не лишати сирою кирилицею.
+  var LEGAL_FORM_EN = {
+    "ПІДПРИЄМСТВО ГРОМАДСЬКОЇ ОРГАНІЗАЦІЇ": "Enterprise of the NGO",
+    "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ": "LLC",
+    "ПРИВАТНЕ АКЦІОНЕРНЕ ТОВАРИСТВО": "Private JSC",
+    "ФІЗИЧНА ОСОБА-ПІДПРИЄМЕЦЬ": "Individual Entrepreneur",
+    "БЛАГОДІЙНА ОРГАНІЗАЦІЯ": "Charitable Organization",
+    "ГРОМАДСЬКЕ ОБ'ЄДНАННЯ": "Public Union",
+    "ГРОМАДСЬКА ОРГАНІЗАЦІЯ": "NGO",
+    "КОМУНАЛЬНЕ ПІДПРИЄМСТВО": "Municipal Enterprise",
+    "ДОЧІРНЄ ПІДПРИЄМСТВО": "Subsidiary Enterprise",
+    "ПРИВАТНЕ ПІДПРИЄМСТВО": "Private Enterprise"
+  };
+
+  var ACTIVITY_EN = {
+    "Онлайн-медіа": "Online media",
+    "Друковане медіа": "Print media",
+    "Лінійне телевізійне мовлення (аудіовізуальне лінійне мовлення)": "Linear television broadcasting",
+    "Лінійне радіомовлення (аудіальне лінійне мовлення)": "Linear radio broadcasting",
+    "Радіомовлення з використанням радіочастотного спектра": "Radio broadcasting via radio-frequency spectrum",
+    "Телевізійне мовлення з використанням радіочастотного спектра": "Television broadcasting via radio-frequency spectrum",
+    "Провайдер аудіовізуальних сервісів": "Audiovisual services provider",
+    "Провайдер платформи спільного доступу до відео": "Video-sharing platform provider",
+    "Аудіальне медіа на замовлення (нелінійний аудіомедіа-сервіс)": "On-demand audio media (non-linear)",
+    "Аудіовізуальне медіа на замовлення (нелінійний медіа-сервіс)": "On-demand audiovisual media (non-linear)",
+    "Постачання електронних комунікаційних послуг для потреб мовлення": "Electronic communications services for broadcasting"
+  };
+
+  function toTitleCaseUkrainian(str) {
+    // Реєстр зберігає назви ВЕЛИКИМИ ЛІТЕРАМИ — а transliterateUkrainian
+    // мапить символи посимвольно й для суцільного капсу дає покручений
+    // результат (напр. "ЦІ" → "TsI" замість "Tsi"). Тож спершу приводимо
+    // до Title Case, а вже потім транслітеруємо.
+    return str.toLowerCase().replace(/(^|[\s"«»'-])([а-яіїєґ])/g, function (m, sep, ch) {
+      return sep + ch.toUpperCase();
+    });
+  }
+
+  function translateLegalName(name) {
+    if (!name) return "";
+    if (getLang() !== "en") return name;
+    var prefixes = Object.keys(LEGAL_FORM_EN).sort(function (a, b) { return b.length - a.length; });
+    var matched = prefixes.filter(function (p) { return name.indexOf(p) === 0; })[0];
+    var rest = matched ? name.slice(matched.length).trim() : name;
+    var restEn = transliterateUkrainian(toTitleCaseUkrainian(rest));
+    return matched ? LEGAL_FORM_EN[matched] + " " + restEn : restEn;
+  }
+
+  function translateActivity(activity) {
+    if (!activity) return "";
+    if (getLang() !== "en") return activity;
+    return ACTIVITY_EN[activity] || activity;
+  }
+
   var container = document.getElementById("media-detail");
   var currentItem = null;
   var newsItems = null;
@@ -152,10 +208,12 @@
     if (!item.badges || !item.badges.registered || !item.registryInfo) return "";
     var info = item.registryInfo;
     var rows = [];
-    if (info.legalName) rows.push([t("media.registry.legalName"), info.legalName]);
+    if (info.legalName) rows.push([t("media.registry.legalName"), translateLegalName(info.legalName)]);
     if (info.edrpou) rows.push([t("media.registry.edrpou"), info.edrpou]);
     if (info.mediaId) rows.push([t("media.registry.mediaId"), info.mediaId]);
-    if (info.activity) rows.push([t("media.registry.activity"), info.activity]);
+    if (info.activity) rows.push([t("media.registry.activity"), translateActivity(info.activity)]);
+    var note = getLang() === "en" && info.noteEn ? info.noteEn : info.note;
+    if (note) rows.push([t("media.registry.note"), note]);
     if (info.email) rows.push([t("media.registry.email"), info.email]);
     if (!rows.length) return "";
     var rowsHtml = rows.map(function (pair) {
