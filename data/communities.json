@@ -1845,6 +1845,7 @@
   {
     "id": "зміст",
     "name": "Зміст",
+    "nameEn": "ZMIST",
     "region": "Полтава",
     "regionEn": "Poltava",
     "regionSlug": "poltava",
