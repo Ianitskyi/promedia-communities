@@ -1841,5 +1841,37 @@
       "activity": "Радіомовлення з використанням радіочастотного спектра — радіобренд «МАКСИМУМ» (101,8 FM, Запоріжжя); той самий власник, що й inform.zp.ua, окремого запису на сам сайт у реєстрі немає",
       "email": "radiovlug@gmail.com"
     }
+  },
+  {
+    "id": "зміст",
+    "name": "Зміст",
+    "region": "Полтава",
+    "regionEn": "Poltava",
+    "regionSlug": "poltava",
+    "city": "Полтава",
+    "cityEn": "Poltava",
+    "website": "https://zmist.pl.ua/",
+    "description": "ЗМІСТ — незалежне регіональне онлайн-медіа з Полтави, що висвітлює місцеві новини, суспільно-політичні процеси, культуру та життя громади. Видання орієнтується передусім на аудиторію Полтави та Полтавської області.",
+    "descriptionEn": "ZMIST is an independent regional online media outlet from Poltava covering local news, socio-political processes, culture, and community life. The outlet focuses primarily on the audience of Poltava and Poltava region.",
+    "communityIdea": "",
+    "communityUrl": "https://zmist.pl.ua/community/",
+    "platform": "website",
+    "badges": {
+      "recommended": true,
+      "whitelist": false,
+      "jti": false,
+      "registered": true
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=zmist.pl.ua&sz=128",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ЗМІСТ ПОЛТАВА\"",
+      "edrpou": "42410961",
+      "mediaId": "R40-01558",
+      "activity": "Онлайн-медіа",
+      "email": "zmist.pl@gmail.com"
+    }
   }
 ]
