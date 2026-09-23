@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /add/
+
+Sitemap: https://communities.promedia.report/sitemap.xml
