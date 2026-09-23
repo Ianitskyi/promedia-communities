@@ -1893,7 +1893,7 @@
     "communityUrl": "https://community.hromadske.ua/",
     "platform": "website",
     "badges": {
-      "recommended": false,
+      "recommended": true,
       "whitelist": true,
       "jti": false,
       "registered": true
