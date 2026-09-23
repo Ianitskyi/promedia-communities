@@ -1876,5 +1876,38 @@
       "activity": "Онлайн-медіа",
       "email": "zmist.pl@gmail.com"
     }
+  },
+  {
+    "id": "громадське",
+    "name": "Громадське",
+    "nameEn": "Hromadske",
+    "region": "Київ",
+    "regionEn": "Kyiv",
+    "regionSlug": "kyiv-city",
+    "city": "Київ",
+    "cityEn": "Kyiv",
+    "website": "https://hromadske.ua/",
+    "description": "Громадське (Hromadske) — незалежне українське медіа, засноване у листопаді 2013 року журналістами напередодні Євромайдану. Одне з перших краудфандингових медіа України, що працює на підтримку спільноти; висвітлює політику, права людини, суспільні процеси та війну у відео- та онлайн-форматах.",
+    "descriptionEn": "Hromadske is an independent Ukrainian media outlet founded in November 2013 by journalists on the eve of the Euromaidan protests. One of Ukraine's pioneering crowdfunded, community-supported media outlets, it covers politics, human rights, social issues, and the war through video and online formats.",
+    "communityIdea": "",
+    "communityUrl": "https://community.hromadske.ua/",
+    "platform": "website",
+    "badges": {
+      "recommended": false,
+      "whitelist": true,
+      "jti": false,
+      "registered": true
+    },
+    "tags": [],
+    "status": "approved",
+    "example": false,
+    "logo": "https://www.google.com/s2/favicons?domain=hromadske.ua&sz=128",
+    "registryInfo": {
+      "legalName": "ГРОМАДСЬКА ОРГАНІЗАЦІЯ \"ГРОМАДСЬКЕ ТЕЛЕБАЧЕННЯ\"",
+      "edrpou": "38780085",
+      "mediaId": "R40-02239",
+      "activity": "Онлайн-медіа",
+      "email": "office@hromadske.ua"
+    }
   }
 ]
