@@ -695,7 +695,42 @@ function normalizeLang(lang) {
   return SUPPORTED_LANGS.indexOf(lang) !== -1 ? lang : "uk";
 }
 
+// Мова — перший сегмент шляху (/en/…, /crh/…), як на всіх сайтах мережі.
+// Сторінки, що мають мовні версії: головна, сторінка медіа, форма заявки.
+const LANG_PATH = /^\/(en|crh)(?=\/|$)/;
+const LOCALIZED_PAGES = ["/", "/index.html", "/media/", "/media/index.html", "/add/", "/add/index.html"];
+
+function pathWithoutLang(pathname) {
+  return pathname.replace(LANG_PATH, "") || "/";
+}
+
+function isLocalizedPage(pathname) {
+  return LOCALIZED_PAGES.indexOf(pathWithoutLang(pathname)) !== -1;
+}
+
+function langPath(lang, pathname) {
+  const rest = pathWithoutLang(pathname);
+  return (lang === "uk" ? "" : "/" + lang) + rest;
+}
+
+// Старі адреси з ?lang= (/media/?id=…&lang=crh) переводимо на шлях із
+// префіксом ще до рендеру — GitHub Pages не вміє серверних редиректів.
+(function redirectLegacyLangParam() {
+  const params = new URLSearchParams(location.search);
+  if (!params.has("lang") || !isLocalizedPage(location.pathname)) return;
+  const lang = normalizeLang(params.get("lang"));
+  params.delete("lang");
+  const search = params.toString() ? "?" + params.toString() : "";
+  const target = langPath(lang, location.pathname) + search + location.hash;
+  if (target !== location.pathname + location.search + location.hash) location.replace(target);
+})();
+
 function getLang() {
+  const m = location.pathname.match(LANG_PATH);
+  if (m) return m[1];
+  // Сторінки з мовними версіями без префікса — українські.
+  if (isLocalizedPage(location.pathname)) return "uk";
+  // Решта (адмінка, стара сторінка дослідження) — за ?lang= або збереженим вибором.
   const urlLang = new URLSearchParams(location.search).get("lang");
   if (SUPPORTED_LANGS.indexOf(urlLang) !== -1) {
     localStorage.setItem("site-lang", urlLang);
@@ -711,19 +746,12 @@ function setLang(lang) {
 // Кореневі сторінки кожної мови: / (uk), /en/, /crh/.
 const LANG_ROOTS = { uk: "/", en: "/en/", crh: "/crh/" };
 
-function rootLangOfPath(path) {
-  if (path === "/" || path === "/index.html") return "uk";
-  if (path === "/en/" || path === "/en/index.html") return "en";
-  if (path === "/crh/" || path === "/crh/index.html") return "crh";
-  return null;
-}
-
 // Адреси сусідніх сайтів мережі ПроМедіа для кожної мови. Сайти без
 // кримськотатарської версії (promedia.report) отримують
 // українську адресу.
 const NETWORK_URLS = {
   home: { uk: "https://promedia.report", en: "https://promedia.report/en", crh: "https://promedia.report" },
-  news: { uk: "https://news.promedia.report/", en: "https://news.promedia.report/?lang=en", crh: "https://news.promedia.report/?lang=crh" },
+  news: { uk: "https://news.promedia.report/", en: "https://news.promedia.report/en/", crh: "https://news.promedia.report/crh/" },
   communities: { uk: "https://communities.promedia.report/", en: "https://communities.promedia.report/en/", crh: "https://communities.promedia.report/crh/" },
   ratings: { uk: "https://ratings.promedia.report/", en: "https://ratings.promedia.report/en/", crh: "https://ratings.promedia.report/crh/" },
   research: { uk: "https://research.promedia.report/", en: "https://research.promedia.report/en/", crh: "https://research.promedia.report/crh/" },
@@ -784,9 +812,7 @@ function tPlural(key, n, vars) {
   return form;
 }
 
-// Дозволяє прийти з promedia.report (чи ratings.promedia.report) з ?lang=en
-// і одразу відкрити цю сторінку англійською; посилання назад теж
-// зберігають поточну мову через ?lang=. Посилання мережі ПроМедіа
+// Посилання мережі ПроМедіа
 // (data-network="news|ratings|research|atlas|communities|home") ведуть на
 // версію сусіднього сайту тією самою мовою.
 function syncCrossSiteLinks() {
@@ -806,13 +832,6 @@ function syncCrossSiteLinks() {
   });
   document.querySelectorAll("a[data-lang-root]").forEach((a) => {
     a.setAttribute("href", LANG_ROOTS[lang]);
-  });
-  document.querySelectorAll("a[data-cross-site]").forEach((a) => {
-    try {
-      const url = new URL(a.getAttribute("href"), location.href);
-      url.searchParams.set("lang", lang);
-      a.setAttribute("href", url.toString());
-    } catch (e) { /* лишаємо посилання як є, якщо не вдалось розпарсити */ }
   });
 }
 
@@ -853,10 +872,9 @@ function initLangToggle() {
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (btn.dataset.lang === getLang()) return;
-      const rootLang = rootLangOfPath(location.pathname);
-      if (rootLang && LANG_ROOTS[btn.dataset.lang]) {
+      if (isLocalizedPage(location.pathname)) {
         setLang(btn.dataset.lang);
-        location.href = LANG_ROOTS[btn.dataset.lang] + location.hash;
+        location.href = langPath(btn.dataset.lang, location.pathname) + location.search + location.hash;
         return;
       }
       setLang(btn.dataset.lang);
