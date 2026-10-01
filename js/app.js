@@ -41,9 +41,12 @@
   };
 
   function localized(item, field) {
-    var enField = field + "En";
-    if (getLang() === "en") {
-      if (item[enField]) return item[enField];
+    var lang = getLang();
+    if (lang === "en" || lang === "crh") {
+      // crh: окреме поле *Crh, інакше латинська транслітерація назв (як для EN);
+      // описи без перекладу показуються українською.
+      var langField = field + (lang === "en" ? "En" : "Crh");
+      if (item[langField]) return item[langField];
       if (field === "name") return NAME_OVERRIDES_EN[item.name] || transliterateUkrainian(item.name);
       if (field === "city") return CITY_OVERRIDES_EN[item.city] || transliterateUkrainian(item.city);
       if (field === "region") return tRaw("oblasts." + item.regionSlug) || transliterateUkrainian(item.region);
@@ -52,7 +55,7 @@
   }
 
   function mediaLink(id) {
-    return "/media/?id=" + encodeURIComponent(id) + (getLang() === "en" ? "&lang=en" : "");
+    return "/media/?id=" + encodeURIComponent(id) + (getLang() !== "uk" ? "&lang=" + getLang() : "");
   }
 
   function itemRegionSlugs(item) {

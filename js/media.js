@@ -126,9 +126,12 @@
   }
 
   function localized(item, field) {
-    var enField = field + "En";
-    if (getLang() === "en") {
-      if (item[enField]) return item[enField];
+    var lang = getLang();
+    if (lang === "en" || lang === "crh") {
+      // crh: окреме поле *Crh, інакше латинська транслітерація назв (як для EN);
+      // описи без перекладу показуються українською.
+      var langField = field + (lang === "en" ? "En" : "Crh");
+      if (item[langField]) return item[langField];
       if (field === "name") return NAME_OVERRIDES_EN[item.name] || transliterateUkrainian(item.name);
       if (field === "city") return CITY_OVERRIDES_EN[item.city] || transliterateUkrainian(item.city);
       if (field === "region") return tRaw("oblasts." + item.regionSlug) || transliterateUkrainian(item.region);
@@ -140,7 +143,7 @@
     if (!currentItem) {
       container.innerHTML =
         '<p class="empty-state">' + escapeHtml(t("media.notFound")) + "</p>" +
-        '<p><a href="../">' + escapeHtml(t("media.backToCatalog")) + "</a></p>";
+        '<p><a href="' + LANG_ROOTS[getLang()] + '">' + escapeHtml(t("media.backToCatalog")) + "</a></p>";
       return;
     }
 
@@ -149,7 +152,7 @@
     var description = localized(item, "description");
     var communityIdea = localized(item, "communityIdea");
     var atlasUrl = item.registryInfo && item.registryInfo.mediaId
-      ? "https://atlas.promedia.report/" + (getLang() === "en" ? "en/" : "") + "?search=" + encodeURIComponent(item.registryInfo.mediaId)
+      ? networkUrl("atlas", getLang()) + "?search=" + encodeURIComponent(item.registryInfo.mediaId)
       : BADGE_LINKS.registered;
     document.title = name + " — " + t("media.titleSuffix");
     var metaDesc = document.querySelector('meta[name="description"]');
@@ -212,7 +215,7 @@
     if (info.edrpou) rows.push([t("media.registry.edrpou"), info.edrpou]);
     if (info.mediaId) rows.push([t("media.registry.mediaId"), info.mediaId]);
     if (info.activity) rows.push([t("media.registry.activity"), translateActivity(info.activity)]);
-    var note = getLang() === "en" && info.noteEn ? info.noteEn : info.note;
+    var note = (getLang() === "en" && info.noteEn) || (getLang() === "crh" && info.noteCrh) || info.note;
     if (note) rows.push([t("media.registry.note"), note]);
     if (info.email) rows.push([t("media.registry.email"), info.email]);
     if (!rows.length) return "";
@@ -223,8 +226,8 @@
     return '<div class="registry-info">' +
       '<h2>' + escapeHtml(t("media.registry.title")) + "</h2>" +
       rowsHtml +
-      '<a class="registry-source" href="' + escapeAttr(item.registryInfo.mediaId ? "https://atlas.promedia.report/" + (getLang() === "en" ? "en/" : "") + "?search=" + encodeURIComponent(item.registryInfo.mediaId) : BADGE_LINKS.registered) + '" target="_blank" rel="noopener">' +
-      escapeHtml(getLang() === "en" ? "Verify in Media Atlas ↗" : "Перевірити в Атласі Медіа ↗") + "</a>" +
+      '<a class="registry-source" href="' + escapeAttr(item.registryInfo.mediaId ? networkUrl("atlas", getLang()) + "?search=" + encodeURIComponent(item.registryInfo.mediaId) : BADGE_LINKS.registered) + '" target="_blank" rel="noopener">' +
+      escapeHtml({ en: "Verify in Media Atlas ↗", crh: "Mediya Atlasında teşkermek ↗" }[getLang()] || "Перевірити в Атласі Медіа ↗") + "</a>" +
       "</div>";
   }
 
@@ -242,11 +245,12 @@
     if (newsItems === null) return "";
     if (!newsItems.length) return "";
     var itemsHtml = newsItems.map(function (n) {
-      var title = getLang() === "en" && n.titleEn ? n.titleEn : n.title;
+      var title = (getLang() === "en" && n.titleEn) || (getLang() === "crh" && n.titleCrh) || n.title;
+      var url = getLang() !== "uk" ? n.url + (n.url.indexOf("?") === -1 ? "?" : "&") + "lang=" + getLang() : n.url;
       var dateText = formatNewsDate(n.publishedAt);
       var dateHtml = dateText ? '<span class="media-news-date">' + escapeHtml(dateText) + "</span>" : "";
       return '<li class="media-news-item">' + dateHtml +
-        '<a href="' + escapeAttr(n.url) + '" target="_blank" rel="noopener">' + escapeHtml(title) + "</a></li>";
+        '<a href="' + escapeAttr(url) + '" target="_blank" rel="noopener">' + escapeHtml(title) + "</a></li>";
     }).join("");
     return '<div class="media-news"><h2>' + escapeHtml(t("media.newsTitle")) + "</h2>" +
       '<ul class="media-news-list">' + itemsHtml + "</ul></div>";
