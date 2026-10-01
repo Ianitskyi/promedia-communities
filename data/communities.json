@@ -22,7 +22,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=nikvesti.com&sz=128",
-    "descriptionEn": "Independent online media outlet of Mykolaiv region — the first online outlet in the region officially registered with the National Council; its audience spans Mykolaiv, Kherson, and Odesa oblasts."
+    "descriptionEn": "Independent online media outlet of Mykolaiv region — the first online outlet in the region officially registered with the National Council; its audience spans Mykolaiv, Kherson, and Odesa oblasts.",
+    "descriptionCrh": "Mıkolayiv vilâyetiniñ müstaqil onlayn mediyası — Milliy Şurada resmiy qayd etilgen mıntaqanıñ ilk onlayn mediyası; auditoriyası Mıkolayiv, Herson ve Odesa vilâyetlerini qaplay."
   },
   {
     "id": "громадське-радіо",
@@ -54,7 +55,8 @@
       "mediaId": "R40-06743",
       "activity": "Онлайн-медіа",
       "email": "office@hromadske.radio, trc@hromadskeradio.org"
-    }
+    },
+    "descriptionCrh": "2013 senesi tsenzurağa razı olmağan jurnalistler tarafından tesis etilgen müstaqil laqırdı radiostantsiyası; Ukrainanıñ 7 mıntaqasında FM-de ve internette yayın yapa."
   },
   {
     "id": "бахмут-in-ua",
@@ -86,7 +88,8 @@
       "mediaId": "R40-05578",
       "activity": "Онлайн-медіа",
       "email": "hromadskebahmut@gmail.com, vilnohirsk.in.ua@gmail.com"
-    }
+    },
+    "descriptionCrh": "Bahmut aqqında ve onıñ sakinleri içün mediya, 2015 senesi tesis etildi — şeerniñ ayatını, köçken insanlarğa yardımnı ve cebhedeki vaziyetni yaqtırta."
   },
   {
     "id": "східний-варіант",
@@ -118,7 +121,8 @@
       "mediaId": "R40-02255",
       "activity": "Онлайн-медіа",
       "email": "slavtown@gmail.com"
-    }
+    },
+    "descriptionCrh": "Donetsk ve Luhansk vilâyetleri aqqında müstaqil onlayn neşir; 2020 senesinden «Bizim ev — Slovânsk» içtimaiy teşkilâtı neşir ete, redaktsiyası bu mıntaqalardan olğan jurnalistlerden ibaret."
   },
   {
     "id": "доступ-медіа",
@@ -143,7 +147,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=dostyp.com.ua&sz=128",
-    "descriptionEn": "Independent outlet from Kropyvnytskyi — a continuation of the “Tochka Dostupu” project (since 2014); covers government decisions and their impact on the community, produces investigations on socially important topics."
+    "descriptionEn": "Independent outlet from Kropyvnytskyi — a continuation of the “Tochka Dostupu” project (since 2014); covers government decisions and their impact on the community, produces investigations on socially important topics.",
+    "descriptionCrh": "Kropıvnıtskıynıñ müstaqil neşiri — «Erişim noqtası» loyihasınıñ devamı (2014 senesinden); akimiyet qararlarını ve olarnıñ cemiyetke tesirini yaqtırta, içtimaiy ehemiyetli mevzularda teftişler azırlay."
   },
   {
     "id": "люк",
@@ -168,7 +173,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=lyuk.media&sz=128",
-    "descriptionEn": "Independent online media about Kharkiv, founded in 2015 — covers urban culture and processes (from architecture to corruption), uniting a community of engaged Kharkiv residents."
+    "descriptionEn": "Independent online media about Kharkiv, founded in 2015 — covers urban culture and processes (from architecture to corruption), uniting a community of engaged Kharkiv residents.",
+    "descriptionCrh": "Harkiv aqqında müstaqil onlayn mediya, 2015 senesi tesis etildi — şeer medeniyetini ve protseslerini (memarlıqtan korruptsiyağa qadar) yaqtırta, faal harkivlilerniñ cemaatini birleştire."
   },
   {
     "id": "мост",
@@ -200,7 +206,8 @@
       "mediaId": "R40-01085",
       "activity": "Онлайн-медіа",
       "email": ""
-    }
+    },
+    "descriptionCrh": "Herson vilâyetiniñ içtimaiy-siyasiy internet neşiri, 2012 senesi tesis etildi; tesis etkenler arasında — aktivist ve siyasetçi Kateryna Handzük."
   },
   {
     "id": "18000",
@@ -234,7 +241,8 @@
       "mediaId": "R40-04807",
       "activity": "Онлайн-медіа",
       "email": "cherkasy18000@gmail.com"
-    }
+    },
+    "descriptionCrh": "Çerkasıdan müstaqil mediya, antikorruptsiya teftişleri, analitikası, podkastları ve video-intervyuları ile belli."
   },
   {
     "id": "махала",
@@ -266,7 +274,8 @@
       "mediaId": "R40-05368",
       "activity": "Онлайн-медіа",
       "email": "news.mahala@gmail.com"
-    }
+    },
+    "descriptionCrh": "Odesa vilâyetiniñ cenübindeki üç rayonnıñ ayatını yaqtırtqan mıntaqa mediyası; 60 yıldan ziyade çıqqan «Drujba» gazetasınıñ sanal devamı, akimiyet ya da biznes tarafından finanslaştırılmay."
   },
   {
     "id": "полтавська-хвиля",
@@ -298,7 +307,8 @@
       "mediaId": "R40-01058",
       "activity": "Онлайн-медіа",
       "email": "editor@sil.media"
-    }
+    },
+    "descriptionCrh": "Poltava ve vilâyetniñ faal insanları ve işbilirmenleri içün müstaqil mediya — «hayp» haberler yerine türlü baqışlarnı köstergen uzun faydalı metinler."
   },
   {
     "id": "gwara-media",
@@ -330,7 +340,8 @@
       "mediaId": "R40-05341",
       "activity": "Онлайн-медіа",
       "email": "hello@gwaramedia.com"
-    }
+    },
+    "descriptionCrh": "Müstaqil harkiv mediyası (2015 senesinden), 2022 senesinden soñ Harkiv vilâyetindeki cenk cinayetlerini ve cemaatlerniñ tiklenüvini yaqtırta; Local Media Innovation Award mükâfatı saibi, IFCN faktçekerler şebekesiniñ azası."
   },
   {
     "id": "медіаплатформа-вгору",
@@ -362,7 +373,8 @@
       "mediaId": "R40-01561",
       "activity": "Онлайн-медіа",
       "email": "kovalenko.anna.fmz@gmail.com"
-    }
+    },
+    "descriptionCrh": "Herson vilâyetiniñ eñ populâr mediya platformalarından biri, Herson işğal altında olğanda da sakinlerge malümat bermege devam etti."
   },
   {
     "id": "гречка",
@@ -394,7 +406,8 @@
       "mediaId": "R40-02655",
       "activity": "Онлайн-медіа",
       "email": ""
-    }
+    },
+    "descriptionCrh": "Kropıvnıtskıy ve vilâyet aqqında onlayn mediya (2008 senesinden) — antikorruptsiya mevzuları, mahkemeler, devlet satın alımları ve topraq meseleleri."
   },
   {
     "id": "гард-city",
@@ -426,7 +439,8 @@
       "mediaId": "R40-02539",
       "activity": "Онлайн-медіа",
       "email": "v.honcharevskyi@tavrmedia.ua, fm.tvij.vsesvit@gmail.com"
-    }
+    },
+    "descriptionCrh": "Mıkolayiv vilâyetindeki Pervomaysk cemaatiniñ öncü onlayn mediyası — yerli sakinler ve meraqlı yerler aqqında haberler ve hikâyeler."
   },
   {
     "id": "накіпело",
@@ -451,7 +465,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=nakypilo.ua&sz=128",
-    "descriptionEn": "Kharkiv media group combining a news site, a radio station, and educational projects — “the voice of Ukrainian Kharkiv” on war, displaced people, and culture."
+    "descriptionEn": "Kharkiv media group combining a news site, a radio station, and educational projects — “the voice of Ukrainian Kharkiv” on war, displaced people, and culture.",
+    "descriptionCrh": "Haber saytını, radiostantsiyanı ve tasil loyihalarını birleştirgen harkiv mediya gruppası — cenk, köçken insanlar ve medeniyet aqqında «ukrain Harkivniñ sesi»."
   },
   {
     "id": "район-in-ua-та-всі-інші-райони",
@@ -476,7 +491,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=rayon.in.ua&sz=128",
-    "descriptionEn": "A nationwide network of hyperlocal media on a franchise model (CID Media Group) — operating in nine regions of Ukraine, including Volyn."
+    "descriptionEn": "A nationwide network of hyperlocal media on a franchise model (CID Media Group) — operating in nine regions of Ukraine, including Volyn.",
+    "descriptionCrh": "Franşiza esasında çalışqan giperlokal mediyalarnıñ umummilliy şebekesi (CID Media Group) — Ukrainanıñ doquz vilâyetinde, şu cümleden Volın vilâyetinde faaliyet köstere."
   },
   {
     "id": "frontliner",
@@ -510,7 +526,8 @@
       "mediaId": "R40-05212",
       "activity": "Онлайн-медіа",
       "email": "DonbasFrontliner@gmail.com"
-    }
+    },
+    "descriptionCrh": "Rusiyeniñ Ukrainağa qarşı cengi aqqında müstaqil reportaj mediyası, fotograf ve muhbir Andriy Dubçak tarafından tesis etildi — cebhe sızığından reportajlar."
   },
   {
     "id": "вільне-радіо",
@@ -542,7 +559,8 @@
       "mediaId": "R40-06475",
       "activity": "Онлайн-медіа",
       "email": "info@freeradio.com.ua"
-    }
+    },
+    "descriptionCrh": "Donetsk vilâyetiniñ mediyası — akimiyet areketlerini kontrol etken ve cenk hronikasını yaqtırtqan «mıntaqa inkişafınıñ vatçdogu»; üç yıl arqa-arqasına KMİ-niñ Tevsiye etilgen mediyalar haritasında."
   },
   {
     "id": "трибун",
@@ -574,7 +592,8 @@
       "mediaId": "R40-05204",
       "activity": "Онлайн-медіа",
       "email": "info@tribun.com.ua"
-    }
+    },
+    "descriptionCrh": "2011 senesi Luhanskta tesis etilgen müstaqil içtimaiy-siyasiy neşir; şeer işğal etilgen soñ redaktsiya köçti ve şimdi Luhansk ve Donetsk vilâyetlerini yaqtırta."
   },
   {
     "id": "о6262",
@@ -606,7 +625,8 @@
       "mediaId": "R40-05099",
       "activity": "Онлайн-медіа",
       "email": "make@sense.ngo"
-    }
+    },
+    "descriptionCrh": "Slovânsk aqqında malümat saytı: şeer, yemek, biznes ve medeniyet; 2019 senesi tamamen ukrain tiline keçti, 2022 senesinden soñ redaktsiya Çernivtsige köçürildi."
   },
   {
     "id": "слобідський-край",
@@ -638,7 +658,8 @@
       "mediaId": "R40-01162",
       "activity": "Онлайн-медіа",
       "email": "info22.slk@gmail.com"
-    }
+    },
+    "descriptionCrh": "Harkiv vilâyetiniñ ukrain tilli mediya brendi — vilâyetniñ eñ eski gazetası (1917 senesinden) ve cenk vaqtında cemaatlerge malümat yardımı içün multimedia saytı."
   },
   {
     "id": "жовті-води-city",
@@ -670,7 +691,8 @@
       "mediaId": "R40-05644",
       "activity": "Онлайн-медіа",
       "email": ""
-    }
+    },
+    "descriptionCrh": "Dnipropetrovsk vilâyetindeki Jovti Vodı aqqında onlayn neşir, «Abo» Mediya inkişafı agentligi yardımınen — insanlar ve şeer aqqında haberler ve hikâyeler."
   },
   {
     "id": "перший-криворізький",
@@ -702,7 +724,8 @@
       "mediaId": "R40-01168",
       "activity": "Онлайн-медіа",
       "email": "editor@1kr.ua"
-    }
+    },
+    "descriptionCrh": "Krıvıy Rihniñ eñ büyük müstaqil mediyası, Ukrainanıñ Televideniye ve radio yayınları boyunca Milliy Şurasında qayd etilgen."
   },
   {
     "id": "цукр",
@@ -734,7 +757,8 @@
       "mediaId": "R40-00971",
       "activity": "Онлайн-медіа",
       "email": "post@cukr.city"
-    }
+    },
+    "descriptionCrh": "Sumını quvet yeri yapqan insanlar ve şeyler aqqında hikâye etken onlayn mediya. Şeerimizde yaşamağa ve yaratmağa ilham bergen hikâyelernen paylaşamız."
   },
   {
     "id": "сєвєродонецьк-онлайн",
@@ -766,7 +790,8 @@
       "mediaId": "R40-06436",
       "activity": "Онлайн-медіа",
       "email": "info@sd.ua"
-    }
+    },
+    "descriptionCrh": "Ayn adlı içtimaiy teşkilâtnıñ Severodonetsk sakinleri içün portalı — köçken insanlar ve doğğan şeeri ile bağnı qorçalağanlar içün haberler ve faydalı malümat."
   },
   {
     "id": "рубрика",
@@ -798,7 +823,8 @@
       "mediaId": "R40-02256",
       "activity": "Онлайн-медіа",
       "email": "a.f.rudenko@gmail.com"
-    }
+    },
+    "descriptionCrh": "Ukrainada çözüm jurnalistikası formatındaki ilk içtimaiy-siyasiy mediya (2018 senesinden); ukrain, ingliz ve rus tillerinde çıqa."
   },
   {
     "id": "varosh",
@@ -830,7 +856,8 @@
       "mediaId": "R40-03074",
       "activity": "Онлайн-медіа",
       "email": ""
-    }
+    },
+    "descriptionCrh": "Zakarpatiye aqqında müstaqil mediya (2013 senesinden) — layfstayl mecmuasından mıntaqanıñ insanları, medeniyeti ve mirası aqqında içtimaiy ehemiyetli neşirge qadar."
   },
   {
     "id": "neformat",
@@ -857,7 +884,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.neformat.com.ua&sz=128",
-    "descriptionEn": "Online media about the Ukrainian music scene, mostly underground (since 2004) — news, reviews, analysis, and a guide to genres."
+    "descriptionEn": "Online media about the Ukrainian music scene, mostly underground (since 2004) — news, reviews, analysis, and a guide to genres.",
+    "descriptionCrh": "Ukrain muzıka saasınıñ, esasen andegraundnıñ, onlayn mediyası (2004 senesinden) — haberler, retsenziyalar, analitika ve janrlar boyunca qılavuz."
   },
   {
     "id": "точка-сходу",
@@ -889,7 +917,8 @@
       "mediaId": "R40-05727",
       "activity": "Онлайн-медіа",
       "email": "tochka.shodu@gmail.com"
-    }
+    },
+    "descriptionCrh": "Mariupol, Kiev ve Harkivden jurnalistler yaratqan Donetsk, Luhansk vilâyetleri ve Azaq boyu aqqında müstaqil onlayn mediya — cebhe, işğal, azat etilgen topraqlar ve köçken insanlar."
   },
   {
     "id": "kordon-media",
@@ -914,7 +943,8 @@
     "status": "approved",
     "example": false,
     "logo": "/img/logos/kordon-media.svg",
-    "descriptionEn": "Online outlet about the people and territories on the border of Sumy region — the war's consequences, recovery, special projects, and podcasts."
+    "descriptionEn": "Online outlet about the people and territories on the border of Sumy region — the war's consequences, recovery, special projects, and podcasts.",
+    "descriptionCrh": "Sumı vilâyetiniñ sıñırındaki insanlar ve topraqlar aqqında onlayn neşir — cenkniñ neticeleri, tiklenüv, mahsus loyihalar ve podkastlar."
   },
   {
     "id": "обрії-ізюмщини",
@@ -946,7 +976,8 @@
       "mediaId": "R30-01188",
       "activity": "Друковане медіа",
       "email": "obrii1919@gmail.com"
-    }
+    },
+    "descriptionCrh": "1919 senesindeki bülletenden başlağan tarihqa saip İzüm rayonınıñ gazetası; onlayn portal redaktsiyanıñ emek kollektivine ait, İzüm azat etilgen soñ işini yañıdan başladı."
   },
   {
     "id": "медіапорт",
@@ -978,7 +1009,8 @@
       "mediaId": "R40-06542",
       "activity": "Онлайн-медіа",
       "email": "mediaport.news@gmail.com"
-    }
+    },
+    "descriptionCrh": "Banner reklamasız müstaqil harkiv onlayn neşiri (arhivi 2002 senesinden), halqara donorlarnıñ grantları ile finanslaştırıla — insanlar, şeer vaqiaları, siyaset ve medeniyet."
   },
   {
     "id": "радіо-накипіло",
@@ -1010,7 +1042,8 @@
       "mediaId": "R11-02138",
       "activity": "Лінійне радіомовлення (аудіальне лінійне мовлення)",
       "email": "radio.nakypilo@gmail.com, radio@nakypilo.ua"
-    }
+    },
+    "descriptionCrh": "«Nakıpilo» mediya gruppasınıñ harkivliler içün onlayn ve FM radiostantsiyası (Harkiv, Balakliya, Blıznüky ve Vovçanskta 92.2 FM) — yerli haberler, reportajlar ve teftişler."
   },
   {
     "id": "dnipro-media",
@@ -1042,7 +1075,8 @@
       "mediaId": "R40-05933",
       "activity": "Онлайн-медіа",
       "email": "mediadnipro@gmail.com"
-    }
+    },
+    "descriptionCrh": "2024 senesi tesis etilgen Dnipro aqqında müstaqil içtimaiy-siyasiy mediya. Teftişler yazalar, ve Dniproni multikultural, Avropağa yönelgen, ukrainparast şeer olaraq köstereler."
   },
   {
     "id": "місто-і-річка",
@@ -1074,7 +1108,8 @@
       "mediaId": "R40-05698",
       "activity": "Онлайн-медіа",
       "email": "mistoirichka@gmail.com"
-    }
+    },
+    "descriptionCrh": "Eski KUST loyihasınıñ ekibinden Dnipro aqqında müstaqil onlayn mecmua (2024 senesi avgustından) — siyasiy, içtimaiy ve urbanistik protsesler aqqında haberler, analitika ve kolonkalar."
   },
   {
     "id": "kramatorsk-post",
@@ -1106,7 +1141,8 @@
       "mediaId": "R40-00969",
       "activity": "Онлайн-медіа",
       "email": "kramatorskpost@gmail.com"
-    }
+    },
+    "descriptionCrh": "Kramatorsk ve onıñ sakinleri aqqında mediya, köçken soñ Kolomıyadan çalışa — şeer ve Donetsk vilâyeti aqqında haberler, videolar ve reportajlar."
   },
   {
     "id": "pechera-info",
@@ -1138,7 +1174,8 @@
       "mediaId": "R40-06409",
       "activity": "Онлайн-медіа",
       "email": "kseniabuh.cmg@gmail.com"
-    }
+    },
+    "descriptionCrh": "Çernihiv mediya gruppasınıñ Çernihiv aqqında onlayn neşiri (2024 senesi oktâbrından) — haber lentası yerine teren metinler, közden keçirüvler, kolonkalar ve videolar."
   },
   {
     "id": "центр-журналістських-розслідувань-сила-п",
@@ -1172,7 +1209,8 @@
       "mediaId": "R40-05262",
       "activity": "Онлайн-медіа",
       "email": "cirpowertruth@gmail.com"
-    }
+    },
+    "descriptionCrh": "Lutskten içtimaiy teşkilât (2017 senesinden) — esasen Volın vilâyeti aqqında jurnalist teftişleri ve haberler."
   },
   {
     "id": "ngl-media",
@@ -1206,7 +1244,8 @@
       "mediaId": "R40-03083",
       "activity": "Онлайн-медіа",
       "email": "editor@ngl.media"
-    }
+    },
+    "descriptionCrh": "Müstaqil antikorruptsiya merkezi (2013 senesinden, evelâ «Bizim paralar. Lviv» olaraq, 2023 senesinden — umummilliy) — teftişler, data-jurnalistika ve faktçeking."
   },
   {
     "id": "bihus",
@@ -1240,7 +1279,8 @@
       "mediaId": "R40-05808",
       "activity": "Онлайн-медіа",
       "email": ""
-    }
+    },
+    "descriptionCrh": "«Denys Bihus ile bizim paralar» teleprogrammasından ösip çıqqan antikorruptsiya teftiş loyihası; redaktsiya taraftan müstaqil, YouTube-ta er hafta teftişler çıqara."
   },
   {
     "id": "слідство",
@@ -1274,7 +1314,8 @@
       "mediaId": "R40-03691",
       "activity": "Онлайн-медіа",
       "email": "slidstvo.info@gmail.com"
-    }
+    },
+    "descriptionCrh": "Anna Babinets yolbaşçılığındaki müstaqil teftiş jurnalistleri ekibi — korruptsiya cinayetleri, ses-sedalı öldürüvler ve Rusiyeniñ cenk cinayetleri; Ukrainada OCCRP şebekesiniñ ortağı."
   },
   {
     "id": "наука-ua",
@@ -1301,7 +1342,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=nauka.ua&sz=128",
-    "descriptionEn": "Independent reader-funded media outlet (since 2020) that explains the most important science news in plain language every day, based on peer-reviewed scientific journals."
+    "descriptionEn": "Independent reader-funded media outlet (since 2020) that explains the most important science news in plain language every day, based on peer-reviewed scientific journals.",
+    "descriptionCrh": "Oquyıcılarnıñ paralarına çalışqan müstaqil mediya (2020 senesinden), er kün retsenziyalanğan ilmiy mecmualar esasında ilimniñ eñ muhim haberlerini sade tilnen añlata."
   },
   {
     "id": "ukrainer",
@@ -1335,7 +1377,8 @@
       "mediaId": "R40-05396",
       "activity": "Онлайн-медіа",
       "email": "mail@ukrainer.net"
-    }
+    },
+    "descriptionCrh": "Bohdan Lohvınenko tesis etken Ukraina aqqında içtimaiy-medeniy multimedia loyihası (2016 senesinden) — mıntaqalar, insanlar ve medeniyet aqqında hronikal videolar, metinler ve kitaplar."
   },
   {
     "id": "читомо",
@@ -1369,7 +1412,8 @@
       "mediaId": "R40-07331",
       "activity": "Онлайн-медіа",
       "email": "chytomo@gmail.com"
-    }
+    },
+    "descriptionCrh": "Oksana Hmelovska ve İryna Baturevıç tesis etken Ukrainada kitaplar ve kitap neşiri aqqında professional mediya — praktiklerden analitika ve materiallar, oquyıcılarnıñ bağışları sayesinde yaşay."
   },
   {
     "id": "ґрунт",
@@ -1401,7 +1445,8 @@
       "mediaId": "R40-05325",
       "activity": "Онлайн-медіа",
       "email": "hello@grnt.media"
-    }
+    },
+    "descriptionCrh": "Anıq vatanperver mevqiyli Ukraina aqqında mediya, 2022 senesi 24 fevralde «Ukraina operativ» telegram-kanalı olaraq peyda oldı, 2022 senesi mayısından «yavaş jurnalistika» mediyası olaraq çalışa."
   },
   {
     "id": "куншт",
@@ -1428,7 +1473,8 @@
     "status": "approved",
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=www.kunsht.com.ua&sz=128",
-    "descriptionEn": "Popular-science media platform (since 2015, initially a print magazine) — articles, podcasts, videos, and lectures about science and technology."
+    "descriptionEn": "Popular-science media platform (since 2015, initially a print magazine) — articles, podcasts, videos, and lectures about science and technology.",
+    "descriptionCrh": "İlmiy-populâr mediya platforması (2015 senesinden, evelâ basma mecmua) — ilim ve tehnologiyalar aqqında maqaleler, podkastlar, videolar ve leksiyalar."
   },
   {
     "id": "vuzol-media",
@@ -1441,6 +1487,7 @@
     "website": "https://www.instagram.com/vuzol.media/",
     "description": "Медіа про історію української музики, яке по-сучасному оглядає мистецьке минуле нашої нації, обʼєднує ним різні покоління та формує відчуття гордості за свою країну.",
     "communityIdea": "Сплітаємо людей музикою та її історією.",
+    "communityIdeaCrh": "İnsanlarnı muzıka ve onıñ tarihı ile birleştiremiz.",
     "communityUrl": "https://base.monobank.ua/9Xzx4fziitEhfT?utm_content=link_in_bio&fbclid=PAdGRleASxxTRwZG9mAmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp7Xw1QuslnPWU8Adrwdnd_YDOIoPmtz-rmosTwTTFU6Mq54iXxPeJvJDHC83_aem_uvxVt-wtw63UNQtxJLHhbQ#subscriptions",
     "platform": "other",
     "badges": {
@@ -1458,7 +1505,8 @@
     "logo": "/img/logos/vuzol-media.jpg",
     "descriptionEn": "Media about the history of Ukrainian music that takes a modern look at our nation's artistic past, connects generations through it, and builds a sense of pride in one's country.",
     "communityIdeaEn": "We weave people together through music and its history.",
-    "nameEn": "VUZOL Media"
+    "nameEn": "VUZOL Media",
+    "descriptionCrh": "Ukrain muzıkasınıñ tarihı aqqında mediya, milletimizniñ sanat keçmişine zamanaviy baqış yapa, onıñnen türlü nesillerni birleştire ve öz memleketiñnen ğurur duyğusını şekillendire."
   },
   {
     "id": "четверта-влада",
@@ -1471,6 +1519,7 @@
     "website": "https://4vlada.com/",
     "description": "Єдине розслідувальницьке незалежне онлайн-медіа Рівненщини — виникло на основі Рівненської агенції журналістських розслідувань «Четверта влада»; висвітлює антикорупційні теми та моніторить державні закупівлі.",
     "communityIdea": "Фінансова підтримка читачів забезпечує незалежність і розвиток редакції.",
+    "communityIdeaCrh": "Oquyıcılarnıñ finansal yardımı redaktsiyanıñ müstaqilligini ve inkişafını temin ete.",
     "communityUrl": "https://donate.4vlada.com/",
     "platform": "website",
     "badges": {
@@ -1493,7 +1542,8 @@
       "mediaId": "R40-02767",
       "activity": "Онлайн-медіа",
       "email": "4vlada.com@gmail.com"
-    }
+    },
+    "descriptionCrh": "Rivne vilâyetiniñ yegâne müstaqil teftiş onlayn mediyası — «Dördünci akimiyet» Rivne jurnalist teftişleri agentligi esasında peyda oldı; antikorruptsiya mevzularını yaqtırta ve devlet satın alımlarını közete."
   },
   {
     "id": "kyiv-independent",
@@ -1506,6 +1556,7 @@
     "website": "https://kyivindependent.com/",
     "description": "Англомовне видання, засноване в листопаді 2021 року журналістами, які звільнилися з Kyiv Post після конфлікту з власником; висвітлює новини України для міжнародної аудиторії, зокрема повномасштабну війну.",
     "communityIdea": "Учасники спільноти отримують ексклюзивну розсилку, доступ до Discord-спільноти, безрекламний перегляд сайту, запрошення на онлайн- та офлайн-події й уроки української мови.",
+    "communityIdeaCrh": "Cemaat azaları mahsus bülletenni, Discord-cemaatke erişimni, saytnı reklamasız körmeni, onlayn ve oflayn vaqialarğa davetlerni ve ukrain tili dersleri alalar.",
     "communityUrl": "https://kyivindependent.com/membership",
     "platform": "website",
     "badges": {
@@ -1521,7 +1572,8 @@
     "example": false,
     "logo": "https://www.google.com/s2/favicons?domain=kyivindependent.com&sz=128",
     "descriptionEn": "English-language outlet founded in November 2021 by journalists who left the Kyiv Post after a dispute with its owner; covers news from Ukraine for an international audience, including the full-scale war.",
-    "communityIdeaEn": "Members get an exclusive newsletter, access to a Discord community, ad-free reading, invitations to online and offline events, and Ukrainian language lessons."
+    "communityIdeaEn": "Members get an exclusive newsletter, access to a Discord community, ad-free reading, invitations to online and offline events, and Ukrainian language lessons.",
+    "descriptionCrh": "2021 senesi noyabrde saip ile çatışmadan soñ Kyiv Post-tan çıqqan jurnalistler tesis etken ingliz tilli neşir; halqara auditoriya içün Ukraina haberlerini, şu cümleden tam miqyaslı cenkni yaqtırta."
   },
   {
     "id": "texty",
@@ -1556,7 +1608,8 @@
       "mediaId": "R40-06507",
       "activity": "Онлайн-медіа",
       "email": "texty.org.ua@gmail.com"
-    }
+    },
+    "descriptionCrh": "Müstaqil malümat ve teftiş mediyası — statistikanı analiz ete, Ukrainada cenk, korruptsiya ve içtimaiy protsesler aqqında açıq malümat esasında interaktiv haritalar ve teftişler qura."
   },
   {
     "id": "the-ukrainians",
@@ -1585,7 +1638,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=theukrainians.org&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=theukrainians.org&sz=128",
+    "descriptionCrh": "Muhim şeyler aqqında mediya — Ukrainada insanlar ve içtimaiy deñişmeler aqqında teren intervyular, reportajlar ve esseler; 2014 senesinden oquyıcılar cemaatiniñ yardımı sayesinde yaşay."
   },
   {
     "id": "divoche-media",
@@ -1610,7 +1664,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=divoche.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=divoche.media&sz=128",
+    "descriptionCrh": "Müstaqil qadın onlayn mecmuası — The Devochki (2013) loyihasından ösip çıqtı, 2022 senesi martta şimdiki adı ile yañıdan başlandı; investorlarsız ve redaktsiya siyasetine tesirsiz qadın hikâyeleri içün meydan."
   },
   {
     "id": "репортер",
@@ -1643,7 +1698,8 @@
       "mediaId": "R40-00979",
       "activity": "Онлайн-медіа",
       "email": "gazeta@report.if.ua"
-    }
+    },
+    "descriptionCrh": "25 yıldır «Reporter» İvano-Frankivsk ve Prıkarpattâ hikâyelerini añlata. «Reporter» neşirleri qarar qabul etmege yardım ete, ilham bere, areketke ya da öz-özüni inkişaf ettirmege teşvik ete, faydalı bilgiler qoşa. Esas vazife — maqsatlı auditoriya içün faydalı malümatnı tapmaq ve onı meraqlı, tez ve mümkün olğanı qadar tolu añlatmaq. Bizim esas sermayemiz — sizniñ işancıñız. Sizniñ yardımıñız — sadece bağış degil, bu bizge uzaq cemaatlerge daa sıq barmaq, eşsiz insan hikâyelerini qayd etmek ve cemaatler içün muhim mevzularnı köterip çıqmaq imkânını bere. Cemaatniñ bir parçası olıp, siz Frankivsk ve Prıkarpattâ cemaatleri bugün nasıl ve yarın nasıl olacağı aqqında doğru laqırdığa yatırım yapasıñız."
   },
   {
     "id": "shotam",
@@ -1676,7 +1732,8 @@
       "mediaId": "R40-06898",
       "activity": "Онлайн-медіа",
       "email": "kryholam@gmail.com"
-    }
+    },
+    "descriptionCrh": "Ukrainanıñ pozitiv haberler mediyası — cenk fonunda muvaffaqiyet, deñişmeler ve insaniyet hikâyelerini añlata; 2017 senesi «Krıholam» içtimaiy teşkilâtı tarafından tesis etildi."
   },
   {
     "id": "linza-media",
@@ -1702,7 +1759,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=linza.in.ua&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=linza.in.ua&sz=128",
+    "descriptionCrh": "Hmelnıtskıy vilâyetiniñ insanları aqqında ve olar içün mediya — yerli haberler, reportajlar, şeer ve mıntaqa hikâyeleri."
   },
   {
     "id": "soda-media",
@@ -1734,7 +1792,8 @@
       "mediaId": "R40-06599",
       "activity": "Онлайн-медіа",
       "email": "soda.zp.ua@gmail.com"
-    }
+    },
+    "descriptionCrh": "Zaporijiyeniñ ilk çözüm mediyası — 2023 senesi üç zaporijiyeli qadın jurnalist tarafından tesis etildi; şeer ve vilâyet sakinleri içün içtimaiy ehemiyetli suallerge cevap qıdıra."
   },
   {
     "id": "море-людей",
@@ -1760,7 +1819,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=moreliudei.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=moreliudei.media&sz=128",
+    "descriptionCrh": "2023 senesi tesis etilgen Odesa ve Ukraina Cenübiniñ müstaqil yerli onlayn mediyası — insanlar, şeer, Odesanıñ ukrain kimligi, medeniyet, volontörlik ve cenk aqqında haberler, reportajlar, intervyular, foto ve video hikâyeler; redaktsiyanıñ maqsatlarından biri — Odesa aqqında rus/rusparast efsaneni yıqmaq."
   },
   {
     "id": "sebto-media",
@@ -1785,7 +1845,8 @@
     "tags": [],
     "status": "approved",
     "example": false,
-    "logo": "https://www.google.com/s2/favicons?domain=sebto.media&sz=128"
+    "logo": "https://www.google.com/s2/favicons?domain=sebto.media&sz=128",
+    "descriptionCrh": "Sebto Media — Lvivden müstaqil ukrain mediyası, evelâ añlatuv jurnalistikası ve podkastlarğa ihtisaslaşqan. Esas mevzu yönelişleri — cemiyet, insan aqları, siyaset, medeniyet, tarih ve kündelik ayat. Redaktsiya özüni haber mediyası degil, belki malümat ğavğasını süzgen ve muhim adiselerniñ kontekstini, sebeplerini ve neticelerini añlatqan neşir olaraq köstere."
   },
   {
     "id": "одеське-життя",
@@ -1842,7 +1903,8 @@
       "note": "Радіобренд «МАКСИМУМ» (101,8 FM, Запоріжжя); той самий власник, що й inform.zp.ua, окремого запису на сам сайт у реєстрі немає.",
       "noteEn": "Radio brand \"MAKSYMUM\" (101.8 FM, Zaporizhzhia); same owner as inform.zp.ua — there is no separate registry entry for the website itself.",
       "email": "radiovlug@gmail.com"
-    }
+    },
+    "descriptionCrh": "Zaporijiye ve Zaporijiye vilâyeti aqqında mıntaqa onlayn mediyası. Neşir er kün yerli haberlerni, siyasetni, iqtisadiyatnı, medeniyetni, içtimaiy ayatnı, sportnı ve rus-ukrain cengi ile bağlı vaqialarnı yaqtırta, ayrıca öz intervyularını, reportajlarını, analitik materiallarını ve teftişlerini azırlay."
   },
   {
     "id": "зміст",
@@ -1875,7 +1937,8 @@
       "mediaId": "R40-01558",
       "activity": "Онлайн-медіа",
       "email": "zmist.pl@gmail.com"
-    }
+    },
+    "descriptionCrh": "ZMİST — Poltavadan müstaqil mıntaqa onlayn mediyası, yerli haberlerni, içtimaiy-siyasiy protsesslerni, medeniyetni ve cemaat ayatını yaqtırta. Neşir evelâ Poltava ve Poltava vilâyetiniñ auditoriyasına yönelgen."
   },
   {
     "id": "громадське",
@@ -1908,6 +1971,7 @@
       "mediaId": "R40-02239",
       "activity": "Онлайн-медіа",
       "email": "office@hromadske.ua"
-    }
+    },
+    "descriptionCrh": "Hromadske.ua — 2013 senesi Lâyıqlıq İnqılâbınıñ başında jurnalistler tarafından tesis etilgen müstaqil ukrain içtimaiy-siyasiy mediyası."
   }
 ]
