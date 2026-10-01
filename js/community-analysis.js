@@ -100,6 +100,53 @@
           filePrefix: "community-analysis"
         }
       }
+    },
+    crh: {
+      nav: {
+        analysis: "Cemaat analizi"
+      },
+      analysis: {
+        eyebrow: "Ameliy iş",
+        title: "Mediya cemaatini analiz etmek içün yedi sual",
+        lede: "Cevaplarnı yazıp PDF-ni yükleñiz.",
+        fields: {
+          name: {
+            label: "Mediyanıñ ya da cemaatniñ adı",
+            placeholder: "Meselâ: yerli mediyanıñ oquyıcılar cemaati"
+          }
+        },
+        questions: {
+          q1: "Qıymet teklifi nedir? Bu cemaat nege bar? Onıñ azalarını hangi umumiy fikir birleştire?",
+          q2: "Cemaat ne derecede resmiyleştirilgen? Anıq qaideler, usullar, rollerniñ bölüşüvi barmı? Cemaatnen meşğul olğan mahsus menejer barmı?",
+          q3: "Azalar ne isse qoşalar? Cemaat azaları onıñ inkişafına hangi menbalarnı yatıralar? Bu para, vaqıt, kontent ya da tecribe olabilir.",
+          q4: "Cemaat içindeki qarşılıqlı areket ne seviyede? Cemaat azaları ne derecede iştirak eteler?",
+          q5: "Umumiy adetler nelerdir: cemaatniñ eşsiz medeniyetini şekillendirgen tekrarlanğan merasimler, vaqialar, usullar, timsaller ve an'aneler?",
+          q6: "Celp etüvniñ qıymet ve duyğu faktorları nelerdir? Birlik, tanıluv, belli bir içtimaiy gruppağa mensüplik duyğusı ve ilâhre.",
+          q7: "Ameliy ve bilgi faydaları nelerdir? Laf yañı bilgiler ve tanışlıqlardan bağışlarğa qadar cemaatke azalıqnıñ aqılğa uyğun faydaları aqqında kete."
+        },
+        actions: {
+          download: "PDF yüklemek",
+          reset: "Temizlemek"
+        },
+        status: {
+          autosave: "Qaralama bu brauzerde avtomatik saqlana.",
+          empty: "Eñ az cemaatniñ adını ya da bir cevapnı yazıñız.",
+          building: "PDF azırlana...",
+          downloaded: "PDF azır. Eger fayl avtomatik açılmasa, brauzerniñ yüklemelerini teşkeriñiz.",
+          printFallback: "PDF-ni avtomatik yaratmaq mümkün olmadı, basma versiyasını açam.",
+          popupBlocked: "Brauzer basma penceresini blokladı. Bu sayt içün açılğan pencerelerge izin beriñiz.",
+          reset: "Forma temizlendi."
+        },
+        pdf: {
+          title: "Cemaatni analiz etmek içün yedi sual",
+          communityLabel: "Cemaat",
+          dateLabel: "Tarih",
+          untitled: "Adsız",
+          emptyAnswer: "Toldurılmağan",
+          footer: "«ProMedia» İCT aleti yardımınen azırlandı",
+          filePrefix: "cemaat-analizi"
+        }
+      }
     }
   };
 
@@ -413,7 +460,14 @@
       .replace(/^-|-$/g, "") || readText("analysis.pdf.filePrefix");
   }
 
+  var CRH_MONTHS = ["yanvar", "fevral", "mart", "aprel", "mayıs", "iyün", "iyül", "avgust", "sentâbr", "oktâbr", "noyabr", "dekabr"];
+
+  function crhDate(date) {
+    return date.getDate() + " " + CRH_MONTHS[date.getMonth()] + " " + date.getFullYear() + " senesi";
+  }
+
   function formattedDate() {
+    if (lang() === "crh") return crhDate(new Date());
     var locale = lang() === "en" ? "en-US" : "uk-UA";
     try {
       return new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", year: "numeric" }).format(new Date());

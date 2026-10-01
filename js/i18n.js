@@ -428,6 +428,192 @@ const I18N = {
       fallbackText: "Redirecting…",
       fallbackLink: "Go to the research"
     }
+  },
+  // Qırımtatarca (latin elifbesi). Bu lugatta olmağan açqıçlar (meselâ, admin
+  // panelniñ metinleri) tRaw() vastasınen ukrain versiyasından alına.
+  crh: {
+    nav: {
+      promedia: "← ProMedia",
+      addCommunity: "+ Cemaat qoşmaq",
+      aboutCommunities: "Mediya cemaati ne demek"
+    },
+    meta: {
+      title: "Ukraina mediya cemaatleriniñ haritası | ProMedia",
+      desc: "Ukraina mediya cemaatleriniñ katalogı ve haritası: mediya saytları, qısqa tarifler, cemaatniñ esas fikiri ve oña nerede abone olmaq mümkün olğanı."
+    },
+    hero: {
+      eyebrow: "Mediya cemaatleriniñ katalogı ve haritası",
+      title: "Ukrainanıñ mediya cemaatleri",
+      ledeHtml: "Oquyıcılarnıñ yardımına tayanğan ve materiallarını açıq erişimde qaldırğan neşirlerni topladıq. Olar maqalelerni kilit altına (paywall) saqlamay, belki fikirdeşlerniñ paralarını umumiy maqsatqa irişmek içün celp eteler (membership). Daha ziyade «<a href=\"#about-communities\">Mediya cemaati ne demek</a>» bölüginde oquñız.",
+      stat: {
+        one: "Katalogda {count} mediya cemaati",
+        many: "Katalogda {count} mediya cemaati"
+      }
+    },
+    explainer: {
+      eyebrow: "Malümat",
+      title: "Mediya cemaati ne demek?",
+      q1: {
+        q: "Mediya cemaati ne demek?",
+        aHtml: "Mediya cemaatlerini (media communities) «oquyıcılar klubları», «mediyanıñ dostları», «azalıq modelleri» ve ilâhre dep te adlandıralar. The Membership Puzzle Project (2020) bergen tarifke köre, bu haber teşkilâtı ile onıñ cemaati azaları arasındaki içtimaiy añlaşmadır: cemaat azaları özleri inanğan işni desteklemek içün vaqıtlarını, paralarını, quvetlerini, tecribelerini ve bağlarını ayıralar. Bunıñ evezine haber teşkilâtı şeffaflıq ve teşkilâtnıñ istiqrarına ve tesirine ehemiyetli isse qoşmaq imkânını teklif ete. Menba: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Bugün Ukrainada bir qaç onlarca mediya cemaati bar, 2021 senesi olar tek 11 edi. Daha tafsilâtlı <a href=\"https://research.promedia.report/research/state-membership-models-ukrainian-media-uk.html\">Membership Puzzle Project tedqiqatında</a> oquñız. Membership Puzzle Project ve The Lenfest Institute hazırlağan <a href=\"https://research.promedia.report/membership-guide/index.html\" target=\"_blank\" rel=\"noopener\">cemaatlerni inkişaf ettirüv qılavuzını</a> da oquñız"
+      },
+      q2: {
+        q: "Mediya cemaati abonementten nesi ile farqlana?",
+        aHtml: "Mediyağa abone olmaq — sırf işbilirmen, ticariy añlaşma. Siz jurnalistlerge para tölesiñiz ve gazetañıznı, mecmuañıznı, saytta metinlerge ya da videolarğa erişimni alasıñız. Cemaatte ise siz jurnalistlerge para tölesiñiz, çünki mediyanı umumiy maqsat içün desteklemege istesiñiz. Bu redaktsiyanıñ yapqan işi, tutqan baqışları sizge beğenile, onıñ işini faydalı sayasıñız ya da o sizniñ duyğusal ya da varlıq ihtiyaclarıñıznı qarşılay."
+      },
+      q3: {
+        q: "Öz cemaatimni nasıl yaratayım?",
+        aHtml: "«ProMedia» içtimaiy teşkilâtı mediyalarğa oquyıcılar cemaatlerini yaratmağa ve inkişaf ettirmege yardım ete. Biz Institute for War and Peace Reporting halqara teşkilâtınıñ sımarışı ile vebinarlar ve oflayn ögretüvler de keçiremiz. 2026 senesi cemaatlerni inkişaf ettirüv qılavuzını yaratmaqta iştirak ettik, onıñ pdf-versiyasını bu bağlantı boyunca tapıp olasıñız: <a href=\"https://iwpr.net/global-voices/print-publications/how-bring-order-chaos\" target=\"_blank\" rel=\"noopener\">iwpr.net</a>"
+      },
+      q4: {
+        q: "Nege haritada UP, NV, Liga ve Forbes yoq?",
+        aHtml: "Çünki bu mediyalar cemaat degil, abonement teklif eteler. Bu neşirlerde esas kontentke paralı erişim aqqında laf kete. Mediya etrafında cemaat şekillendirmek ise neşirniñ esas materiallarına erişimniñ paralı olmasını közde tutmay. Cemaat azaları içün ilâve bonus kontent olabilir, amma cemaatniñ fikiri — mediyanıñ hayranları onıñ tesirini arttırmaq içün faaliyetini desteklemeleridir."
+      },
+      q5: {
+        q: "«Tevsiye etilgen», «aq cedvel», «sertifikatlı», «qayd etilgen» işaretleri ne demek?",
+        aHtml: "Mediya kartoçkalarında neşirge işancnı tasdiqlağan işaretlerni körip olasıñız:<br>🗺️ <strong>Tevsiye etilgen mediya</strong> — neşir Detector Media ve Kütleviy Malümat İnstitutı (KMİ) alıp barğan Tevsiye etilgen mediyalar haritasına kirgen: <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>KMİ aq cedveli</strong> — neşir yüksek keyfiyet standartlarına uyğan mediyalarnı belgilegen KMİ aq cedveline kirgen: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI sertifikatlı</strong> — neşir redaktsiya protsesleriniñ şeffaflığını ve etikasını tasdiqlağan Journalism Trust Initiative standartı boyunca sertifikatlaşuvdan keçken: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a><br>🏛️ <strong>Milliy Şurada qayd etilgen</strong> — neşir Ukrainanıñ Televideniye ve radio yayınları boyunca Milliy Şurası alıp barğan Televideniye ve radio yayını saasında malümat faaliyeti subyektleriniñ Devlet reyestrine kirsetilgen: <a href=\"https://webportal.nrada.gov.ua/derzhavnyj-reyestr-sub-yektiv-informatsijnoyi-diyalnosti-u-sferi-telebachennya-i-radiomovlennya/\" target=\"_blank\" rel=\"noopener\">webportal.nrada.gov.ua</a>. Bu reyestr keyfiyet qıymeti degil, subyektniñ qaydını resmiy tasdiqlav."
+      }
+    },
+    controls: {
+      searchPlaceholder: "Ad ya da şeer boyunca qıdıruv…",
+      allRegions: "Episi vilâyetler"
+    },
+    map: {
+      ariaLabel: "Ukraina vilâyetleriniñ kontur haritası",
+      hint: "Cedvelni süzmek içün vilâyetke basıñız. İşaretteki sayı — mediyalar sayısı.",
+      loadError: "Haritanı yüklemek mümkün olmadı.",
+      legendLess: "az cemaat",
+      legendMore: "çoq cemaat"
+    },
+    list: {
+      loadError: "Katalognı yüklemek mümkün olmadı. Saifeni yañartıp baqıñız.",
+      empty: "Bu süzgüçler boyunca hiç bir şey tapılmadı."
+    },
+    results: {
+      count: "{total} mediyadan {count}"
+    },
+    card: {
+      subscribe: "Abone oluñız →",
+      website: "Mediyanıñ saytı",
+      example: "misal — aydınlaştırıla"
+    },
+    badges: {
+      recommended: "Mediya Tevsiye etilgenler haritasında",
+      whitelist: "Mediya Aq cedvelde",
+      jti: "Journalism Trust Initiative sertifikatı",
+      registered: "Milliy Şurada qayd etilgen"
+    },
+    tags: {
+      investigative: "Teftiş mediyası",
+      warJournalism: "Cenk jurnalistikası",
+      culture: "Medeniyet aqqında mediya",
+      science: "İlmiy mediya"
+    },
+    legend: {
+      recommended: "mediya Tevsiye etilgenler haritasında",
+      whitelist: "mediya Aq cedvelde",
+      jti: "Journalism Trust Initiative sertifikatı",
+      registered: "Milliy Şuranıñ Devlet reyestrinde qayd etilgen"
+    },
+    addSection: {
+      title: "Mediyañıznı tapmadıñızmı?",
+      text: "Mediya cemaatiñizni katalogğa qoşuñız — arza neşirden evel moderatsiyadan keçe."
+    },
+    footer: {
+      initiative: "Tesebbüs",
+      wordmarkAlt: "«ProMedia» İCT",
+      mapCreditHtml: "Vilâyetlerniñ kontur haritası: <a href=\"https://mapsvg.com/maps/ukraine\" target=\"_blank\" rel=\"noopener\">MapSVG</a> esasında uyğunlaştırıldı (<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>). Katalog malümatı neşirden evel moderatsiyadan keçe.",
+      reportErrorHtml: "Hata taptıñızmı? <a href=\"mailto:info@promedia.report\">info@promedia.report</a> adresine yazıñız"
+    },
+    oblasts: {
+      "cherkasy": "Çerkası vilâyeti",
+      "chernihiv": "Çernihiv vilâyeti",
+      "chernivtsi": "Çernivtsi vilâyeti",
+      "crimea": "Qırım Muhtar Cumhuriyeti",
+      "dnipropetrovsk": "Dnipropetrovsk vilâyeti",
+      "donetsk": "Donetsk vilâyeti",
+      "ivano-frankivsk": "İvano-Frankivsk vilâyeti",
+      "kharkiv": "Harkiv vilâyeti",
+      "kherson": "Herson vilâyeti",
+      "khmelnytskyi": "Hmelnıtskıy vilâyeti",
+      "kirovohrad": "Kirovohrad vilâyeti",
+      "kyiv": "Kiev vilâyeti",
+      "kyiv-city": "Kiev şeeri",
+      "luhansk": "Luhansk vilâyeti",
+      "lviv": "Lviv vilâyeti",
+      "mykolaiv": "Mıkolayiv vilâyeti",
+      "odessa": "Odesa vilâyeti",
+      "poltava": "Poltava vilâyeti",
+      "rivne": "Rivne vilâyeti",
+      "sumy": "Sumı vilâyeti",
+      "ternopil": "Ternopil vilâyeti",
+      "vinnytsia": "Vinnıtsâ vilâyeti",
+      "volyn": "Volın vilâyeti",
+      "zakarpattia": "Zakarpatiye vilâyeti",
+      "zaporizhia": "Zaporijiye vilâyeti",
+      "zhytomyr": "Jıtomır vilâyeti"
+    },
+    addForm: {
+      eyebrow: "Cemaat qoşmaq",
+      title: "Mediya cemaatiñizni qoşuñız",
+      lede: "Aşağıdaki formanı toldurıp yiberiñiz — arza moderatsiyadan keçe, adeten 1-2 iş künü içinde derc etemiz.",
+      backToMap: "← Haritağa",
+      name: { label: "Mediyanıñ adı", placeholder: "Meselâ: Suspilne Haberleri" },
+      website: { label: "Mediyanıñ saytı", placeholder: "https://example.com" },
+      logo: {
+        label: "Mediyanıñ logotipi (mecburiy degil)",
+        hint: "PNG, JPG, SVG ya da WebP, 2 MB-ğa qadar. Eger yüklemeseñiz, saytnıñ ikonkasını avtomatik alıp baqarmız.",
+        tooLarge: "Fayl pek büyük — azamiy 2 MB.",
+        invalidType: "Fayl formatı desteklenmey — PNG, JPG, SVG ya da WebP qullanıñız."
+      },
+      communityUrl: { label: "Cemaatke bağlantı (nerede abone olmaq mümkün)", hint: "Para köçürip cemaatke qoşulmaq mümkün olğan bağlantı", placeholder: "https://t.me/example" },
+      description: { label: "Mediyanıñ qısqa tarifi ve cemaatniñ esas fikiri", hint: "Bu ne mediya ve nege onıñ cemaatine abone olmağa arzıy." },
+      city: { label: "Şeer", placeholder: "Lviv" },
+      region: { label: "Vilâyet", placeholder: "Vilâyetni saylañız", hint: "Haritada mediya vilâyetke bağlana (sxematik kontur haritası, anıq koordinatlarsız)." },
+      badgesLabel: "İşaretler (eger bar olsa)",
+      badgeRecommended: "Tevsiye etilgen mediyalar haritasında",
+      badgeWhitelist: "KMİ aq cedvelinde",
+      badgeJti: "Halqara JTI (Journalism Trust Initiative) işaretine saip",
+      tagsLabel: "Tegler (mecburiy degil)",
+      tagInvestigative: "Teftiş mediyası",
+      tagWarJournalism: "Cenk jurnalistikası",
+      tagCulture: "Medeniyet aqqında mediya",
+      tagScience: "İlmiy mediya",
+      contact: { label: "Arza bergenniñ kontaktı (email ya da telefon)", hint: "Arza boyunca suallerimiz olsa, siznen bağlanıp olmamız içün." },
+      submit: "Arzanı yibermek",
+      submitting: "Yiberemiz…",
+      success: "Sağ oluñız! Arza yiberildi, o moderatornıñ baqışında.",
+      submitError: "Arzanı yibermek mümkün olmadı. Bir daa deneñiz ya da info@promedia.report adresine yazıñız.",
+      note: "Arza moderatsiyadan keçe — adeten 1-2 iş künü içinde derc etemiz.",
+      requiredError: "Lütfen, bütün mecburiy saalarnı toldurıñız."
+    },
+    media: {
+      titleFallback: "Mediya | ProMedia mediya cemaatleri katalogı",
+      titleSuffix: "ProMedia mediya cemaatleri katalogı",
+      backToCatalog: "← Katalogğa",
+      loading: "Yüklene…",
+      loadError: "Malümatnı yüklemek mümkün olmadı.",
+      notFound: "Mediya tapılmadı ya da daa derc etilmedi.",
+      newsTitle: "Bu mediya aqqında haberler",
+      newsEmpty: "Şimdilik bu mediya aqqında haber yoq.",
+      newsMore: "Episi haberler →",
+      registry: {
+        title: "Qayd malümatı",
+        legalName: "Yuridik adı",
+        edrpou: "EDRPOU/RNOKPP kodu",
+        mediaId: "Mediyanıñ identifikatorı",
+        activity: "Reyestrdeki faaliyet türü",
+        note: "Qayd",
+        email: "Kontakt email",
+        sourceLink: "Milliy Şura reyestrinde teşkermek ↗"
+      }
+    },
+    research: {
+      eyebrow: "ProMedia tedqiqatları",
+      title: "Ukraina mediyalarında azalıq modelleriniñ alı",
+      fallbackText: "Yönelteyatır…",
+      fallbackLink: "Tedqiqatqa keçmek"
+    }
   }
 };
 
@@ -503,22 +689,66 @@ function loadSiteContent() {
     });
 }
 
+const SUPPORTED_LANGS = ["uk", "en", "crh"];
+
+function normalizeLang(lang) {
+  return SUPPORTED_LANGS.indexOf(lang) !== -1 ? lang : "uk";
+}
+
 function getLang() {
   const urlLang = new URLSearchParams(location.search).get("lang");
-  if (urlLang === "en" || urlLang === "uk") {
+  if (SUPPORTED_LANGS.indexOf(urlLang) !== -1) {
     localStorage.setItem("site-lang", urlLang);
     return urlLang;
   }
-  return localStorage.getItem("site-lang") === "en" ? "en" : "uk";
+  return normalizeLang(localStorage.getItem("site-lang"));
 }
 
 function setLang(lang) {
-  localStorage.setItem("site-lang", lang === "en" ? "en" : "uk");
+  localStorage.setItem("site-lang", normalizeLang(lang));
 }
 
-function tRaw(key) {
-  const dict = I18N[getLang()];
+// Кореневі сторінки кожної мови: / (uk), /en/, /crh/.
+const LANG_ROOTS = { uk: "/", en: "/en/", crh: "/crh/" };
+
+function rootLangOfPath(path) {
+  if (path === "/" || path === "/index.html") return "uk";
+  if (path === "/en/" || path === "/en/index.html") return "en";
+  if (path === "/crh/" || path === "/crh/index.html") return "crh";
+  return null;
+}
+
+// Адреси сусідніх сайтів мережі ПроМедіа для кожної мови. Сайти без
+// кримськотатарської версії (promedia.report, рейтинг журфаків) отримують
+// українську адресу.
+const NETWORK_URLS = {
+  home: { uk: "https://promedia.report", en: "https://promedia.report/en", crh: "https://promedia.report" },
+  news: { uk: "https://news.promedia.report/", en: "https://news.promedia.report/?lang=en", crh: "https://news.promedia.report/?lang=crh" },
+  communities: { uk: "https://communities.promedia.report/", en: "https://communities.promedia.report/en/", crh: "https://communities.promedia.report/crh/" },
+  ratings: { uk: "https://ratings.promedia.report/", en: "https://ratings.promedia.report/en/", crh: "https://ratings.promedia.report/" },
+  research: { uk: "https://research.promedia.report/", en: "https://research.promedia.report/en/", crh: "https://research.promedia.report/crh/" },
+  atlas: { uk: "https://atlas.promedia.report/", en: "https://atlas.promedia.report/en/", crh: "https://atlas.promedia.report/crh/" }
+};
+
+const NETWORK_LABELS = {
+  uk: { communities: "Карта спільнот", news: "Новини", ratings: "Рейтинг журфаків", research: "Дослідження", atlas: "Атлас Медіа", aria: "Проєкти ПроМедіа" },
+  en: { communities: "Community Map", news: "News", ratings: "Journalism Schools Ranking", research: "Research", atlas: "Media Atlas", aria: "ProMedia projects" },
+  crh: { communities: "Cemaatlar haritası", news: "Haberler", ratings: "Jurnalistika fakülteleri reytingi", research: "Tedqiqatlar", atlas: "Mediya Atlası", aria: "ProMedia loyihaları" }
+};
+
+function networkUrl(site, lang) {
+  const urls = NETWORK_URLS[site];
+  return urls ? (urls[normalizeLang(lang)] || urls.uk) : null;
+}
+
+function lookup(dict, key) {
   return key.split(".").reduce((o, k) => (o && o[k] != null ? o[k] : undefined), dict);
+}
+
+// Ключі, яких немає в crh-словнику (напр. тексти адмінки), беруться з uk.
+function tRaw(key) {
+  const value = lookup(I18N[getLang()], key);
+  return value != null ? value : lookup(I18N.uk, key);
 }
 
 function t(key, vars) {
@@ -556,10 +786,28 @@ function tPlural(key, n, vars) {
 
 // Дозволяє прийти з promedia.report (чи ratings.promedia.report) з ?lang=en
 // і одразу відкрити цю сторінку англійською; посилання назад теж
-// зберігають поточну мову через ?lang=.
+// зберігають поточну мову через ?lang=. Посилання мережі ПроМедіа
+// (data-network="news|ratings|research|atlas|communities|home") ведуть на
+// версію сусіднього сайту тією самою мовою.
 function syncCrossSiteLinks() {
   const lang = getLang();
-  document.querySelectorAll("a.home-btn, a[data-cross-site]").forEach((a) => {
+  const labels = NETWORK_LABELS[lang] || NETWORK_LABELS.uk;
+  document.querySelectorAll("a[data-network]").forEach((a) => {
+    const site = a.dataset.network;
+    const href = networkUrl(site, lang);
+    if (href && site !== "home") a.setAttribute("href", href);
+    if (labels[site] && !a.querySelector("span")) a.textContent = labels[site];
+  });
+  document.querySelectorAll("nav.network-nav, nav.network-footer").forEach((nav) => {
+    nav.setAttribute("aria-label", labels.aria);
+  });
+  document.querySelectorAll("a.home-btn").forEach((a) => {
+    a.setAttribute("href", networkUrl("home", lang));
+  });
+  document.querySelectorAll("a[data-lang-root]").forEach((a) => {
+    a.setAttribute("href", LANG_ROOTS[lang]);
+  });
+  document.querySelectorAll("a[data-cross-site]").forEach((a) => {
     try {
       const url = new URL(a.getAttribute("href"), location.href);
       url.searchParams.set("lang", lang);
@@ -605,17 +853,10 @@ function initLangToggle() {
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       if (btn.dataset.lang === getLang()) return;
-      const path = location.pathname;
-      const isRootUk = path === "/" || path === "/index.html";
-      const isRootEn = path === "/en/" || path === "/en/index.html";
-      if (isRootUk && btn.dataset.lang === "en") {
-        setLang("en");
-        location.href = "/en/";
-        return;
-      }
-      if (isRootEn && btn.dataset.lang === "uk") {
-        setLang("uk");
-        location.href = "/";
+      const rootLang = rootLangOfPath(location.pathname);
+      if (rootLang && LANG_ROOTS[btn.dataset.lang]) {
+        setLang(btn.dataset.lang);
+        location.href = LANG_ROOTS[btn.dataset.lang] + location.hash;
         return;
       }
       setLang(btn.dataset.lang);
