@@ -55,7 +55,7 @@
   }
 
   function mediaLink(id) {
-    return "/media/?id=" + encodeURIComponent(id) + (getLang() !== "uk" ? "&lang=" + getLang() : "");
+    return (getLang() === "uk" ? "" : "/" + getLang()) + "/media/?id=" + encodeURIComponent(id);
   }
 
   function itemRegionSlugs(item) {

@@ -246,7 +246,11 @@
     if (!newsItems.length) return "";
     var itemsHtml = newsItems.map(function (n) {
       var title = (getLang() === "en" && n.titleEn) || (getLang() === "crh" && n.titleCrh) || n.title;
-      var url = getLang() !== "uk" ? n.url + (n.url.indexOf("?") === -1 ? "?" : "&") + "lang=" + getLang() : n.url;
+      var url = n.url;
+      if (getLang() !== "uk") {
+        // Новини теж розрізняють мови префіксом шляху: /crh/article/<slug>.
+        try { var u = new URL(n.url); u.pathname = "/" + getLang() + u.pathname; url = u.href; } catch (e) { /* лишаємо як є */ }
+      }
       var dateText = formatNewsDate(n.publishedAt);
       var dateHtml = dateText ? '<span class="media-news-date">' + escapeHtml(dateText) + "</span>" : "";
       return '<li class="media-news-item">' + dateHtml +
@@ -270,7 +274,7 @@
 
   function load() {
     var id = getIdFromUrl();
-    fetch("../data/communities.json?t=" + Date.now())
+    fetch("/data/communities.json?t=" + Date.now())
       .then(function (r) { return r.json(); })
       .then(function (data) {
         currentItem = data.find(function (i) { return i.id === id && i.status === "approved"; }) || null;
