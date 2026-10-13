@@ -447,6 +447,7 @@ const I18N = {
       ledeHtml: "Oquyıcılarnıñ yardımına tayanğan ve materiallarını açıq erişimde qaldırğan neşirlerni topladıq. Olar maqalelerni kilit altına (paywall) saqlamay, belki fikirdeşlerniñ paralarını umumiy maqsatqa irişmek içün celp eteler (membership). Daha ziyade «<a href=\"#about-communities\">Mediya cemaati ne demek</a>» bölüginde oquñız.",
       stat: {
         one: "Katalogda {count} mediya cemaati",
+        few: "Katalogda {count} mediya cemaati",
         many: "Katalogda {count} mediya cemaati"
       }
     },
@@ -587,6 +588,35 @@ const I18N = {
       note: "Arza moderatsiyadan keçe — adeten 1-2 iş künü içinde derc etemiz.",
       requiredError: "Lütfen, bütün mecburiy saalarnı toldurıñız."
     },
+
+    admin: {
+      eyebrow: "Yalnız ProMedia komandası içün",
+      title: "Katalognı idare etüv paneli",
+      ledeHtml: "Yañı arzalar mında «baqılmaqta» statusınen peyda ola ve saytta körsetilmey. Aşağıdaki dögmeler deñişikliklerni doğrudan GitHub-da saqlay — faylnı elnen redaktir etmek kerek degil.",
+      passwordLabel: "Administrator paroli",
+      passwordSave: "Saqlamaq",
+      passwordSaved: "Saqlandı",
+      passwordRequired: "Evel saifeniñ yuqarısında administrator parolini kirsetip saqlañız.",
+      wrongPassword: "Parol yanlış. Doğru parolni kirsetip bir daa deneñiz.",
+      actionFailed: "Areketni yerine ketirmek mümkün olmadı. Bir daa deneñiz ya da GitHub-da elnen redaktir etiñiz.",
+      confirmAction: "Eminsiñizmi? Bu areketni keri qaytarmaq mümkün degil.",
+      approve: "✅ Tasdıqlamaq",
+      reject: "🗑️ Red etmek",
+      deactivate: "🚫 Faal olmaycaq etüv",
+      reactivate: "♻️ Yañıdan faalleştirmek",
+      delete: "🗑️ Silmek",
+      pendingTitle: "Baqılmaqta",
+      approvedTitle: "Saytta derc etilgen",
+      otherTitle: "Başqa (derc etilmegen, baqılmaqta degil)",
+      empty: "Boş.",
+      loadError: "Katalog malümatını yüklemek mümkün olmadı.",
+      editOnGithub: "GitHub-da redaktir etmek →",
+      sourceIssue: "Qaynaq: issue",
+      statusPending: "baqılmaqta",
+      statusApproved: "derc etilgen",
+      example: "misal"
+    },
+
     media: {
       titleFallback: "Mediya | ProMedia mediya cemaatleri katalogı",
       titleSuffix: "ProMedia mediya cemaatleri katalogı",
