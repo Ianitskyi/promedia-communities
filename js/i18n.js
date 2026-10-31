@@ -438,12 +438,12 @@ const I18N = {
       aboutCommunities: "Mediya cemaati ne demek"
     },
     meta: {
-      title: "Ukraina mediya cemaatleriniñ haritası | ProMedia",
-      desc: "Ukraina mediya cemaatleriniñ katalogı ve haritası: mediya saytları, qısqa tarifler, cemaatniñ esas fikiri ve oña nerede abone olmaq mümkün olğanı."
+      title: "Ukrayina mediya cemaatleriniñ haritası | ProMedia",
+      desc: "Ukrayina mediya cemaatleriniñ katalogı ve haritası: mediya saytları, qısqa tarifler, cemaatniñ esas fikiri ve oña nerede abone olmaq mümkün olğanı."
     },
     hero: {
       eyebrow: "Mediya cemaatleriniñ katalogı ve haritası",
-      title: "Ukrainanıñ mediya cemaatleri",
+      title: "Ukrayinanıñ mediya cemaatleri",
       ledeHtml: "Oquyıcılarnıñ yardımına tayanğan ve materiallarını açıq erişimde qaldırğan neşirlerni topladıq. Olar maqalelerni kilit altına (paywall) saqlamay, belki fikirdeşlerniñ paralarını umumiy maqsatqa irişmek içün celp eteler (membership). Daha ziyade «<a href=\"#about-communities\">Mediya cemaati ne demek</a>» bölüginde oquñız.",
       stat: {
         one: "Katalogda {count} mediya cemaati",
@@ -456,7 +456,7 @@ const I18N = {
       title: "Mediya cemaati ne demek?",
       q1: {
         q: "Mediya cemaati ne demek?",
-        aHtml: "Mediya cemaatlerini (media communities) «oquyıcılar klubları», «mediyanıñ dostları», «azalıq modelleri» ve ilâhre dep te adlandıralar. The Membership Puzzle Project (2020) bergen tarifke köre, bu haber teşkilâtı ile onıñ cemaati azaları arasındaki içtimaiy añlaşmadır: cemaat azaları özleri inanğan işni desteklemek içün vaqıtlarını, paralarını, quvetlerini, tecribelerini ve bağlarını ayıralar. Bunıñ evezine haber teşkilâtı şeffaflıq ve teşkilâtnıñ istiqrarına ve tesirine ehemiyetli isse qoşmaq imkânını teklif ete. Menba: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Bugün Ukrainada bir qaç onlarca mediya cemaati bar, 2021 senesi olar tek 11 edi. Daha tafsilâtlı <a href=\"https://research.promedia.report/research/state-membership-models-ukrainian-media-uk.html\">Membership Puzzle Project tedqiqatında</a> oquñız. Membership Puzzle Project ve The Lenfest Institute hazırlağan <a href=\"https://research.promedia.report/membership-guide/index.html\" target=\"_blank\" rel=\"noopener\">cemaatlerni inkişaf ettirüv qılavuzını</a> da oquñız"
+        aHtml: "Mediya cemaatlerini (media communities) «oquyıcılar klubları», «mediyanıñ dostları», «azalıq modelleri» ve ilâhre dep te adlandıralar. The Membership Puzzle Project (2020) bergen tarifke köre, bu haber teşkilâtı ile onıñ cemaati azaları arasındaki içtimaiy añlaşmadır: cemaat azaları özleri inanğan işni desteklemek içün vaqıtlarını, paralarını, quvetlerini, tecribelerini ve bağlarını ayıralar. Bunıñ evezine haber teşkilâtı şeffaflıq ve teşkilâtnıñ istiqrarına ve tesirine ehemiyetli isse qoşmaq imkânını teklif ete. Menba: <a href=\"https://membershippuzzle.org/\" target=\"_blank\" rel=\"noopener\">membershippuzzle.org</a>. Bugün Ukrayinada bir qaç onlarca mediya cemaati bar, 2021 senesi olar tek 11 edi. Daha tafsilâtlı <a href=\"https://research.promedia.report/research/state-membership-models-ukrainian-media-uk.html\">Membership Puzzle Project tedqiqatında</a> oquñız. Membership Puzzle Project ve The Lenfest Institute hazırlağan <a href=\"https://research.promedia.report/membership-guide/index.html\" target=\"_blank\" rel=\"noopener\">cemaatlerni inkişaf ettirüv qılavuzını</a> da oquñız"
       },
       q2: {
         q: "Mediya cemaati abonementten nesi ile farqlana?",
@@ -472,7 +472,7 @@ const I18N = {
       },
       q5: {
         q: "«Tevsiye etilgen», «aq cedvel», «sertifikatlı», «qayd etilgen» işaretleri ne demek?",
-        aHtml: "Mediya kartoçkalarında neşirge işancnı tasdiqlağan işaretlerni körip olasıñız:<br>🗺️ <strong>Tevsiye etilgen mediya</strong> — neşir Detector Media ve Kütleviy Malümat İnstitutı (KMİ) alıp barğan Tevsiye etilgen mediyalar haritasına kirgen: <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>KMİ aq cedveli</strong> — neşir yüksek keyfiyet standartlarına uyğan mediyalarnı belgilegen KMİ aq cedveline kirgen: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI sertifikatlı</strong> — neşir redaktsiya protsesleriniñ şeffaflığını ve etikasını tasdiqlağan Journalism Trust Initiative standartı boyunca sertifikatlaşuvdan keçken: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a><br>🏛️ <strong>Milliy Şurada qayd etilgen</strong> — neşir Ukrainanıñ Televideniye ve radio yayınları boyunca Milliy Şurası alıp barğan Televideniye ve radio yayını saasında malümat faaliyeti subyektleriniñ Devlet reyestrine kirsetilgen: <a href=\"https://webportal.nrada.gov.ua/derzhavnyj-reyestr-sub-yektiv-informatsijnoyi-diyalnosti-u-sferi-telebachennya-i-radiomovlennya/\" target=\"_blank\" rel=\"noopener\">webportal.nrada.gov.ua</a>. Bu reyestr keyfiyet qıymeti degil, subyektniñ qaydını resmiy tasdiqlav."
+        aHtml: "Mediya kartoçkalarında neşirge işancnı tasdiqlağan işaretlerni körip olasıñız:<br>🗺️ <strong>Tevsiye etilgen mediya</strong> — neşir Detector Media ve Kütleviy Malümat İnstitutı (KMİ) alıp barğan Tevsiye etilgen mediyalar haritasına kirgen: <a href=\"https://map.detector.media/\" target=\"_blank\" rel=\"noopener\">map.detector.media</a><br>✅ <strong>KMİ aq cedveli</strong> — neşir yüksek keyfiyet standartlarına uyğan mediyalarnı belgilegen KMİ aq cedveline kirgen: <a href=\"https://imi.org.ua/doslidzhennya-standartiv\" target=\"_blank\" rel=\"noopener\">imi.org.ua</a><br>🛡️ <strong>JTI sertifikatlı</strong> — neşir redaktsiya protsesleriniñ şeffaflığını ve etikasını tasdiqlağan Journalism Trust Initiative standartı boyunca sertifikatlaşuvdan keçken: <a href=\"https://journalismtrustinitiative.org/\" target=\"_blank\" rel=\"noopener\">journalismtrustinitiative.org</a><br>🏛️ <strong>Milliy Şurada qayd etilgen</strong> — neşir Ukrayinanıñ Televideniye ve radio yayınları boyunca Milliy Şurası alıp barğan Televideniye ve radio yayını saasında malümat faaliyeti subyektleriniñ Devlet reyestrine kirsetilgen: <a href=\"https://webportal.nrada.gov.ua/derzhavnyj-reyestr-sub-yektiv-informatsijnoyi-diyalnosti-u-sferi-telebachennya-i-radiomovlennya/\" target=\"_blank\" rel=\"noopener\">webportal.nrada.gov.ua</a>. Bu reyestr keyfiyet qıymeti degil, subyektniñ qaydını resmiy tasdiqlav."
       }
     },
     controls: {
@@ -480,7 +480,7 @@ const I18N = {
       allRegions: "Episi vilâyetler"
     },
     map: {
-      ariaLabel: "Ukraina vilâyetleriniñ kontur haritası",
+      ariaLabel: "Ukrayina vilâyetleriniñ kontur haritası",
       hint: "Cedvelni süzmek içün vilâyetke basıñız. İşaretteki sayı — mediyalar sayısı.",
       loadError: "Haritanı yüklemek mümkün olmadı.",
       legendLess: "az cemaat",
@@ -521,7 +521,7 @@ const I18N = {
       text: "Mediya cemaatiñizni katalogğa qoşuñız — arza neşirden evel moderatsiyadan keçe."
     },
     footer: {
-      initiative: "Tesebbüs",
+      initiative: "Teşebbüs",
       wordmarkAlt: "«ProMedia» İCT",
       mapCreditHtml: "Vilâyetlerniñ kontur haritası: <a href=\"https://mapsvg.com/maps/ukraine\" target=\"_blank\" rel=\"noopener\">MapSVG</a> esasında uyğunlaştırıldı (<a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY 4.0</a>). Katalog malümatı neşirden evel moderatsiyadan keçe.",
       reportErrorHtml: "Hata taptıñızmı? <a href=\"mailto:info@promedia.report\">info@promedia.report</a> adresine yazıñız"
@@ -538,8 +538,8 @@ const I18N = {
       "kherson": "Herson vilâyeti",
       "khmelnytskyi": "Hmelnıtskıy vilâyeti",
       "kirovohrad": "Kirovohrad vilâyeti",
-      "kyiv": "Kiev vilâyeti",
-      "kyiv-city": "Kiev şeeri",
+      "kyiv": "Kyiv vilâyeti",
+      "kyiv-city": "Kyiv şeeri",
       "luhansk": "Luhansk vilâyeti",
       "lviv": "Lviv vilâyeti",
       "mykolaiv": "Mıkolayiv vilâyeti",
@@ -640,7 +640,7 @@ const I18N = {
     },
     research: {
       eyebrow: "ProMedia tedqiqatları",
-      title: "Ukraina mediyalarında azalıq modelleriniñ alı",
+      title: "Ukrayina mediyalarında azalıq modelleriniñ alı",
       fallbackText: "Yönelteyatır…",
       fallbackLink: "Tedqiqatqa keçmek"
     }
@@ -791,7 +791,7 @@ const NETWORK_URLS = {
 const NETWORK_LABELS = {
   uk: { communities: "Карта спільнот", news: "Новини", ratings: "Рейтинг журфаків", research: "Дослідження", atlas: "Атлас Медіа", aria: "Проєкти ПроМедіа" },
   en: { communities: "Community Map", news: "News", ratings: "Journalism Schools Ranking", research: "Research", atlas: "Media Atlas", aria: "ProMedia projects" },
-  crh: { communities: "Cemaatlar haritası", news: "Haberler", ratings: "Jurnalistika fakülteleri reytingi", research: "Tedqiqatlar", atlas: "Mediya Atlası", aria: "ProMedia loyihaları" }
+  crh: { communities: "Cemaatlar haritası", news: "Haberler", ratings: "Jurnalistika fakülteleri reytingi", research: "Tedqiqatlar", atlas: "Mediya Atlası", aria: "ProMedia leyhaları" }
 };
 
 function networkUrl(site, lang) {
