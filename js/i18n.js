@@ -19,7 +19,7 @@ const I18N = {
     hero: {
       eyebrow: "Каталог і карта медіаспільнот",
       title: "Медійні спільноти України",
-      ledeHtml: "Зібрали видання, що спираються на підтримку читачів та залишають матеріали у відкритому доступі. Вони не ховають статті під замок (paywall), а залучають гроші однодумців задля досягнення спільної мети (membership). Більше читайте у розділі «<a href=\"#about-communities\">Що таке медійна спільнота</a>».",
+      ledeHtml: "Зібрали медіа, які розвивають спільноти та працюють за підтримки читачів.",
       stat: {
         one: "{count} медіаспільнота у каталозі",
         few: "{count} медіаспільноти у каталозі",
@@ -51,6 +51,7 @@ const I18N = {
       }
     },
     controls: {
+      filters: "Фільтри",
       searchPlaceholder: "Пошук за назвою чи містом…",
       allRegions: "Усі області"
     },
@@ -231,7 +232,7 @@ const I18N = {
     hero: {
       eyebrow: "Catalog and map of media communities",
       title: "Media Communities of Ukraine",
-      ledeHtml: "We've gathered outlets that rely on reader support and keep their content freely accessible. They don't lock articles behind a paywall — instead, they raise money from like-minded supporters to pursue a shared goal (membership). Read more in the “<a href=\"#about-communities\">What is a media community</a>” section.",
+      ledeHtml: "Discover media outlets that build communities and rely on reader support.",
       stat: {
         one: "{count} media community in the catalog",
         many: "{count} media communities in the catalog"
@@ -262,6 +263,7 @@ const I18N = {
       }
     },
     controls: {
+      filters: "Filters",
       searchPlaceholder: "Search by name or city…",
       allRegions: "All oblasts"
     },
@@ -444,7 +446,7 @@ const I18N = {
     hero: {
       eyebrow: "Mediya cemaatleriniñ katalogı ve haritası",
       title: "Ukrayinanıñ mediya cemaatleri",
-      ledeHtml: "Oquyıcılarnıñ yardımına tayanğan ve materiallarını açıq erişimde qaldırğan neşirlerni topladıq. Olar maqalelerni kilit altına (paywall) saqlamay, belki fikirdeşlerniñ paralarını umumiy maqsatqa irişmek içün celp eteler (membership). Daha ziyade «<a href=\"#about-communities\">Mediya cemaati ne demek</a>» bölüginde oquñız.",
+      ledeHtml: "Cemaatlarnı inkişaf ettirgen ve oquyıcılarnıñ yardımına tayanğan mediyalarnı topladıq.",
       stat: {
         one: "Katalogda {count} mediya cemaati",
         few: "Katalogda {count} mediya cemaati",
@@ -476,6 +478,7 @@ const I18N = {
       }
     },
     controls: {
+      filters: "Süzgüçler",
       searchPlaceholder: "Ad ya da şeer boyunca qıdıruv…",
       allRegions: "Episi vilâyetler"
     },

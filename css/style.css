@@ -1355,3 +1355,35 @@ a.badge:hover {
   .network-nav { padding-inline: 16px; gap: 6px 15px; }
   .network-footer { gap: 8px 14px; }
 }
+
+/* Compact map entry: keep the catalog visible before secondary actions. */
+.hero { padding-top: 22px; }
+.catalog-controls { margin-top: 12px; display: block; }
+.catalog-controls .search-input { width: 100%; min-width: 0; }
+.catalog-filters { margin-top: 8px; }
+.catalog-filters > summary {
+  display: flex; align-items: center; gap: 8px; width: fit-content;
+  min-height: 44px; padding: 8px 16px; border: 1.5px solid var(--border);
+  border-radius: 22px; background: var(--card); color: var(--ink);
+  font-size: 14px; font-weight: 700; cursor: pointer; list-style: none;
+}
+.catalog-filters > summary::-webkit-details-marker { display: none; }
+.catalog-filters > summary::after { content: "⌄"; margin-left: 12px; }
+.catalog-filters[open] > summary::after { content: "⌃"; }
+.catalog-filters > summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.filter-options { padding: 12px 0 4px; }
+.filter-options .select-input { max-width: 100%; min-height: 44px; }
+.filter-options .legend-filter-btn { min-height: 44px; text-align: left; }
+#active-filter-count { border-radius: 999px; padding: 1px 7px; background: var(--accent-tint); }
+.catalog-controls + .results-count { margin-top: 8px; }
+.map-actions { padding: 14px 0 0; gap: 10px 16px; }
+.map-actions .nav-link { font-size: 13px; }
+@media (max-width: 600px) {
+  .hero { padding: 18px 20px 4px; }
+  .hero .eyebrow { font-size: 10px; margin-bottom: 8px; }
+  .hero .lede { font-size: 14px; }
+  .hero-stat { margin-top: 10px; }
+  .catalog-controls, .catalog-controls + .results-count, .catalog-layout { padding-left: 20px; padding-right: 20px; }
+  .catalog-layout { margin-top: 10px; }
+  .oblast-map { padding: 10px; }
+}

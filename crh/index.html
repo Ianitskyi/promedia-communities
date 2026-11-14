@@ -23,7 +23,7 @@
 <link rel="alternate" hreflang="crh" href="https://communities.promedia.report/crh/" />
 <link rel="alternate" hreflang="x-default" href="https://communities.promedia.report/" />
 <link rel="icon" href="../favicon.png" type="image/png" />
-<link rel="stylesheet" href="../css/style.css?v=20261002-paths" />
+<link rel="stylesheet" href="../css/style.css?v=20261114-compact-map" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://news.promedia.report/js/promedia-analytics.js"></script>
 </head>
@@ -31,59 +31,58 @@
 <promedia-global-header></promedia-global-header>
 <script>localStorage.setItem("site-lang", "crh"); document.documentElement.lang = "crh";</script>
 
-<div class="utility-bar">
-  
-  <a class="nav-link" href="#about-communities" data-i18n="nav.aboutCommunities">Що таке медійна спільнота</a>
-  <a class="add-btn" href="add/" data-i18n="nav.addCommunity">+ Додати спільноту</a>
-  
-</div>
+
 
 
 
 <section class="hero" id="top">
   <div class="eyebrow" data-i18n="hero.eyebrow">Каталог і карта медіаспільнот</div>
   <h1 data-i18n="hero.title">Медійні спільноти України</h1>
-  <p class="lede" data-i18n-html="hero.ledeHtml">
-    Зібрали видання, що спираються на підтримку читачів та залишають матеріали у відкритому доступі. Вони не ховають статті під замок (paywall), а залучають гроші однодумців задля досягнення спільної мети (membership). Більше читайте у розділі «<a href="#about-communities">Що таке медійна спільнота</a>».
-  </p>
+  <p class="lede" data-i18n-html="hero.ledeHtml">Cemaatlarnı inkişaf ettirgen ve oquyıcılarnıñ yardımına tayanğan mediyalarnı topladıq.</p>
   <p class="hero-stat" id="hero-stat"></p>
+
+</section>
+
+<div class="controls catalog-controls">
+  <input class="search-input" id="search" type="search" aria-label="Пошук за назвою чи містом…" data-i18n-aria-label="controls.searchPlaceholder" placeholder="Пошук за назвою чи містом…" data-i18n-placeholder="controls.searchPlaceholder" />
+  <details class="catalog-filters" id="catalog-filters">
+    <summary><span data-i18n="controls.filters">Фільтри</span><span id="active-filter-count" hidden></span></summary>
+    <div class="filter-options">
+  <select class="select-input" id="region-filter" aria-label="Усі області" data-i18n-aria-label="controls.allRegions">
+    <option value="" data-i18n="controls.allRegions">Усі області</option>
+  </select>
   <div class="badge-legend" id="badge-legend">
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="badge:recommended"><span class="legend-emoji">🗺️</span> <span data-i18n="legend.recommended">медіа на Мапі рекомендованих</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="badge:recommended"><span class="legend-emoji">🗺️</span> <span data-i18n="legend.recommended">медіа на Мапі рекомендованих</span></button>
       <a class="legend-external" href="https://map.detector.media/" target="_blank" rel="noopener" title="map.detector.media">↗</a>
     </span>
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="badge:whitelist"><span class="legend-emoji">✅</span> <span data-i18n="legend.whitelist">медіа у Білому списку</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="badge:whitelist"><span class="legend-emoji">✅</span> <span data-i18n="legend.whitelist">медіа у Білому списку</span></button>
       <a class="legend-external" href="https://imi.org.ua/doslidzhennya-standartiv" target="_blank" rel="noopener" title="imi.org.ua">↗</a>
     </span>
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="badge:jti"><span class="legend-emoji">🛡️</span> <span data-i18n="legend.jti">сертифікат Journalism Trust Initiative</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="badge:jti"><span class="legend-emoji">🛡️</span> <span data-i18n="legend.jti">сертифікат Journalism Trust Initiative</span></button>
       <a class="legend-external" href="https://journalismtrustinitiative.org/" target="_blank" rel="noopener" title="journalismtrustinitiative.org">↗</a>
     </span>
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="badge:registered"><span class="legend-emoji">🏛️</span> <span data-i18n="legend.registered">зареєстроване в Держреєстрі Нацради</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="badge:registered"><span class="legend-emoji">🏛️</span> <span data-i18n="legend.registered">зареєстроване в Держреєстрі Нацради</span></button>
       <a class="legend-external" href="https://webportal.nrada.gov.ua/derzhavnyj-reyestr-sub-yektiv-informatsijnoyi-diyalnosti-u-sferi-telebachennya-i-radiomovlennya/" target="_blank" rel="noopener" title="webportal.nrada.gov.ua">↗</a>
     </span>
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="tag:investigative"><span class="legend-emoji">🔍</span> <span data-i18n="tags.investigative">Розслідувальне медіа</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="tag:investigative"><span class="legend-emoji">🔍</span> <span data-i18n="tags.investigative">Розслідувальне медіа</span></button>
     </span>
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="tag:warJournalism"><span class="legend-emoji"><svg class="tag-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M5,14 L9,14 L4,2 Z M10,14 L14,14 L12,1 Z M15,14 L19,14 L20,2 Z M4,14 L20,14 L20,16 L4,16 Z M11,16 L13,16 L12,20 Z"/></svg></span> <span data-i18n="tags.warJournalism">Воєнна журналістика</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="tag:warJournalism"><span class="legend-emoji"><svg class="tag-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M5,14 L9,14 L4,2 Z M10,14 L14,14 L12,1 Z M15,14 L19,14 L20,2 Z M4,14 L20,14 L20,16 L4,16 Z M11,16 L13,16 L12,20 Z"/></svg></span> <span data-i18n="tags.warJournalism">Воєнна журналістика</span></button>
     </span>
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="tag:culture"><span class="legend-emoji">🎨</span> <span data-i18n="tags.culture">Медіа про культуру</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="tag:culture"><span class="legend-emoji">🎨</span> <span data-i18n="tags.culture">Медіа про культуру</span></button>
     </span>
     <span class="legend-item">
-      <button type="button" class="legend-filter-btn" data-filter="tag:science"><span class="legend-emoji">🔬</span> <span data-i18n="tags.science">Наукове медіа</span></button>
+      <button type="button" class="legend-filter-btn" aria-pressed="false" data-filter="tag:science"><span class="legend-emoji">🔬</span> <span data-i18n="tags.science">Наукове медіа</span></button>
     </span>
   </div>
-</section>
-
-<div class="controls">
-  <input class="search-input" id="search" type="text" placeholder="Пошук за назвою чи містом…" data-i18n-placeholder="controls.searchPlaceholder" />
-  <select class="select-input" id="region-filter">
-    <option value="" data-i18n="controls.allRegions">Усі області</option>
-  </select>
+    </div>
+  </details>
 </div>
 
 <p class="results-count" id="results-count"></p>
@@ -92,6 +91,12 @@
   <div class="oblast-map-wrap">
     <div class="oblast-map" id="oblast-map" aria-label="Контурна карта областей України" data-i18n-aria-label="map.ariaLabel"></div>
     <p class="map-hint" id="map-hint" data-i18n="map.hint">Натисніть на область, щоб відфільтрувати список. Число на позначці — кількість медіа.</p>
+<div class="utility-bar map-actions">
+
+  <a class="nav-link" href="#about-communities" data-i18n="nav.aboutCommunities">Що таке медійна спільнота</a>
+  <a class="add-btn" href="add/" data-i18n="nav.addCommunity">+ Додати спільноту</a>
+
+</div>
   </div>
   <div class="card-list" id="card-list"></div>
 </div>
@@ -211,9 +216,9 @@
 
 
 
-<script src="../js/i18n.js?v=20261002-paths"></script>
-<script src="../js/app.js?v=20261002-paths"></script>
-<script src="../js/community-analysis.js?v=20261002-paths"></script>
+<script src="../js/i18n.js?v=20261114-compact-map"></script>
+<script src="../js/app.js?v=20261114-compact-map"></script>
+<script src="../js/community-analysis.js?v=20261114-compact-map"></script>
 <script defer src="https://news.promedia.report/js/promedia-memorial-popup.js"></script>
 <promedia-global-footer></promedia-global-footer>
 <script defer src="https://news.promedia.report/js/promedia-global-shell.js"></script>

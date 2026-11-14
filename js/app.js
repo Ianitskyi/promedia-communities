@@ -266,6 +266,13 @@
     document.getElementById("results-count").textContent =
       t("results.count", { count: state.filtered.length, total: state.all.length });
 
+    var filterCount = document.getElementById("active-filter-count");
+    if (filterCount) {
+      var activeCount = Object.keys(state.activeFilters).length + (state.regionSlug ? 1 : 0);
+      filterCount.textContent = activeCount;
+      filterCount.hidden = !activeCount;
+    }
+
     var heroStat = document.getElementById("hero-stat");
     if (heroStat) {
       heroStat.textContent = state.all.length
@@ -430,6 +437,7 @@
           state.activeFilters[key] = true;
           btn.classList.add("active");
         }
+        btn.setAttribute("aria-pressed", btn.classList.contains("active") ? "true" : "false");
         render();
       });
     }
