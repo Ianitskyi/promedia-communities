@@ -848,7 +848,7 @@ a.badge:hover {
 
 .add-section {
   max-width: 1200px;
-  margin: 0 auto 60px;
+  margin: 48px auto 60px;
   padding: 0 24px;
 }
 
@@ -862,10 +862,11 @@ a.badge:hover {
 }
 
 .add-card h2 {
-  font-family: var(--sans);
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 12px;
 }
 
 .add-card p {
