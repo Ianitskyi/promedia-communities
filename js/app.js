@@ -37,6 +37,7 @@
     search: "",
     regionSlug: "",
     activeId: null,
+    listLimit: 5,
     activeFilters: {}
   };
 
@@ -255,6 +256,7 @@
   }
 
   function render() {
+    state.listLimit = 5;
     var preRegion = state.all.filter(matchesSearch).filter(matchesFilters);
     state.filtered = state.regionSlug
       ? preRegion.filter(function (item) { return itemRegionSlugs(item).indexOf(state.regionSlug) !== -1; })
@@ -268,7 +270,7 @@
 
     var filterCount = document.getElementById("active-filter-count");
     if (filterCount) {
-      var activeCount = Object.keys(state.activeFilters).length + (state.regionSlug ? 1 : 0);
+      var activeCount = Object.keys(state.activeFilters).length + (state.regionSlug ? 1 : 0) + (state.search.trim() ? 1 : 0);
       filterCount.textContent = activeCount;
       filterCount.hidden = !activeCount;
     }
@@ -336,11 +338,13 @@
   function renderList() {
     var list = document.getElementById("card-list");
     list.innerHTML = "";
+    var showAll = document.getElementById("show-all-media");
+    if (showAll) showAll.hidden = state.filtered.length <= state.listLimit;
     if (!state.filtered.length) {
       list.innerHTML = '<p class="empty-state">' + escapeHtml(t("list.empty")) + "</p>";
       return;
     }
-    state.filtered.forEach(function (item) {
+    state.filtered.slice(0, state.listLimit).forEach(function (item) {
       var card = document.createElement("div");
       card.className = "media-card" + (item.id === state.activeId ? " active" : "");
       card.dataset.id = item.id;
@@ -413,6 +417,12 @@
   }
 
   function bindEvents() {
+    var showAll = document.getElementById("show-all-media");
+    if (showAll) showAll.addEventListener("click", function () {
+      state.listLimit = state.filtered.length;
+      renderList();
+    });
+
     document.getElementById("search").addEventListener("input", function (e) {
       state.search = e.target.value;
       render();

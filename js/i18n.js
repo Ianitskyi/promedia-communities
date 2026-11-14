@@ -63,6 +63,7 @@ const I18N = {
       legendMore: "більше спільнот"
     },
     list: {
+      showAll: "Показати весь список",
       loadError: "Не вдалося завантажити каталог. Спробуйте оновити сторінку.",
       empty: "Нічого не знайдено за такими фільтрами."
     },
@@ -275,6 +276,7 @@ const I18N = {
       legendMore: "more outlets"
     },
     list: {
+      showAll: "Show the full list",
       loadError: "Failed to load the catalog. Try refreshing the page.",
       empty: "Nothing matches these filters."
     },
@@ -490,6 +492,7 @@ const I18N = {
       legendMore: "çoq cemaat"
     },
     list: {
+      showAll: "Tam cedvelni köster",
       loadError: "Katalognı yüklemek mümkün olmadı. Saifeni yañartıp baqıñız.",
       empty: "Bu süzgüçler boyunca hiç bir şey tapılmadı."
     },
