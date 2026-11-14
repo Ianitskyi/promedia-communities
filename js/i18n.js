@@ -68,7 +68,11 @@ const I18N = {
       empty: "Нічого не знайдено за такими фільтрами."
     },
     results: {
-      count: "{count} з {total} медіа"
+      count: {
+        one: "{count} спільнота",
+        few: "{count} спільноти",
+        many: "{count} спільнот"
+      }
     },
     card: {
       subscribe: "Підписатися →",
@@ -281,7 +285,10 @@ const I18N = {
       empty: "Nothing matches these filters."
     },
     results: {
-      count: "{count} of {total} media outlets"
+      count: {
+        one: "{count} community",
+        many: "{count} communities"
+      }
     },
     card: {
       subscribe: "Subscribe →",
@@ -497,7 +504,11 @@ const I18N = {
       empty: "Bu süzgüçler boyunca hiç bir şey tapılmadı."
     },
     results: {
-      count: "{total} mediyadan {count}"
+      count: {
+        one: "{count} cemaat",
+        few: "{count} cemaat",
+        many: "{count} cemaat"
+      }
     },
     card: {
       subscribe: "Abone oluñız →",

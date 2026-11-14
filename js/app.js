@@ -266,7 +266,7 @@
     renderList();
 
     document.getElementById("results-count").textContent =
-      t("results.count", { count: state.filtered.length, total: state.all.length });
+      tPlural("results.count", state.filtered.length);
 
     var filterCount = document.getElementById("active-filter-count");
     if (filterCount) {
@@ -275,12 +275,6 @@
       filterCount.hidden = !activeCount;
     }
 
-    var heroStat = document.getElementById("hero-stat");
-    if (heroStat) {
-      heroStat.textContent = state.all.length
-        ? tPlural("hero.stat", state.all.length)
-        : "";
-    }
   }
 
   function renderMapCounts(preRegion) {
