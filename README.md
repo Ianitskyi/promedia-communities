@@ -230,9 +230,16 @@ workflow [`process-new-community.yml`](.github/workflows/process-new-community.y
 
 ## Google Analytics
 
-На сторінці стоїть той самий тег `gtag.js` (`G-D8TM22QR9R`), що й на
-`ratings.promedia.report`, — трафік цього субдомену агрегується в одній
-властивості Google Analytics разом з рештою сайту ПроМедіа.
+Сторінки підключають спільний модуль мережі одним рядком:
+
+```html
+<script async src="https://news.promedia.report/js/promedia-analytics.js"></script>
+```
+
+Модуль (репозиторій `promedia-news`, файл `public/js/promedia-analytics.js`)
+завантажує GA4 (`G-D8TM22QR9R`) лише на `*.promedia.report`, додає до подій
+`site_section`, `content_type`, `content_language` і показує повідомлення з
+можливістю вимкнути аналітику. Окремий код gtag на сторінки не додавайте.
 
 ## Деплой і DNS
 
